@@ -1,0 +1,383 @@
+{
+  "module_id": "justice",
+  "name": "Justice & Democracy",
+  "tagline": "Question fairness. Examine rights. Understand responsibility.",
+  "icon": "⚖️",
+  "description": "Apply ideas of equality, freedom, rights and democratic participation to everyday situations on campus and in the community.",
+  "activities": [
+    {
+      "id": "J01",
+      "title": "The Online-Only Registration",
+      "type": "engine",
+      "difficulty": 1,
+      "skills": ["problem", "assumptions", "ethics", "perspectives"],
+      "objective": "Tell the difference between treating everyone the same (formal equality) and giving everyone a real chance (substantive equality).",
+      "scenario": "Your college announces an inter-college quiz with a prize of a fully paid summer school. The notice says: 'All students are welcome. Registration only through the online portal. Closes in 48 hours.' Kiran, a second-year student, lives in a hill area where mobile data is weak, and the college computer lab is closed for repairs this week. Kiran hears about the quiz from a friend after registration has closed. The principal says, 'The rule was the same for everyone, so it was fair.'",
+      "main_question": "Was the registration process fair? Explain your judgement and suggest what, if anything, should change.",
+      "follow_ups": [
+        "Is a rule fair simply because it applies to everyone?",
+        "Who might be disadvantaged by an online-only, 48-hour process?",
+        "What extra information would you want before deciding?",
+        "What practical change would make the process fairer without making it complicated?"
+      ],
+      "key_ideas": ["same rule", "equal", "access", "internet", "disadvantage", "opportunity", "time", "offline", "lab", "fair", "notice", "alternative"],
+      "reasoning_guide": "Start by separating facts (the rule, the 48 hours, the closed lab) from judgements ('it was fair'). Then ask whether the same rule creates the same opportunity for everyone. A strong answer recognises what the college intended, names who was left out and why, and proposes a realistic fix.",
+      "misconceptions": [
+        "Equality always means identical treatment.",
+        "If nobody complained in time, the process must have been fine.",
+        "Making a process fairer always means making it harder for others."
+      ],
+      "perspectives": [
+        "The principal may believe that one simple rule avoids favouritism and confusion.",
+        "A student with weak internet may feel the competition was 'open' only on paper.",
+        "The organising staff may have had very little time and limited resources."
+      ],
+      "concept": "Formal equality means the same rule for all. Substantive equality asks whether people actually have a similar chance to benefit from that rule. Both matter; good policy looks at both.",
+      "reflection": "Can you think of a rule in your own life that is the same for everyone but does not feel equally fair to everyone?"
+    },
+    {
+      "id": "J02",
+      "title": "Stairs, Ramps and Fairness",
+      "type": "mcq",
+      "difficulty": 1,
+      "skills": ["logic", "ethics", "problem"],
+      "objective": "Read a short text closely and identify its central argument about equality.",
+      "passage": {
+        "kind": "Short essay",
+        "title": "The Same Door",
+        "text": "Our old library has one entrance: fourteen stone steps leading to a heavy wooden door. For years, the college said the library was 'open to all'. Technically, this was true. No student was ever refused entry. But Sam, who uses a wheelchair, waited at the bottom of those steps every week while a friend went up to borrow books for both of them. Sam could read the books, but could never browse the shelves, sit at the long reading tables, or join the evening discussion circle held on the first floor.\n\nLast year, a ramp and a small lift were added. Some students grumbled that the money could have bought new computers that 'everyone' could use. But the ramp is now used by delivery staff with heavy boxes, by a professor recovering from knee surgery, and by parents with small children during open day. Being 'open to all' turned out to mean more than having no locked door. It meant asking who could actually walk through it."
+      },
+      "main_question": "Answer the questions about the essay, then explain your thinking.",
+      "questions": [
+        {
+          "q": "What is the writer's main argument?",
+          "options": [
+            {"text": "Libraries should spend less on buildings and more on books.", "quality": "weak", "explanation": "The essay never compares buildings and books. This misreads the topic."},
+            {"text": "A place is truly 'open to all' only when people can actually use it, not just when no one is refused.", "quality": "best", "explanation": "Yes. The writer contrasts 'technically open' with real access, which is the heart of the essay."},
+            {"text": "Students who complain about spending are selfish.", "quality": "weak", "explanation": "The writer mentions the grumbling but does not call anyone selfish. Be careful not to add judgements the text does not make."},
+            {"text": "Ramps are useful for delivery staff.", "quality": "partial", "explanation": "This is true in the text, but it is a supporting detail, not the main argument."}
+          ]
+        },
+        {
+          "q": "Why does the writer mention the delivery staff, the professor and the parents?",
+          "options": [
+            {"text": "To show that changes made for one group can benefit many others too.", "quality": "best", "explanation": "Correct. This answers the objection that the money only helped 'one person'."},
+            {"text": "To prove that the computers were not needed.", "quality": "weak", "explanation": "The text does not say the computers were unnecessary."},
+            {"text": "To make the essay longer.", "quality": "weak", "explanation": "Writers usually include examples for a purpose. Ask what each example is doing."},
+            {"text": "To suggest that Sam was not the real reason for the ramp.", "quality": "partial", "explanation": "Close reading shows the opposite: Sam's experience is the starting point; the others show wider benefit."}
+          ]
+        },
+        {
+          "q": "Which statement is an OPINION rather than a fact in the essay's world?",
+          "options": [
+            {"text": "The library has fourteen steps.", "quality": "weak", "explanation": "This can be counted and checked, so it is a fact."},
+            {"text": "A ramp and a small lift were added last year.", "quality": "weak", "explanation": "This is a checkable event, so it is a fact."},
+            {"text": "The money could have bought computers that everyone could use.", "quality": "best", "explanation": "Yes. This is a judgement about priorities. Notice the hidden assumption that 'everyone' could use computers but not a ramp."},
+            {"text": "Sam uses a wheelchair.", "quality": "weak", "explanation": "This is a fact about Sam in the essay."}
+          ]
+        }
+      ],
+      "justify_prompt": "In 3–5 sentences: Do you agree with the writer? Give one reason and one possible objection.",
+      "key_ideas": ["access", "open to all", "ramp", "benefit", "equal", "use", "barrier", "everyone"],
+      "concept": "Look for the central claim, then for the examples and the objection the writer answers. Strong readers ask: 'What is this paragraph doing for the argument?'",
+      "perspectives": ["A student who wanted computers may feel their need was ignored.", "A student who uses the lift may feel included for the first time."],
+      "reflection": "Is there a place on your campus that is 'open to all' only in theory?"
+    },
+    {
+      "id": "J03",
+      "title": "Criticism or Harassment?",
+      "type": "engine",
+      "difficulty": 2,
+      "skills": ["ethics", "perspectives", "assumptions", "counterargument"],
+      "objective": "Identify competing rights (expression vs dignity) and decide where the line between criticism and harassment lies.",
+      "scenario": "The college introduces a new rule: phones must be submitted at the entrance of every exam hall and collected later. Alex posts on a public social media page: 'This rule is stupid and the people who made it clearly don't trust students. Total waste of our time.' The post gets 400 likes. A few students then add comments naming a specific staff member and mocking their appearance. Some teachers demand that Alex be suspended. Other students say Alex only expressed an opinion.",
+      "main_question": "Should Alex face disciplinary action? Where should the line be drawn between criticism and harassment?",
+      "follow_ups": [
+        "Is strong criticism of a rule the same as disrespect towards a person?",
+        "Is Alex responsible for the comments other people wrote?",
+        "What facts would change your judgement?",
+        "How could the college respond to disagreement fairly?"
+      ],
+      "key_ideas": ["criticism", "harassment", "expression", "opinion", "person", "rule", "comments", "responsib", "dignity", "policy", "respect", "discipline"],
+      "reasoning_guide": "Separate three things: Alex's post (criticism of a rule), other people's comments (personal mockery), and the college's reaction. Ask who did what, what rights are involved, and whether the response is proportionate.",
+      "misconceptions": [
+        "Any criticism of authority is harassment.",
+        "Freedom of expression means there are no limits at all.",
+        "The author of a post is automatically responsible for every comment under it."
+      ],
+      "perspectives": [
+        "Staff may feel publicly insulted and worry about losing authority.",
+        "Students may feel their only way to be heard is public posting.",
+        "The staff member mocked in the comments is harmed regardless of the original post."
+      ],
+      "concept": "Competing rights: freedom of expression and the right to dignity can conflict. A useful test: is the speech aimed at an idea or policy, or at a person's identity or appearance?",
+      "reflection": "Think of a time you disagreed strongly with a decision. How did you express it, and would you change that now?"
+    },
+    {
+      "id": "J04",
+      "title": "Design a Fair Campus",
+      "type": "allocate",
+      "difficulty": 2,
+      "skills": ["ethics", "problem", "perspectives", "reflection"],
+      "objective": "Distribute limited resources, then examine trade-offs, opportunity costs and unintended consequences.",
+      "scenario": "Your college has received a one-time grant of ₹100 lakh. The student council is asked to recommend how to spend it. Every option has supporters. You must use the full amount, in steps of ₹5 lakh.",
+      "budget": 100,
+      "step": 5,
+      "unit": "₹ lakh",
+      "mode": "slider",
+      "indicators": ["Access & Equity", "Academic Quality", "Well-being", "Long-term Value"],
+      "options": [
+        {"key": "library", "label": "Library & study spaces", "desc": "New books, longer opening hours, quiet study rooms.", "effects": {"Academic Quality": [3, 3], "Access & Equity": [1, 2], "Long-term Value": [1, 2]}, "low": "Students without quiet space at home lose a key place to study.", "high": "Exam results improve slowly, but other needs wait."},
+        {"key": "access", "label": "Disability access", "desc": "Ramps, lifts, accessible toilets, screen-reader software.", "effects": {"Access & Equity": [4, 4], "Long-term Value": [2, 3], "Well-being": [1, 1]}, "low": "Students with disabilities continue to depend on others for basic movement.", "high": "Buildings become usable by many more people, including future students and visitors."},
+        {"key": "scholar", "label": "Scholarships", "desc": "Fee support for students from low-income families.", "effects": {"Access & Equity": [4, 2], "Well-being": [2, 1], "Long-term Value": [0, -1]}, "low": "Some students may drop out for financial reasons.", "high": "Immediate relief for many families, but a one-time grant cannot fund scholarships forever. What happens next year?"},
+        {"key": "sports", "label": "Sports facilities", "desc": "A renovated ground and indoor court.", "effects": {"Well-being": [3, 2], "Academic Quality": [0, 0], "Long-term Value": [1, 2]}, "low": "Fewer chances for physical activity and team building.", "high": "Athletes benefit greatly; students who do not play may see little change."},
+        {"key": "mental", "label": "Mental health support", "desc": "A trained counsellor and peer-support programme.", "effects": {"Well-being": [4, 3], "Access & Equity": [1, 1], "Academic Quality": [1, 2]}, "low": "Students facing stress may have nowhere confidential to turn.", "high": "Support improves, but salaries are recurring costs — the grant runs out in a few years."},
+        {"key": "digital", "label": "Digital infrastructure", "desc": "Wi-Fi across campus, a new computer lab.", "effects": {"Academic Quality": [2, 2], "Access & Equity": [2, 2], "Long-term Value": [1, 0]}, "low": "Students without devices or data fall further behind.", "high": "Strong access now, but equipment becomes outdated in 4–5 years."}
+      ],
+      "main_question": "Explain your priorities. Who benefits most from your plan, who benefits least, and why is that justified?",
+      "follow_ups": ["What is the opportunity cost of your biggest allocation?", "Which choice has a cost that appears only later?"],
+      "key_ideas": ["priority", "need", "benefit", "cost", "long-term", "short-term", "fair", "students", "opportunity", "recurring"],
+      "concept": "Opportunity cost: every rupee spent on one need is a rupee not spent on another. Distributive justice asks how benefits and burdens should be shared.",
+      "perspectives": ["A sports captain, a student who uses a wheelchair, and a first-generation student from a low-income family would each judge your plan differently."],
+      "reflection": "Would your plan change if you yourself belonged to the group that benefits least?"
+    },
+    {
+      "id": "J05",
+      "title": "The Ward Meeting Speech",
+      "type": "mcq",
+      "difficulty": 2,
+      "skills": ["evidence", "logic", "assumptions"],
+      "objective": "Analyse a public speech: separate claims from evidence and notice persuasive techniques.",
+      "passage": {
+        "kind": "Speech (fictional)",
+        "title": "Speech by a ward member at a local meeting",
+        "text": "Friends, neighbours, everyone gathered here today — thank you for coming out in this heat.\n\nFor ten years we have been promised a proper road to the health centre. For ten years, every monsoon, our elders have been carried through mud on stretchers. I have seen it with my own eyes. You have seen it too.\n\nNow the district has finally sanctioned the road. Some people say the new road will cut through three paddy fields and that the drainage will flood the lower houses. I respect their concern. But let me ask you: are we going to let a few objections stop progress that the whole ward needs? Every developed place you admire began with a road.\n\nThe engineers have assured me that everything will be fine. Work starts next month. Those who truly care about our elders will support this road. Those who delay it must answer to the families who wait in the rain.\n\nThank you."
+      },
+      "main_question": "Answer the questions about the speech, then evaluate it.",
+      "questions": [
+        {
+          "q": "Which part of the speech is the strongest EVIDENCE for the need for a road?",
+          "options": [
+            {"text": "'Every developed place you admire began with a road.'", "quality": "weak", "explanation": "This is a sweeping generalisation, not evidence about this ward."},
+            {"text": "'For ten years… our elders have been carried through mud on stretchers.'", "quality": "best", "explanation": "This is a specific, checkable claim about a real problem. It is personal testimony, which is useful, though records from the health centre would make it stronger."},
+            {"text": "'The engineers have assured me that everything will be fine.'", "quality": "partial", "explanation": "This sounds like expert evidence, but no report, data or name is given. It is an assurance, not evidence we can examine."},
+            {"text": "'Thank you for coming out in this heat.'", "quality": "weak", "explanation": "This builds goodwill with the audience but says nothing about the road."}
+          ]
+        },
+        {
+          "q": "'Those who truly care about our elders will support this road.' What is the problem with this sentence?",
+          "options": [
+            {"text": "It is grammatically incorrect.", "quality": "weak", "explanation": "The grammar is fine. Look at the logic instead."},
+            {"text": "It presents a false choice: either you support this exact road or you do not care about elders.", "quality": "best", "explanation": "Correct. Someone might care deeply about elders AND want a different route or better drainage. This is a false dilemma combined with an emotional appeal."},
+            {"text": "It is too short.", "quality": "weak", "explanation": "Length is not the issue. Short sentences can be logical or illogical."},
+            {"text": "Nothing; it is a reasonable conclusion.", "quality": "weak", "explanation": "It does not follow from the evidence. It turns a policy disagreement into a question of character."}
+          ]
+        },
+        {
+          "q": "What does the speaker do with the objection about flooding?",
+          "options": [
+            {"text": "Answers it with drainage data.", "quality": "weak", "explanation": "No drainage data is offered."},
+            {"text": "Acknowledges it briefly, then dismisses it as 'a few objections' without answering it.", "quality": "best", "explanation": "Yes. 'I respect their concern' sounds fair, but the concern is never actually addressed."},
+            {"text": "Agrees that the route should be changed.", "quality": "weak", "explanation": "The speaker says work starts next month; there is no change."},
+            {"text": "Ignores it completely.", "quality": "partial", "explanation": "Not completely — it is mentioned. The more precise answer is that it is mentioned and then brushed aside."}
+          ]
+        }
+      ],
+      "justify_prompt": "If you were a resident of one of the lower houses, what two questions would you ask the speaker? Why?",
+      "key_ideas": ["evidence", "drainage", "flood", "report", "route", "data", "engineer", "alternative", "health centre"],
+      "concept": "A persuasive speech can describe a real problem AND use weak reasoning. Separate the problem (real need) from the argument (this exact plan, right now).",
+      "perspectives": ["Elders and families who need the health centre.", "Paddy farmers and residents of the lower houses.", "The ward member under pressure to deliver results."],
+      "reflection": "Have you ever been persuaded by a speech that you later realised had weak evidence?"
+    },
+    {
+      "id": "J06",
+      "title": "Majority Vote, Minority Cost",
+      "type": "engine",
+      "difficulty": 3,
+      "skills": ["ethics", "perspectives", "counterargument", "reflection"],
+      "objective": "Examine the limits of majority rule and how democratic decisions should protect minority interests.",
+      "scenario": "A class of 60 students votes on when to hold weekly revision tests. 52 vote for Saturday mornings because weekday afternoons are tiring. 8 students vote against: five of them work Saturday shifts to support their families, two travel home every weekend because of a family member's illness, and one attends a weekend skill-training course. The class representative says, 'Democracy has spoken. 52 to 8.' The tests count towards internal marks.",
+      "main_question": "Is the decision fair just because the majority voted for it? What should the class do?",
+      "follow_ups": [
+        "What makes a decision democratic: only the vote, or also how minorities are treated?",
+        "Are the 8 students' reasons equally strong? Does that matter?",
+        "Is there an option that respects most people's preferences without excluding anyone?",
+        "Who should have the final say: the class, the teacher, or the college?"
+      ],
+      "key_ideas": ["majority", "minority", "vote", "democracy", "rights", "exclude", "alternative", "internal marks", "work", "fair", "compromise"],
+      "reasoning_guide": "Democracy includes voting, but also deliberation and protection of those outvoted. Consider what is at stake for each group: convenience for the majority, marks and income for the minority.",
+      "misconceptions": [
+        "Whatever the majority wants is automatically just.",
+        "Minority concerns always override majority preferences.",
+        "Asking for an exception is the same as asking for special treatment."
+      ],
+      "perspectives": [
+        "Majority students: tired on weekday afternoons; they followed a fair voting process.",
+        "Working students: forced to choose between family income and marks.",
+        "The teacher: must ensure assessment is fair to all."
+      ],
+      "concept": "Tyranny of the majority: when majority decisions impose serious costs on a minority. Many democratic systems protect certain rights from being removed by a simple vote.",
+      "reflection": "Have you ever been in the minority of a vote? How did it feel, and was the process fair?"
+    },
+    {
+      "id": "J07",
+      "title": "Loudspeakers in Exam Week",
+      "type": "mcq",
+      "difficulty": 2,
+      "skills": ["perspectives", "ethics", "problem"],
+      "objective": "Identify competing interests in a community conflict and find proportionate solutions.",
+      "scenario": "A residents' association plans its 25th anniversary celebration with music and loudspeakers from 6 pm to midnight for three days. The dates fall in the middle of university exam week. Robin, a final-year student living next door, asks the organisers to reduce the volume after 9 pm. An organiser replies, 'This happens once in 25 years. You can study any other day.' Local rules allow loudspeakers only until 10 pm.",
+      "main_question": "Choose the best answer for each question, then explain your reasoning.",
+      "questions": [
+        {
+          "q": "What are the main competing interests here?",
+          "options": [
+            {"text": "The community's interest in celebrating together vs. a resident's interest in rest and study.", "quality": "best", "explanation": "Yes. Both are legitimate. Naming both fairly is the first step to a fair solution."},
+            {"text": "Old people vs. young people.", "quality": "weak", "explanation": "Nothing in the scenario says this is about age. Avoid inventing group divisions."},
+            {"text": "Right vs. wrong.", "quality": "weak", "explanation": "Framing it as right vs wrong hides the fact that both sides have reasonable interests."},
+            {"text": "Music lovers vs. people who dislike music.", "quality": "partial", "explanation": "Too narrow — Robin's concern is timing and exams, not music itself."}
+          ]
+        },
+        {
+          "q": "Which fact matters MOST for a fair resolution?",
+          "options": [
+            {"text": "The celebration happens once in 25 years.", "quality": "partial", "explanation": "Relevant — it makes the event special — but it does not override legal limits or others' basic needs."},
+            {"text": "Local rules allow loudspeakers only until 10 pm.", "quality": "best", "explanation": "This sets a shared, pre-agreed boundary. Fair solutions often start from rules everyone already accepted."},
+            {"text": "Robin is a final-year student.", "quality": "partial", "explanation": "Relevant to Robin's need, but other neighbours (babies, patients, night-shift workers) may also be affected."},
+            {"text": "The organiser was rude.", "quality": "weak", "explanation": "Tone matters for the relationship, but it does not decide what is fair."}
+          ]
+        },
+        {
+          "q": "Which response is most proportionate?",
+          "options": [
+            {"text": "Cancel the celebration completely.", "quality": "weak", "explanation": "This ignores the community's legitimate interest and is far more than needed."},
+            {"text": "Keep the plan; one student must adjust.", "quality": "weak", "explanation": "This ignores the legal limit and treats one person's needs as unimportant."},
+            {"text": "Hold the celebration, end loud music by 10 pm as the rules require, and keep volume lower on the nights before exams.", "quality": "best", "explanation": "This respects both interests and the shared rule. Proportionate responses solve the problem with the least loss to anyone."},
+            {"text": "Robin should complain to the police immediately.", "quality": "partial", "explanation": "This may be a last option, but going straight to authorities without conversation can damage community relations."}
+          ]
+        }
+      ],
+      "justify_prompt": "Write a short, polite message (3–4 sentences) Robin could send to the organisers that respects their celebration but explains the concern.",
+      "key_ideas": ["celebration", "exam", "volume", "rule", "10 pm", "respect", "neighbour", "request", "community"],
+      "concept": "Proportionality: a good solution addresses the harm without taking away more than necessary from anyone.",
+      "perspectives": ["Organisers who planned for months.", "Robin and other students.", "Older residents and families with infants."],
+      "reflection": "When did you last need something from your neighbours or community? How did you ask?"
+    },
+    {
+      "id": "J08",
+      "title": "The Bus Concession Protest",
+      "type": "branch",
+      "difficulty": 2,
+      "skills": ["ethics", "problem", "perspectives", "reflection"],
+      "objective": "Explore how different forms of democratic participation lead to different consequences.",
+      "scenario": "A private bus operator announces it will stop giving student concession fares on the route to your college, saying it loses money. Many students cannot afford the full fare. You are a class representative, and students look to you for a plan.",
+      "nodes": {
+        "start": {
+          "text": "Students are angry. A group wants to block the bus stand tomorrow morning. Others want to 'go viral' online. Some want to meet officials. What do you propose first?",
+          "choices": [
+            {"label": "Support the road blockade tomorrow", "next": "block"},
+            {"label": "Start a social media campaign", "next": "online"},
+            {"label": "Collect facts and write a petition to the transport authority", "next": "petition"},
+            {"label": "Request a meeting with the bus operator", "next": "meet"}
+          ]
+        },
+        "block": {
+          "text": "The blockade gets news coverage. But an ambulance is delayed for 15 minutes and commuters are angry with students. The police warn that organisers may face cases. What now?",
+          "choices": [
+            {"label": "Continue the blockade daily until concessions return", "next": "end_escalate"},
+            {"label": "Stop, apologise for the disruption, and switch to a petition", "next": "end_pivot"}
+          ]
+        },
+        "online": {
+          "text": "Your post is shared widely. Some comments start abusing the bus owner's family and sharing their home address. The operator says he will not talk to 'a mob'.",
+          "choices": [
+            {"label": "Ignore the comments; the campaign is working", "next": "end_mob"},
+            {"label": "Publicly condemn abuse, delete the address, and invite talks", "next": "end_reset"}
+          ]
+        },
+        "petition": {
+          "text": "You collect data: 340 students use the route; 60% say they would struggle to pay full fare. You learn the rules on concessions may require operators to offer them. The transport office says it will 'look into it'. Weeks pass.",
+          "choices": [
+            {"label": "Follow up formally and inform the local media with your data", "next": "end_steady"},
+            {"label": "Give up; officials never act", "next": "end_quit"}
+          ]
+        },
+        "meet": {
+          "text": "The operator shows you his fuel costs and says he truly is losing money on student fares. He offers concessions only during college hours, not evenings.",
+          "choices": [
+            {"label": "Accept the partial deal", "next": "end_partial"},
+            {"label": "Thank him, then also petition the authority for a fair subsidy", "next": "end_both"}
+          ]
+        },
+        "end_escalate": {"end": true, "title": "Escalation", "text": "Public sympathy drops, cases are filed against student leaders, and the operator digs in. The concession issue is lost in the controversy.", "analysis": "Protest is a democratic right, but methods that harm uninvolved people (like delaying an ambulance) can weaken both the cause and its moral standing."},
+        "end_pivot": {"end": true, "title": "Course correction", "text": "Commuters appreciate the apology. Your petition gets a hearing, partly because the issue is now known.", "analysis": "Changing strategy after seeing harm is a sign of responsible leadership, not weakness."},
+        "end_mob": {"end": true, "title": "Lost control", "text": "The abuse becomes the story. Students who shared the address face police inquiries. The concession is not restored.", "analysis": "Leaders are not responsible for everything others write, but they are responsible for how they respond to it. Silence can look like approval."},
+        "end_reset": {"end": true, "title": "Reset", "text": "The operator agrees to talk after the public condemnation. The campaign regains credibility.", "analysis": "Separating a cause from abusive supporters protects both the cause and the people targeted."},
+        "end_steady": {"end": true, "title": "Persistence", "text": "With data and media attention, the authority reminds the operator of concession rules. Concessions are restored in two months.", "analysis": "Institutional routes are slow but often durable. Evidence makes demands harder to ignore."},
+        "end_quit": {"end": true, "title": "Giving up", "text": "Nothing changes. Some students reduce attendance because of travel costs.", "analysis": "Cynicism can become self-fulfilling. Ask: what would one more step have cost?"},
+        "end_partial": {"end": true, "title": "Partial win", "text": "Daytime students benefit; students with evening classes or part-time jobs do not.", "analysis": "Compromise can help many, but check who is left out of the deal."},
+        "end_both": {"end": true, "title": "Two tracks", "text": "The operator keeps the daytime offer while the authority considers a subsidy. Progress is slow but no one is made an enemy.", "analysis": "Understanding the other side's constraints (fuel costs) can open solutions that blame alone cannot."}
+      },
+      "main_question": "Looking at your path: what did your choices assume about how change happens? What would you do differently?",
+      "key_ideas": ["protest", "petition", "evidence", "harm", "commuters", "operator", "authority", "dialogue", "rights", "responsib"],
+      "concept": "Democratic participation has many forms: voting, petitioning, dialogue, peaceful protest, media. Each has costs and strengths.",
+      "perspectives": ["Students who cannot afford fares.", "The bus operator facing fuel costs.", "Commuters and patients using the same roads."],
+      "reflection": "Replay with a different first choice. Which path surprised you most?"
+    },
+    {
+      "id": "J09",
+      "title": "Fact, Opinion, Right or Responsibility?",
+      "type": "classify",
+      "difficulty": 1,
+      "skills": ["logic", "assumptions", "ethics"],
+      "objective": "Distinguish factual statements, opinions, rights and responsibilities in civic life.",
+      "scenario": "Read each statement about life in a democracy and classify it. Some statements could fit more than one category — explain your choice.",
+      "categories": ["Fact", "Opinion", "Right", "Responsibility", "Needs more evidence"],
+      "items": [
+        {"statement": "Citizens aged 18 and above can vote in Indian elections.", "accepted": ["Fact", "Right"], "best": "Fact", "explanation": "This is a verifiable fact about the law, and it also describes a right. Both are defensible."},
+        {"statement": "Young people today don't care about politics.", "accepted": ["Opinion", "Needs more evidence"], "best": "Needs more evidence", "explanation": "A sweeping generalisation. Survey data could support or challenge it; until then it is an opinion."},
+        {"statement": "Every person should be able to express their views without fear of violence.", "accepted": ["Right", "Opinion"], "best": "Right", "explanation": "This expresses a right. Some may call it a value judgement (opinion), but it is widely recognised as a basic right."},
+        {"statement": "We should keep public places clean.", "accepted": ["Responsibility", "Opinion"], "best": "Responsibility", "explanation": "This states a civic duty — what we owe to others."},
+        {"statement": "Online petitions never change anything.", "accepted": ["Opinion", "Needs more evidence"], "best": "Needs more evidence", "explanation": "'Never' is an absolute. One counter-example would disprove it."},
+        {"statement": "Voter turnout in our college union election was 41% this year.", "accepted": ["Fact"], "best": "Fact", "explanation": "A specific, measurable figure that can be checked with records."},
+        {"statement": "A person accused of wrongdoing should get a chance to explain their side.", "accepted": ["Right", "Responsibility", "Opinion"], "best": "Right", "explanation": "This is the principle of a fair hearing — a right. It also creates a responsibility for those judging."},
+        {"statement": "Strict rules always make students more disciplined.", "accepted": ["Opinion", "Needs more evidence"], "best": "Needs more evidence", "explanation": "An untested causal claim with the absolute 'always'."}
+      ],
+      "main_question": "Which statement was hardest to classify, and why?",
+      "key_ideas": ["fact", "opinion", "right", "responsibility", "evidence", "verify", "always", "never", "check"],
+      "concept": "A fact can be checked. An opinion expresses a judgement. A right is something a person is entitled to. A responsibility is something we owe to others. Words like 'always' and 'never' signal claims that need evidence.",
+      "perspectives": [],
+      "reflection": "Which opinion of yours do you often state as if it were a fact?"
+    },
+    {
+      "id": "J10",
+      "title": "The Cut-off That Helped Some",
+      "type": "engine",
+      "difficulty": 3,
+      "skills": ["evidence", "counterargument", "ethics", "reflection"],
+      "objective": "Evaluate conflicting evidence about a policy and defend a position under uncertainty.",
+      "scenario": "A state scholarship is awarded only to students who score above 85% in Class 12. Supporters say this rewards merit and is simple to administer. Last year's data shows: 70% of scholarships went to students from city schools, though city students are 40% of applicants. A teachers' association argues rural schools have fewer teachers and labs. The scholarship board replies that many rural students did win, and that marks are 'the only objective measure'. A new study suggests that scholarship winners from rural schools had slightly higher university grades than expected from their Class 12 marks.",
+      "main_question": "Should the scholarship rule change? Take a position and defend it using the evidence — including evidence that challenges you.",
+      "follow_ups": [
+        "What does the 70%/40% data show, and what does it NOT show?",
+        "Is 'marks are the only objective measure' a fact or an assumption?",
+        "What does the new study suggest about measuring merit?",
+        "What would a fair alternative look like, and what are its own risks?"
+      ],
+      "key_ideas": ["merit", "marks", "data", "rural", "urban", "city", "evidence", "objective", "opportunity", "correlation", "alternative", "study"],
+      "reasoning_guide": "Treat each piece of evidence separately: what it shows and its limits. Disproportion (70% vs 40%) suggests unequal outcomes but does not prove why. The study suggests marks may underestimate some students' potential. Defend a position while admitting uncertainty.",
+      "misconceptions": [
+        "Unequal results automatically prove intentional discrimination.",
+        "Marks are a perfectly neutral measure of ability.",
+        "Changing a rule to help one group is always unfair to another."
+      ],
+      "perspectives": [
+        "A city student who worked hard for 90% may fear their effort will count less.",
+        "A rural student scoring 82% with no lab access may feel the race was not equal.",
+        "The board wants a transparent rule that cannot be manipulated."
+      ],
+      "concept": "Conflicting evidence: strong reasoners do not ignore evidence that weakens their view. They weigh it, explain it, and state what would change their mind.",
+      "reflection": "Which piece of evidence was most uncomfortable for your own position?"
+    }
+  ]
+}

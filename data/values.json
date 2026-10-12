@@ -1,0 +1,376 @@
+{
+  "module_id": "values",
+  "name": "Values & Decisions",
+  "tagline": "Examine dilemmas. Weigh alternatives. Make reasoned choices.",
+  "icon": "🧭",
+  "description": "Reflect on your values, work through hard choices step by step, and practise explaining — and reconsidering — your decisions.",
+  "activities": [
+    {
+      "id": "V01",
+      "title": "The Scholarship Mistake",
+      "type": "engine",
+      "difficulty": 2,
+      "skills": ["ethics", "problem", "perspectives", "counterargument"],
+      "objective": "Use a step-by-step decision method when personal need conflicts with fairness and honesty.",
+      "scenario": "Kiran receives a scholarship of ₹40,000. A week later, Kiran realises from the published list that it was awarded because of an administrative error: Kiran's marks were entered as 88 instead of 78. Another student, Ash, who actually qualified, was left out. Kiran's family has just lost income, and the money would pay this year's fees. No one else seems to have noticed the error.",
+      "main_question": "What should Kiran do? Work through the conflict, the options, the stakeholders and the consequences before deciding.",
+      "follow_ups": [
+        "What exactly is the ethical conflict?",
+        "What are all the options (not just two)?",
+        "Who is affected, and how?",
+        "Who is responsible for the error — and does that change Kiran's duty?"
+      ],
+      "key_ideas": ["honest", "fair", "need", "error", "Ash", "report", "responsib", "consequence", "option", "family", "institution", "support"],
+      "reasoning_guide": "Follow the decision steps: (1) name the conflict, (2) list options, (3) list stakeholders, (4) predict consequences, (5) choose, (6) justify, (7) consider the strongest counterargument. Look for options beyond 'keep quiet' or 'give it back' — e.g. reporting while asking about other financial support.",
+      "misconceptions": [
+        "If it was the office's mistake, Kiran has no responsibility.",
+        "Being honest means accepting hardship with no help.",
+        "Need automatically justifies keeping the money."
+      ],
+      "perspectives": [
+        "Kiran, facing real financial hardship.",
+        "Ash, who was wrongly left out.",
+        "The scholarship office, which made the error.",
+        "Kiran's family."
+      ],
+      "concept": "Consequence-based reasoning asks 'What results will this produce?' Duty-based reasoning asks 'What is the right thing to do, regardless of results?' Strong decisions consider both.",
+      "reflection": "Would your answer change if no one could ever find out? Why or why not?"
+    },
+    {
+      "id": "V02",
+      "title": "Bullying in the Group Chat",
+      "type": "branch",
+      "difficulty": 1,
+      "skills": ["ethics", "perspectives", "problem"],
+      "objective": "Explore realistic consequences of different bystander responses to online bullying.",
+      "scenario": "In your 70-member class group, a few students keep posting edited 'funny' pictures of Robin, a classmate, with mocking captions. Robin has stopped replying and missed two days of college. Many people react with laughing emojis.",
+      "nodes": {
+        "start": {
+          "text": "You see a new mocking picture of Robin. What do you do?",
+          "choices": [
+            {"label": "Ignore it — it's not my business", "next": "ignore"},
+            {"label": "Publicly confront the posters in the group", "next": "confront"},
+            {"label": "Privately message Robin to check on them", "next": "support"},
+            {"label": "Report it to a teacher or anti-ragging cell", "next": "report"},
+            {"label": "Gather more information first", "next": "info"}
+          ]
+        },
+        "ignore": {"text": "The posts continue. Robin leaves the group.", "choices": [{"label": "Still do nothing", "next": "end_ignore"}, {"label": "Reconsider and message Robin", "next": "support"}]},
+        "confront": {"text": "You post: 'This is not funny. Stop.' Two people agree with you. The posters mock you too.", "choices": [{"label": "Argue back angrily", "next": "end_fight"}, {"label": "Stay calm and also message Robin privately", "next": "end_upstander"}]},
+        "support": {"text": "Robin replies: 'Thanks. I didn't think anyone noticed. Please don't tell anyone — it'll get worse.'", "choices": [{"label": "Respect the request and keep checking in", "next": "end_respect"}, {"label": "Gently encourage Robin to report together with you", "next": "end_together"}]},
+        "report": {"text": "The teacher thanks you and asks for screenshots. You worry the posters will find out it was you.", "choices": [{"label": "Share screenshots and ask for confidentiality", "next": "end_report"}, {"label": "Withdraw the report", "next": "end_withdraw"}]},
+        "info": {"text": "You learn this started after Robin refused to share assignment answers with the posters.", "choices": [{"label": "Use this information to report with context", "next": "end_report"}, {"label": "Decide it's a personal dispute and stay out", "next": "end_ignore"}]},
+        "end_ignore": {"end": true, "title": "Bystander", "text": "Robin stays away from college for a week.", "analysis": "Silence from many people can feel like agreement to the person being targeted. The 'bystander effect' means everyone waits for someone else."},
+        "end_fight": {"end": true, "title": "Escalation", "text": "The group fight becomes the story; Robin is forgotten.", "analysis": "Speaking up matters, but anger can shift attention away from the person who needs support."},
+        "end_upstander": {"end": true, "title": "Upstander", "text": "The posting slows down. Robin thanks you privately.", "analysis": "Combining a calm public signal with private support helps both the norm and the person."},
+        "end_respect": {"end": true, "title": "Quiet support", "text": "Robin feels less alone, but the bullying continues.", "analysis": "Respecting a person's wishes matters — and sometimes the situation needs more. Ongoing check-ins keep that option open."},
+        "end_together": {"end": true, "title": "Reporting together", "text": "Robin agrees. The anti-ragging cell acts; the posters are warned.", "analysis": "Supporting someone to act, rather than acting over their head, protects both safety and dignity."},
+        "end_report": {"end": true, "title": "Formal report", "text": "The college intervenes. Robin returns to class.", "analysis": "Institutions often need evidence. Reporting can feel risky; confidentiality protections matter."},
+        "end_withdraw": {"end": true, "title": "Withdrawal", "text": "Without evidence, the college cannot act.", "analysis": "Fear of retaliation is real. What would make reporting feel safer for students?"}
+      },
+      "main_question": "What did you consider when making your choices? Is there any response that has no risk at all?",
+      "key_ideas": ["Robin", "support", "report", "risk", "bystander", "safe", "respect", "dignity", "evidence", "silence"],
+      "concept": "Bystander vs upstander: a bystander sees harm and does nothing; an upstander takes some safe, constructive action. There are many ways to be an upstander.",
+      "perspectives": ["Robin.", "Students who laughed without thinking.", "The posters.", "Teachers responsible for safety."],
+      "reflection": "Replay with a different first choice. Which response fits who you want to be?"
+    },
+    {
+      "id": "V03",
+      "title": "The Values Ranking Challenge",
+      "type": "values",
+      "difficulty": 2,
+      "skills": ["ethics", "reflection", "perspectives"],
+      "objective": "Rank your values, then test whether your ranking holds when values conflict.",
+      "scenario": "Rank these eight values from most important (first) to least important (last) for you personally. There is no correct order. Then face situations where two values clash.",
+      "values_list": ["Honesty", "Loyalty", "Justice", "Compassion", "Freedom", "Responsibility", "Respect", "Privacy"],
+      "conflicts": [
+        {"situation": "Your best friend asks you to tell their parents they were at your house last night. They were actually at a party. They are safe.", "a": "Loyalty", "b": "Honesty"},
+        {"situation": "A classmate shares in confidence that they are struggling badly with stress and sometimes skip meals. They beg you not to tell anyone.", "a": "Privacy", "b": "Compassion"},
+        {"situation": "A rule bans posters on campus walls. Students want to put up posters announcing a blood donation camp.", "a": "Freedom", "b": "Responsibility"},
+        {"situation": "You are on an interview panel. Your cousin is a candidate who is slightly less qualified than another applicant.", "a": "Loyalty", "b": "Justice"}
+      ],
+      "main_question": "Did your ranking hold in all four situations? What made you change, or stay the same?",
+      "key_ideas": ["value", "change", "depend", "situation", "conflict", "rank", "consequence", "context", "priority"],
+      "concept": "Value pluralism: many good values cannot all be fully satisfied at once. Your priorities may depend on stakes, relationships and consequences — and noticing this is a sign of thoughtful reasoning, not inconsistency.",
+      "perspectives": [],
+      "reflection": "Which value surprised you by how much it mattered in a specific situation?"
+    },
+    {
+      "id": "V04",
+      "title": "The Future Generations Test",
+      "type": "mcq",
+      "difficulty": 1,
+      "skills": ["problem", "ethics", "logic"],
+      "objective": "Identify who benefits and who pays in short-term vs long-term choices.",
+      "scenario": "Consider these everyday decisions that trade present convenience against future consequences.",
+      "main_question": "Choose the best answer, then reflect on your own habits.",
+      "questions": [
+        {
+          "q": "A canteen switches from steel plates to disposable plates to save washing time. Who bears the long-term cost?",
+          "options": [
+            {"text": "Nobody; disposable plates are cheap.", "quality": "weak", "explanation": "The price at purchase doesn't include waste, disposal or pollution costs."},
+            {"text": "The town's waste system, nearby residents and future users of the land where waste ends up.", "quality": "best", "explanation": "Yes. These are 'external' costs — paid by people outside the decision."},
+            {"text": "Only the canteen owner.", "quality": "partial", "explanation": "The owner pays the plates' price, but the bigger long-term costs fall on others."},
+            {"text": "Only students.", "quality": "weak", "explanation": "Students gain convenience; the costs spread wider."}
+          ]
+        },
+        {
+          "q": "You sign up for a free app using 'Login with social media', giving access to your profile and friends list. What is the long-term risk?",
+          "options": [
+            {"text": "None — it's free.", "quality": "weak", "explanation": "Free services often earn from data. 'Free' has hidden prices."},
+            {"text": "Data shared today can be stored, sold or leaked years later, when you can no longer control it.", "quality": "best", "explanation": "Correct. Data is hard to take back; consequences may appear long after the convenience."},
+            {"text": "Your phone will become slow.", "quality": "weak", "explanation": "Not the main risk."},
+            {"text": "You might forget your password.", "quality": "weak", "explanation": "That's a short-term inconvenience, not a long-term consequence."}
+          ]
+        },
+        {
+          "q": "A company doubles profit for two years by over-fishing a lake. What usually happens next?",
+          "options": [
+            {"text": "Profits keep rising forever.", "quality": "weak", "explanation": "Natural resources have limits."},
+            {"text": "Fish stocks collapse, hurting the company, local fishers and future generations.", "quality": "best", "explanation": "Yes — short-term gain can destroy the base of long-term livelihoods."},
+            {"text": "The lake recovers immediately.", "quality": "weak", "explanation": "Recovery can take many years, if it happens at all."},
+            {"text": "Only the environment suffers; people are unaffected.", "quality": "weak", "explanation": "People who depend on the lake suffer directly."}
+          ]
+        }
+      ],
+      "justify_prompt": "Name one habit of yours that is convenient now but may have a cost later. Who pays that cost? What small change could you make?",
+      "key_ideas": ["future", "cost", "habit", "later", "change", "convenient", "waste", "data", "plastic", "who pays"],
+      "concept": "Externalities: costs or benefits that fall on people who were not part of the decision — often future generations.",
+      "perspectives": [],
+      "reflection": "If your future self could send you one message about today's habits, what would it say?"
+    },
+    {
+      "id": "V05",
+      "title": "The Found Wallet",
+      "type": "engine",
+      "difficulty": 1,
+      "skills": ["ethics", "problem", "assumptions"],
+      "objective": "Practise a simple, clear decision process in an everyday moral situation.",
+      "scenario": "On the bus, Alex finds a wallet with ₹3,500, a college ID card of a student from another college, and a bus pass. Alex is short of money this month and needs ₹2,000 for a textbook. A friend says, 'Take the cash and post the ID back. They'll never know, and they probably have rich parents anyway.'",
+      "main_question": "What should Alex do, and why?",
+      "follow_ups": [
+        "What assumption is the friend making about the owner?",
+        "How might the owner be affected by losing the cash?",
+        "Does Alex's own need change what is right?",
+        "What is the easiest honest way to return it?"
+      ],
+      "key_ideas": ["return", "honest", "owner", "assum", "rich", "need", "ID", "college", "contact", "right", "wrong", "bus"],
+      "reasoning_guide": "Separate the facts (what is in the wallet) from the friend's assumption ('rich parents'). Consider the owner's situation, Alex's need, and practical ways to return everything.",
+      "misconceptions": [
+        "If no one will find out, it doesn't matter.",
+        "If the owner is wealthy, taking money is less wrong.",
+        "Being in need makes any choice acceptable."
+      ],
+      "perspectives": [
+        "The owner, who may also be a student with limited money.",
+        "Alex, who genuinely needs money.",
+        "The friend giving advice."
+      ],
+      "concept": "Universalisability test: ask 'What if everyone did this in my situation?' If the world would be worse, the action is hard to justify.",
+      "reflection": "Have you ever lost something important? How did others' actions affect you?"
+    },
+    {
+      "id": "V06",
+      "title": "The Internship Certificate",
+      "type": "mcq",
+      "difficulty": 2,
+      "skills": ["ethics", "logic", "counterargument"],
+      "objective": "Evaluate the 'everyone does it' argument and the hidden costs of small dishonesty.",
+      "scenario": "Your course requires a 30-day internship. A local firm offers 'internship certificates' for ₹1,500 without any actual work. Many students in previous batches used it. Your classmate says, 'Everyone does it. The internship requirement is useless anyway. Teachers know and don't care.'",
+      "main_question": "Evaluate the arguments.",
+      "questions": [
+        {
+          "q": "What kind of argument is 'Everyone does it'?",
+          "options": [
+            {"text": "A strong argument, because majority behaviour shows what is right.", "quality": "weak", "explanation": "How many people do something doesn't decide whether it's right."},
+            {"text": "An appeal to popularity — it describes behaviour but doesn't justify it.", "quality": "best", "explanation": "Correct. It may explain pressure, but it doesn't answer whether the action is honest or fair."},
+            {"text": "A factual argument that proves it is legal.", "quality": "weak", "explanation": "Common doesn't mean legal."},
+            {"text": "An irrelevant statement.", "quality": "partial", "explanation": "It's relevant to understanding pressure, just not to justification."}
+          ]
+        },
+        {
+          "q": "'The internship requirement is useless.' Even if true, what is the best response?",
+          "options": [
+            {"text": "Then faking it is fine.", "quality": "weak", "explanation": "A bad rule is a reason to change it, not to present false documents."},
+            {"text": "Raise the concern through student feedback and seek a meaningful internship.", "quality": "best", "explanation": "This takes the criticism seriously AND stays honest."},
+            {"text": "Never question requirements.", "quality": "weak", "explanation": "Questioning rules is healthy; the issue is how you respond."},
+            {"text": "Skip the course.", "quality": "weak", "explanation": "Avoids the issue without solving it."}
+          ]
+        },
+        {
+          "q": "Who could be harmed by a fake certificate?",
+          "options": [
+            {"text": "No one.", "quality": "weak", "explanation": "Look wider: who relies on certificates being true?"},
+            {"text": "Employers, honest students competing for the same jobs, and the student who loses real experience.", "quality": "best", "explanation": "Yes. Fake credentials damage trust in everyone's credentials."},
+            {"text": "Only the firm selling it.", "quality": "weak", "explanation": "The firm profits; others bear the costs."},
+            {"text": "Only teachers.", "quality": "partial", "explanation": "Teachers are affected, but they're not the only ones."}
+          ]
+        }
+      ],
+      "justify_prompt": "Write the strongest argument your classmate could make, then your reply to it.",
+      "key_ideas": ["honest", "everyone", "trust", "experience", "fake", "employer", "fair", "rule", "change", "popular"],
+      "concept": "Appeal to popularity (bandwagon fallacy): assuming something is acceptable because many people do it.",
+      "perspectives": ["Students under time and money pressure.", "Honest students.", "Employers who rely on credentials."],
+      "reflection": "When did 'everyone does it' almost convince you?"
+    },
+    {
+      "id": "V07",
+      "title": "A Speech on Failure",
+      "type": "mcq",
+      "difficulty": 2,
+      "skills": ["logic", "assumptions", "perspectives"],
+      "objective": "Analyse a motivational speech: what it gets right, and what it oversimplifies.",
+      "passage": {
+        "kind": "Speech (fictional)",
+        "title": "Address by an alumnus at a college day function",
+        "text": "Twenty years ago, I sat where you are sitting. I failed my second-year exams. I remember walking home slowly, practising how to tell my parents.\n\nThat failure was the best thing that happened to me. It taught me discipline. I started waking at five, studying in the library until it closed. Within three years I had a job; within ten, my own company.\n\nSo I tell you: failure is only a lack of effort. If you fail, it means you did not want it badly enough. Successful people don't have more luck; they have more hunger.\n\nDon't be afraid to fail. Be afraid of not trying. Your future is entirely in your hands.\n\nThank you."
+      },
+      "main_question": "Analyse the speech.",
+      "questions": [
+        {
+          "q": "What part of the speech is most valuable and credible?",
+          "options": [
+            {"text": "The speaker's honest story of failing and recovering.", "quality": "best", "explanation": "Personal experience of failure and recovery is credible and can genuinely encourage listeners."},
+            {"text": "'Failure is only a lack of effort.'", "quality": "weak", "explanation": "This is a sweeping generalisation, not supported by one story."},
+            {"text": "'Successful people don't have more luck.'", "quality": "weak", "explanation": "This dismisses chance and circumstances without evidence."},
+            {"text": "'Thank you.'", "quality": "weak", "explanation": "A courtesy, not content."}
+          ]
+        },
+        {
+          "q": "What reasoning error is in 'If you fail, it means you did not want it badly enough'?",
+          "options": [
+            {"text": "Generalising from one personal case to everyone.", "quality": "best", "explanation": "Yes. One success story cannot show that effort is the only factor for everyone."},
+            {"text": "It is too emotional.", "quality": "partial", "explanation": "It is emotional, but the logical flaw is over-generalisation."},
+            {"text": "No error; it is true.", "quality": "weak", "explanation": "Illness, family duties, finances or disabilities can cause failure despite great effort."},
+            {"text": "It uses a conditional sentence.", "quality": "weak", "explanation": "Grammar isn't the issue."}
+          ]
+        },
+        {
+          "q": "How might a student who failed while caring for a sick parent feel hearing this speech?",
+          "options": [
+            {"text": "Motivated, because the message is positive.", "quality": "partial", "explanation": "Possibly, but they may also feel blamed for circumstances beyond their control."},
+            {"text": "Possibly blamed and misunderstood, despite the speaker's good intentions.", "quality": "best", "explanation": "The speech's message could add guilt to someone already struggling. Intentions and effects can differ."},
+            {"text": "Nothing, speeches don't affect people.", "quality": "weak", "explanation": "Speeches can strongly affect how people see themselves."},
+            {"text": "Angry at the speaker for succeeding.", "quality": "weak", "explanation": "Assumes envy without evidence."}
+          ]
+        }
+      ],
+      "justify_prompt": "Rewrite the speech's main message in two sentences so that it still motivates, but is fair to people facing hardships.",
+      "key_ideas": ["effort", "circumstance", "luck", "support", "generalis", "resilience", "fair", "hardship", "help"],
+      "concept": "Survivorship bias: we hear stories from those who succeeded, not from the many who worked hard and didn't. Effort matters — but it is not the only factor.",
+      "perspectives": ["The speaker, sincerely sharing their journey.", "Students facing hardships.", "Students who need motivation to keep trying."],
+      "reflection": "What is a more helpful message you could give a friend who has just failed an exam?"
+    },
+    {
+      "id": "V08",
+      "title": "Proxy Attendance",
+      "type": "engine",
+      "difficulty": 3,
+      "skills": ["ethics", "counterargument", "perspectives", "reflection"],
+      "objective": "Defend a position when loyalty and fairness pull in opposite directions, and consider the strongest counterargument.",
+      "scenario": "Your close friend Ari works evening shifts at a hotel to support their younger siblings' education. Ari is often exhausted and has 68% attendance; 75% is required to sit the exam. Ari asks you to mark proxy attendance for them in morning classes. 'Just three weeks. You know my situation. A real friend would help.' The teacher trusts you.",
+      "main_question": "What should you do? Defend your decision and engage seriously with the strongest argument against it.",
+      "follow_ups": [
+        "What values are in conflict?",
+        "What are the risks for you, for Ari, and for other students?",
+        "Is there a way to help Ari that doesn't involve deception?",
+        "When, if ever, should loyalty give way to fairness?"
+      ],
+      "key_ideas": ["loyalty", "fair", "honest", "trust", "friend", "help", "teacher", "attendance", "risk", "condonation", "alternative", "situation"],
+      "reasoning_guide": "Acknowledge Ari's real difficulty — this is not a lazy request. Compare deception with alternatives such as approaching the teacher together, attendance condonation procedures, or support schemes for working students.",
+      "misconceptions": [
+        "A real friend always does what the friend asks.",
+        "Refusing means you don't care.",
+        "Rules can never accommodate real hardship."
+      ],
+      "perspectives": [
+        "Ari, carrying adult responsibilities.",
+        "You, whose integrity and the teacher's trust are at stake.",
+        "Other students who follow the rule in difficult circumstances."
+      ],
+      "concept": "Steelmanning: stating the strongest version of the view you disagree with before responding. It is the opposite of a 'straw man'.",
+      "reflection": "What does loyalty mean to you? Has this activity changed your answer?"
+    },
+    {
+      "id": "V09",
+      "title": "Extra Shift or Exam Prep?",
+      "type": "branch",
+      "difficulty": 2,
+      "skills": ["problem", "ethics", "reflection"],
+      "objective": "Make decisions with competing responsibilities and see how choices compound over time.",
+      "scenario": "Sam works part-time at a supermarket to pay for college. The manager offers four extra shifts during the week before semester exams — double pay. Sam's family could use the money; Sam is also behind in two subjects.",
+      "nodes": {
+        "start": {
+          "text": "What does Sam do?",
+          "choices": [
+            {"label": "Accept all four shifts", "next": "all"},
+            {"label": "Decline all shifts", "next": "none"},
+            {"label": "Negotiate: two shifts, on the days before easier exams", "next": "some"}
+          ]
+        },
+        "all": {
+          "text": "Sam earns well but sleeps four hours a night. On the morning of the hardest exam, Sam feels unwell.",
+          "choices": [
+            {"label": "Write the exam anyway", "next": "end_all_write"},
+            {"label": "Apply for a medical supplementary exam", "next": "end_all_supp"}
+          ]
+        },
+        "none": {
+          "text": "Sam studies well, but the manager is annoyed and later gives fewer regular shifts.",
+          "choices": [
+            {"label": "Accept the reduced shifts", "next": "end_none_accept"},
+            {"label": "Calmly explain to the manager and ask for shifts after exams", "next": "end_none_talk"}
+          ]
+        },
+        "some": {
+          "text": "The manager agrees, slightly reluctantly. Sam plans a strict timetable.",
+          "choices": [
+            {"label": "Stick to the timetable", "next": "end_some_plan"},
+            {"label": "Pick up a third shift when a colleague is sick", "next": "end_some_extra"}
+          ]
+        },
+        "end_all_write": {"end": true, "title": "Pushed through", "text": "Sam passes one subject but fails the hardest one. The extra money pays for a re-exam fee.", "analysis": "Short-term gains can create long-term costs that cancel them out."},
+        "end_all_supp": {"end": true, "title": "Using the system", "text": "Sam gets a supplementary exam, but the stress continues for another month.", "analysis": "Safety nets help, but they work best as backups, not plans."},
+        "end_none_accept": {"end": true, "title": "Study first", "text": "Sam does well in exams but faces two lean months financially.", "analysis": "Choosing one responsibility can mean real costs in another. There's no cost-free option."},
+        "end_none_talk": {"end": true, "title": "Honest negotiation", "text": "The manager respects the explanation and offers extra shifts in the holidays.", "analysis": "Clear, respectful communication often opens options that silence closes."},
+        "end_some_plan": {"end": true, "title": "Balanced plan", "text": "Sam passes both weak subjects and earns some extra money.", "analysis": "Partial solutions and planning can often reduce trade-offs."},
+        "end_some_extra": {"end": true, "title": "Plan drift", "text": "One more shift breaks the timetable; Sam just passes one subject.", "analysis": "Plans often fail not in the big decision, but in small later exceptions."}
+      },
+      "main_question": "What was the most important factor in your decisions? Would your answer differ if Sam were the only earning member of the family?",
+      "key_ideas": ["money", "exam", "family", "health", "plan", "balance", "negotiat", "long-term", "short-term", "responsib"],
+      "concept": "Compounding decisions: early choices change the options available later.",
+      "perspectives": ["Sam.", "Sam's family.", "The manager running a short-staffed shop."],
+      "reflection": "Replay with a different strategy. Which outcome would you choose for yourself?"
+    },
+    {
+      "id": "V10",
+      "title": "When New Evidence Arrives",
+      "type": "engine",
+      "difficulty": 3,
+      "skills": ["reflection", "evidence", "counterargument", "logic"],
+      "objective": "Practise revising a conclusion when stronger evidence appears — without abandoning reasoning.",
+      "scenario": "Your class strongly supported a new rule: 'No mobile phones in classrooms.' You argued for it in a debate, saying it would improve concentration. After one semester, the department shares data: average marks did not change. Students with learning disabilities, who used phone apps for text-to-speech and note recording, saw their marks fall. However, teachers report fewer distractions and more discussion in class. Some classmates now say, 'The rule failed — scrap it.' Others say, 'One semester is too short to judge.'",
+      "main_question": "Has your position changed? Explain what you now think and why — including what you got right and what you got wrong.",
+      "follow_ups": [
+        "What did the original argument predict, and what actually happened?",
+        "Which evidence is strongest, and which is weakest?",
+        "Is there a modified rule that keeps the benefits and reduces the harms?",
+        "Is changing your mind a sign of weakness or strength?"
+      ],
+      "key_ideas": ["evidence", "data", "change", "revise", "disabilit", "exception", "marks", "discussion", "semester", "modify", "wrong", "predict"],
+      "reasoning_guide": "Treat your original view as a hypothesis. Compare prediction with results. Notice mixed evidence: no mark change, harm to one group, but other benefits. A strong answer revises precisely — not 'I was totally wrong' or 'I was totally right'.",
+      "misconceptions": [
+        "Changing your mind means you were foolish.",
+        "One piece of data settles everything.",
+        "If the main goal wasn't met, the rule had no value."
+      ],
+      "perspectives": [
+        "Students with learning disabilities who rely on assistive apps.",
+        "Teachers who value attention and discussion.",
+        "Students who argued for the rule in public."
+      ],
+      "concept": "Intellectual humility: willingness to revise beliefs in proportion to evidence. Good thinkers update precisely, not completely.",
+      "reflection": "What is one belief you have changed in the last year? What changed it?"
+    }
+  ]
+}

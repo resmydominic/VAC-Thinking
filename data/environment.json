@@ -1,0 +1,345 @@
+{
+  "module_id": "environment",
+  "name": "Environment & Sustainability",
+  "tagline": "Explore connections. Evaluate consequences.",
+  "icon": "🌿",
+  "description": "Think in systems: trace how one decision ripples through water, land, livelihoods and future generations — and why easy answers rarely exist.",
+  "activities": [
+    {
+      "id": "E01",
+      "title": "The Forest and the Shopping Complex",
+      "type": "engine",
+      "difficulty": 2,
+      "skills": ["problem", "perspectives", "evidence", "ethics"],
+      "objective": "Map who benefits and who is harmed by a development project, and identify the evidence needed to decide.",
+      "scenario": "A 20-acre patch of forest near a village is to be cleared for a shopping complex and a wider road. The developer promises 300 jobs and better transport to the town. Residents downstream rely on a stream that starts in the forest for drinking water and paddy cultivation. Some families collect honey and firewood there. A few young people in the village are excited about jobs; some elders are worried. The panchayat must decide within a month.",
+      "main_question": "Should the project go ahead as planned, be modified, or be rejected? Justify your answer.",
+      "follow_ups": [
+        "Who benefits, and when? Who may be harmed, and when?",
+        "What could happen to the stream, wildlife and farming over 10 years?",
+        "Which groups have a voice in this decision, and which do not?",
+        "What evidence should be collected before deciding?",
+        "Is development necessarily opposed to environmental protection?"
+      ],
+      "key_ideas": ["jobs", "water", "stream", "forest", "farm", "paddy", "wildlife", "long-term", "short-term", "evidence", "study", "voice", "alternative", "livelihood"],
+      "reasoning_guide": "Build a chain: forest → stream → drinking water & paddy → livelihoods. Then a second chain: project → jobs → income → transport. Compare who receives benefits and who carries costs, and over what time period.",
+      "misconceptions": [
+        "Development and environment are always enemies.",
+        "Jobs promised are the same as jobs delivered.",
+        "If most villagers support it, the environment doesn't matter."
+      ],
+      "perspectives": [
+        "Young job seekers in the village.",
+        "Paddy farmers and families who use the stream.",
+        "The developer and the panchayat budget.",
+        "Wildlife and future residents who cannot speak at the meeting."
+      ],
+      "concept": "Systems thinking: in connected systems, one change causes several effects, some delayed. Ask 'and then what?' at least three times.",
+      "reflection": "What evidence would make you change your recommendation?"
+    },
+    {
+      "id": "E02",
+      "title": "Trace the Chain: The Lost Wetland",
+      "type": "rank",
+      "difficulty": 1,
+      "skills": ["logic", "problem", "evidence"],
+      "objective": "Arrange events into a logical cause-and-effect sequence.",
+      "scenario": "A paddy wetland near a town was filled in to build houses. Over the next few years, several things happened. Arrange the events in the most logical cause-and-effect order (first cause at the top).",
+      "items": [
+        {"id": "a", "label": "Wetland is filled with soil for a housing project"},
+        {"id": "b", "label": "Rainwater has less land to soak into and is stored less"},
+        {"id": "c", "label": "Groundwater levels in nearby wells fall in summer"},
+        {"id": "d", "label": "Households buy water from tanker lorries"},
+        {"id": "e", "label": "Low-income families spend a larger share of income on water"}
+      ],
+      "reference_order": ["a", "b", "c", "d", "e"],
+      "explanations": {
+        "a": "The trigger: a land-use change.",
+        "b": "Direct physical effect: wetlands act like sponges that store water.",
+        "c": "Delayed effect: less recharge means lower groundwater.",
+        "d": "Human response to scarcity.",
+        "e": "Social consequence: costs fall hardest on those with least money — environment becomes an equity issue."
+      },
+      "main_question": "Which link in this chain would need the most evidence to prove? Why?",
+      "key_ideas": ["groundwater", "evidence", "rain", "data", "link", "cause", "other factors", "prove", "measure"],
+      "concept": "Each arrow in a causal chain is a claim. Some links are well established (wetlands store water); others need local data (was the fall in groundwater caused by this wetland, or by other factors too?).",
+      "perspectives": [],
+      "reflection": "Could anything else explain falling well levels? Name one other possible cause."
+    },
+    {
+      "id": "E03",
+      "title": "Sustainability Simulator: Puzhakkara Town",
+      "type": "allocate",
+      "difficulty": 2,
+      "skills": ["problem", "logic", "reflection", "ethics"],
+      "objective": "Manage a fictional town's budget and observe short-term vs long-term consequences.",
+      "scenario": "You are the town council of Puzhakkara, a fictional town of 40,000 people beside a river. You have ₹200 crore for a five-year plan. Each choice affects several indicators. Watch how Year 1 results differ from Year 10.",
+      "budget": 200,
+      "step": 10,
+      "unit": "₹ crore",
+      "mode": "slider",
+      "indicators": ["Environment", "Economy", "Social Equity", "Public Well-being", "Long-term Sustainability"],
+      "options": [
+        {"key": "solar", "label": "Renewable energy", "desc": "Solar on public buildings, small hydro study.", "effects": {"Environment": [1, 3], "Economy": [-1, 2], "Long-term Sustainability": [1, 4]}, "low": "Electricity bills and fossil dependence stay high.", "high": "High upfront cost; savings arrive only after several years."},
+        {"key": "waste", "label": "Waste management", "desc": "Segregation, composting, recycling centre.", "effects": {"Environment": [2, 3], "Public Well-being": [2, 3], "Economy": [0, 1]}, "low": "Garbage burning and river dumping continue; health complaints rise.", "high": "Cleaner town, but only if households cooperate with segregation."},
+        {"key": "transport", "label": "Public transport", "desc": "Electric buses and safe footpaths.", "effects": {"Environment": [1, 2], "Social Equity": [2, 3], "Economy": [1, 2]}, "low": "Traffic grows; people without vehicles struggle to reach work.", "high": "Better mobility for the poor, but ridership takes time to build."},
+        {"key": "water", "label": "Water conservation", "desc": "Rainwater harvesting, pond restoration.", "effects": {"Environment": [1, 3], "Public Well-being": [1, 3], "Long-term Sustainability": [1, 3]}, "low": "Summer water shortages worsen over time.", "high": "Little visible change in Year 1; major drought protection by Year 10."},
+        {"key": "forest", "label": "River-bank forest protection", "desc": "Protect and replant riverbank vegetation.", "effects": {"Environment": [2, 4], "Economy": [-1, 1], "Long-term Sustainability": [1, 3]}, "low": "Bank erosion and flood damage increase.", "high": "Some landowners lose short-term use of riverbank land."},
+        {"key": "housing", "label": "Affordable housing", "desc": "Low-cost homes for 2,000 families.", "effects": {"Social Equity": [3, 3], "Public Well-being": [2, 2], "Environment": [-1, -2]}, "low": "Informal settlements grow in flood-prone areas.", "high": "Families gain security, but construction uses land and materials."},
+        {"key": "jobs", "label": "Industrial park & jobs", "desc": "Small factories and a skill centre.", "effects": {"Economy": [3, 2], "Social Equity": [1, 1], "Environment": [-2, -3]}, "low": "Young people migrate out for work.", "high": "Jobs rise quickly; pollution and water use rise later unless regulated."},
+        {"key": "health", "label": "Public health", "desc": "Clinics, sanitation and disease surveillance.", "effects": {"Public Well-being": [3, 3], "Social Equity": [2, 2], "Economy": [0, 1]}, "low": "Monsoon disease outbreaks hit poorer areas hardest.", "high": "Healthier town, but clinics need staff salaries every year."}
+      ],
+      "main_question": "Which of your choices looks good in Year 1 but worse by Year 10 (or the opposite)? Explain the trade-off you accepted.",
+      "follow_ups": ["Which indicator did you sacrifice, and who lives with that cost?", "If you had 20% more money, where would it go and why?"],
+      "key_ideas": ["short-term", "long-term", "trade-off", "year", "cost", "benefit", "future", "jobs", "environment", "equity"],
+      "concept": "Discounting the future: humans tend to value immediate benefits more than later ones. Sustainable planning deliberately gives weight to Year 10.",
+      "perspectives": ["Unemployed youth.", "Families in flood-prone areas.", "Children who will be adults in Year 10."],
+      "reflection": "Run the simulator again with a completely different strategy. What did you learn from comparing them?"
+    },
+    {
+      "id": "E04",
+      "title": "Fact, Claim or Greenwashing?",
+      "type": "classify",
+      "difficulty": 1,
+      "skills": ["evidence", "logic", "assumptions"],
+      "objective": "Distinguish specific, verifiable environmental claims from vague or misleading marketing.",
+      "scenario": "Read each advertisement line from fictional companies and classify it.",
+      "categories": ["Specific & verifiable", "Vague claim", "Possibly misleading", "Needs evidence"],
+      "items": [
+        {"statement": "'EcoPure detergent — 100% natural and earth-friendly!'", "accepted": ["Vague claim", "Possibly misleading"], "best": "Vague claim", "explanation": "'Natural' and 'earth-friendly' have no fixed meaning. Arsenic is natural, too."},
+        {"statement": "'This bottle is made from 60% recycled plastic, certified by an independent testing agency (certificate no. shown).'", "accepted": ["Specific & verifiable"], "best": "Specific & verifiable", "explanation": "Specific percentage, named certification, and checkable reference."},
+        {"statement": "'Our new car is green — it produces 30% less smoke!' (compared with the company's own 1998 model)", "accepted": ["Possibly misleading"], "best": "Possibly misleading", "explanation": "The comparison point is hidden and very old. 30% less than a very polluting car may still be a lot."},
+        {"statement": "'Plant-based packaging that breaks down in nature.'", "accepted": ["Needs evidence", "Vague claim"], "best": "Needs evidence", "explanation": "Under what conditions, and how long? Many 'biodegradable' plastics only break down in industrial composting."},
+        {"statement": "'We planted one tree for every product sold — 10,000 trees in Wayanad last year, with GPS-tagged locations online.'", "accepted": ["Specific & verifiable", "Needs evidence"], "best": "Specific & verifiable", "explanation": "Specific and checkable. Still ask: did the trees survive? Planting is not the same as growing."},
+        {"statement": "'Carbon neutral company.' (no details given)", "accepted": ["Needs evidence", "Vague claim"], "best": "Needs evidence", "explanation": "Carbon neutrality can mean real reduction or just buying offsets. Without details, it can't be judged."},
+        {"statement": "'Free from CFCs!' (on a product type that has not used CFCs for 30 years)", "accepted": ["Possibly misleading"], "best": "Possibly misleading", "explanation": "True but irrelevant: it presents a legal requirement as a special achievement."}
+      ],
+      "main_question": "Write two questions you would ask any company that claims its product is 'eco-friendly'.",
+      "key_ideas": ["evidence", "certif", "compared", "measure", "percent", "how", "proof", "independent", "data", "what"],
+      "concept": "Greenwashing: making a product seem more environmentally friendly than it is through vague words, hidden comparisons, irrelevant claims or missing evidence.",
+      "perspectives": [],
+      "reflection": "Find one 'green' claim on a product in your home. Which category does it fit?"
+    },
+    {
+      "id": "E05",
+      "title": "Reading the Backwater Report",
+      "type": "mcq",
+      "difficulty": 2,
+      "skills": ["evidence", "logic", "assumptions"],
+      "objective": "Interpret data in a short report and avoid jumping from correlation to cause.",
+      "passage": {
+        "kind": "News report (fictional)",
+        "title": "Houseboat numbers rise; fish catch falls",
+        "text": "The number of registered houseboats on the lake has risen from 400 to 1,100 over the past fifteen years, according to the district tourism office. During the same period, local fishers report that their average daily catch has fallen by about 40%.\n\nA fishers' collective blames waste and fuel discharge from houseboats. 'The water smells of diesel near the jetties,' said one member. A tourism association spokesperson responded that fish decline is 'a global problem' and that houseboats provide employment to over 8,000 people.\n\nA university study cited in the report found higher oil content near major jetties than in the open lake. However, the study also noted that new barrages, reduced salt-water inflow, and agricultural chemical run-off have changed the lake during the same years.\n\nThe district has proposed a cap on new houseboat licences. Fishers welcome it; houseboat owners say it will hurt young entrepreneurs."
+      },
+      "main_question": "Answer the questions about the report.",
+      "questions": [
+        {
+          "q": "Does the report prove that houseboats caused the fall in fish catch?",
+          "options": [
+            {"text": "Yes — both changed during the same years.", "quality": "weak", "explanation": "Two things changing together (correlation) does not prove one caused the other."},
+            {"text": "No — the report shows a correlation and some supporting evidence, but other possible causes are also present.", "quality": "best", "explanation": "Correct. The oil finding supports a link, but barrages, salinity and chemicals are competing explanations."},
+            {"text": "No — houseboats have nothing to do with it.", "quality": "weak", "explanation": "This over-corrects. The oil evidence suggests houseboats may be one factor."},
+            {"text": "Yes — fishers said so.", "quality": "weak", "explanation": "Testimony from an affected group is valuable but not proof of cause."}
+          ]
+        },
+        {
+          "q": "The tourism spokesperson says fish decline is 'a global problem'. What is the weakness of this response?",
+          "options": [
+            {"text": "It is false.", "quality": "partial", "explanation": "Fish decline is a real global issue — the response may be true but still miss the point."},
+            {"text": "It changes the subject from local evidence to a general trend.", "quality": "best", "explanation": "Yes. A global trend does not explain local oil readings near jetties."},
+            {"text": "It is too short.", "quality": "weak", "explanation": "Length is not the issue."},
+            {"text": "It mentions employment.", "quality": "weak", "explanation": "Employment is a separate, relevant point; it doesn't make the first response weak."}
+          ]
+        },
+        {
+          "q": "What additional evidence would be MOST useful to the district?",
+          "options": [
+            {"text": "Fish catch in parts of the lake far from houseboats vs. near jetties.", "quality": "best", "explanation": "Comparing areas helps separate the houseboat effect from lake-wide causes."},
+            {"text": "The number of tourists' social media posts.", "quality": "weak", "explanation": "Not relevant to fish decline."},
+            {"text": "Opinions of houseboat owners only.", "quality": "weak", "explanation": "One-sided and not evidence about cause."},
+            {"text": "The colour of houseboats.", "quality": "weak", "explanation": "Irrelevant."}
+          ]
+        }
+      ],
+      "justify_prompt": "Should the district cap new houseboat licences now, or wait for more evidence? Argue your position in 4–5 sentences and mention one risk of your choice.",
+      "key_ideas": ["evidence", "cause", "correlation", "risk", "wait", "precaution", "fishers", "jobs", "study", "barrage"],
+      "concept": "Correlation is not causation. When stakes are high and evidence is incomplete, the precautionary principle suggests acting carefully to prevent serious harm — but it also has costs.",
+      "perspectives": ["Fishing families.", "Houseboat workers and young entrepreneurs.", "Scientists and the district administration."],
+      "reflection": "Where else have you seen two things happening together being treated as cause and effect?"
+    },
+    {
+      "id": "E06",
+      "title": "Who Pays for the Plastic?",
+      "type": "engine",
+      "difficulty": 3,
+      "skills": ["ethics", "counterargument", "perspectives", "evidence"],
+      "objective": "Construct arguments for different positions on responsibility for environmental damage.",
+      "scenario": "After heavy rain, a town's drains are blocked with plastic packets, causing flooding in low-lying streets. A debate breaks out. The municipality says citizens must stop littering. Citizens say companies should stop selling products in single-use plastic. Shopkeepers say customers demand cheap packaged goods. Companies say they follow all laws and the municipality should improve waste collection.",
+      "main_question": "Who should bear the main cost of solving this problem — and why?",
+      "follow_ups": [
+        "Construct the strongest argument for at least two different positions.",
+        "What is the 'polluter pays' idea, and who is the polluter here?",
+        "Is individual responsibility enough for a large-scale problem?",
+        "What evidence would help decide how to share responsibility?"
+      ],
+      "key_ideas": ["responsib", "company", "citizen", "municipal", "polluter", "producer", "individual", "system", "cost", "law", "collection", "share"],
+      "reasoning_guide": "Responsibility can be shared. Consider who caused the problem, who profits, who has power to change it most efficiently, and who suffers the flooding.",
+      "misconceptions": [
+        "Only one party can be responsible.",
+        "If something is legal, it causes no harm.",
+        "Individual action alone can solve system-wide problems."
+      ],
+      "perspectives": [
+        "Low-income residents whose homes flood.",
+        "Small shopkeepers with thin profits.",
+        "Manufacturers and the municipality."
+      ],
+      "concept": "Extended Producer Responsibility (EPR): the idea that producers share responsibility for their products after use. Shared responsibility asks each actor to do what they are best placed to do.",
+      "reflection": "Which party did you blame first? Did your view shift after considering the others?"
+    },
+    {
+      "id": "E07",
+      "title": "The Shoreline Decision",
+      "type": "branch",
+      "difficulty": 2,
+      "skills": ["problem", "ethics", "perspectives", "reflection"],
+      "objective": "Explore consequences of different responses to coastal erosion.",
+      "scenario": "Sea erosion in a coastal fishing village has destroyed 12 houses in three years. The district has funds for one main strategy now. You advise the district committee.",
+      "nodes": {
+        "start": {
+          "text": "Engineers, residents and ecologists each propose a plan. Which do you support?",
+          "choices": [
+            {"label": "Build a concrete sea wall immediately", "next": "wall"},
+            {"label": "Restore mangroves and dunes (nature-based)", "next": "mangrove"},
+            {"label": "Help families relocate inland", "next": "relocate"}
+          ]
+        },
+        "wall": {
+          "text": "The wall protects houses within months. But two years later, the neighbouring beach — where boats are launched — starts eroding faster.",
+          "choices": [
+            {"label": "Extend the wall further along the coast", "next": "end_wallmore"},
+            {"label": "Add mangrove restoration to the neighbouring stretch", "next": "end_hybrid"}
+          ]
+        },
+        "mangrove": {
+          "text": "Planting begins, but mangroves take 5–7 years to become protective. Another monsoon damages four more houses meanwhile.",
+          "choices": [
+            {"label": "Stay the course and give temporary shelter", "next": "end_patient"},
+            {"label": "Add temporary geo-bags (sand bags) at the worst points", "next": "end_bridge"}
+          ]
+        },
+        "relocate": {
+          "text": "Some families agree. Others refuse: 'Our boats, our livelihood, our ancestors are here. Inland we are nobody.'",
+          "choices": [
+            {"label": "Make relocation compulsory", "next": "end_force"},
+            {"label": "Keep it voluntary, with a fishing landing kept on the coast", "next": "end_voluntary"}
+          ]
+        },
+        "end_wallmore": {"end": true, "title": "The wall that moves the problem", "text": "Erosion shifts again to the next village. Costs keep rising.", "analysis": "Hard structures can transfer erosion along the coast. A solution for one place can become a problem for its neighbour."},
+        "end_hybrid": {"end": true, "title": "Hybrid solution", "text": "The combination slows erosion on both stretches, though maintenance is ongoing.", "analysis": "Combining fast engineering with slower natural solutions can balance urgency and sustainability."},
+        "end_patient": {"end": true, "title": "Long view", "text": "By Year 7, mangroves protect the coast and support fish breeding. But families lived in temporary shelters for years.", "analysis": "Nature-based solutions can bring multiple benefits, but someone pays the cost of waiting."},
+        "end_bridge": {"end": true, "title": "Bridge measure", "text": "Geo-bags reduce damage while mangroves grow. Some bags tear and need replacing.", "analysis": "Temporary measures can 'buy time' for long-term solutions, if they are not mistaken for the final answer."},
+        "end_force": {"end": true, "title": "Forced move", "text": "Protests follow. Some families return to the coast illegally, now without support.", "analysis": "Ignoring people's livelihoods and identity can make technically sound plans fail."},
+        "end_voluntary": {"end": true, "title": "Choice with support", "text": "Slower progress, but families who move keep their work and dignity. Trust grows.", "analysis": "Involving affected people in decisions often makes plans slower but more lasting."}
+      },
+      "main_question": "Which hidden consequence surprised you most? What does this tell you about 'quick fixes'?",
+      "key_ideas": ["erosion", "livelihood", "long-term", "short-term", "nature", "wall", "families", "consequence", "neighbour", "time"],
+      "concept": "Unintended consequences: actions in connected systems often produce effects nobody planned for. Good decisions include monitoring and adjustment.",
+      "perspectives": ["Fishing families.", "Engineers.", "Neighbouring villages.", "Future generations on the coast."],
+      "reflection": "Replay with another first choice. Is there any path without costs?"
+    },
+    {
+      "id": "E08",
+      "title": "A Frog Without a Price Tag",
+      "type": "engine",
+      "difficulty": 3,
+      "skills": ["ethics", "counterargument", "reflection", "perspectives"],
+      "objective": "Argue about the moral value of species that have no obvious economic benefit, and defend a position under uncertainty.",
+      "scenario": "A new road to a district hospital would cut travel time from 90 minutes to 35 minutes for 50 villages. Surveys find that the planned route passes through the only known breeding stream of a tiny frog species found nowhere else in the world. Moving the route would add ₹40 crore and two years. Some say, 'People's lives matter more than a frog.' Others say, 'Once a species is extinct, it is gone forever.'",
+      "main_question": "Should the road follow the original route, be re-routed, or be delayed for further study? Defend your answer.",
+      "follow_ups": [
+        "Do humans have a duty to protect species with no known economic value?",
+        "Is 'people vs. frog' the right way to frame this choice?",
+        "What is irreversible here, and what is reversible?",
+        "What is the strongest argument against your position?"
+      ],
+      "key_ideas": ["species", "extinct", "irreversible", "hospital", "lives", "cost", "route", "value", "duty", "delay", "alternative", "future"],
+      "reasoning_guide": "Watch out for false dilemmas. Compare the size, certainty and reversibility of harms on each side. Consider whether a third option exists.",
+      "misconceptions": [
+        "A species only matters if it is useful to people.",
+        "Protecting nature always means ignoring human needs.",
+        "Money spent on re-routing is wasted."
+      ],
+      "perspectives": [
+        "Patients and families in 50 villages.",
+        "Biologists and conservationists.",
+        "Taxpayers who would fund ₹40 crore extra.",
+        "Future generations who inherit an irreversible loss."
+      ],
+      "concept": "Intrinsic vs instrumental value: something can be valued for what it does for us (instrumental) or for what it is (intrinsic). Irreversibility often deserves extra weight in decisions.",
+      "reflection": "Did the word 'frog' make the species seem less important than, say, a tiger? Why?"
+    },
+    {
+      "id": "E09",
+      "title": "The Plastic Bottle Ban",
+      "type": "mcq",
+      "difficulty": 1,
+      "skills": ["problem", "logic", "assumptions"],
+      "objective": "Spot unintended consequences of a well-meaning rule.",
+      "scenario": "Your college bans the sale of plastic water bottles on campus to reduce waste. There are only two drinking-water filters for 2,500 students, and one is often broken. During exam week in April, students start buying soft drinks in plastic bottles instead, from the shop outside the gate.",
+      "main_question": "Choose the best answers, then propose an improvement.",
+      "questions": [
+        {
+          "q": "What went wrong with the policy?",
+          "options": [
+            {"text": "The goal was wrong — plastic waste is not a real problem.", "quality": "weak", "explanation": "The goal is reasonable; the problem is in the design."},
+            {"text": "It removed one option without providing a practical alternative.", "quality": "best", "explanation": "Yes. When people still need water and the alternative is weak, behaviour shifts elsewhere."},
+            {"text": "Students are irresponsible.", "quality": "weak", "explanation": "This blames individuals without looking at the situation they faced."},
+            {"text": "The ban was too strict.", "quality": "partial", "explanation": "Strictness isn't the main issue; missing support is."}
+          ]
+        },
+        {
+          "q": "What is the unintended consequence?",
+          "options": [
+            {"text": "Students drink less water and more sugary drinks — still in plastic.", "quality": "best", "explanation": "Correct: the rule may worsen health AND fail to reduce plastic."},
+            {"text": "The shop outside earns more money.", "quality": "partial", "explanation": "True, but it is a side effect, not the most important consequence."},
+            {"text": "Students become more environmentally aware.", "quality": "weak", "explanation": "There's no evidence of this in the scenario."},
+            {"text": "Nothing changed.", "quality": "weak", "explanation": "Behaviour did change — just not as intended."}
+          ]
+        }
+      ],
+      "justify_prompt": "Redesign the policy in 3–4 sentences so that it reduces plastic AND meets students' needs.",
+      "key_ideas": ["filter", "water", "alternative", "refill", "install", "students", "need", "plastic", "maintain"],
+      "concept": "Unintended consequences: policies change incentives. Ask 'If I remove this option, what will people do instead?'",
+      "perspectives": ["Students during a hot exam week.", "The administration with a limited budget.", "The shopkeeper outside the gate."],
+      "reflection": "Have you seen a rule that produced the opposite of its goal?"
+    },
+    {
+      "id": "E10",
+      "title": "Comfort Now or Benefit Later?",
+      "type": "engine",
+      "difficulty": 2,
+      "skills": ["problem", "ethics", "perspectives", "reflection"],
+      "objective": "Weigh present convenience against long-term benefits for future generations.",
+      "scenario": "Your college has ₹50 lakh. Option A: install air-conditioners in 20 classrooms — students are suffering in the heat right now, and classes are hard to concentrate in. Option B: install rooftop solar panels — no immediate comfort, but electricity bills fall by about 60% for the next 25 years, saving money for future facilities. The student union is split. Current final-year students point out they will graduate before seeing any benefit from solar.",
+      "main_question": "Which option should the college choose — or is there a better third option? Explain who benefits and who bears the cost, in the short and long term.",
+      "follow_ups": [
+        "Do current students have a stronger claim than future students?",
+        "Do air-conditioners create new long-term costs (electricity)?",
+        "Could the options be combined or sequenced?",
+        "What information would help decide?"
+      ],
+      "key_ideas": ["future", "present", "cost", "heat", "solar", "electricity", "long-term", "short-term", "students", "combine", "savings"],
+      "reasoning_guide": "List benefits and costs for each option for Year 1 and Year 10. Notice that Option A also carries long-term running costs, and Option B could fund comfort later.",
+      "misconceptions": [
+        "Only present needs are real.",
+        "Future generations' interests always outweigh present needs.",
+        "There are only two options."
+      ],
+      "perspectives": ["Final-year students.", "First-year and future students.", "Staff who work in the heat every day.", "Administration paying the bills."],
+      "concept": "Intergenerational justice: what we owe to people who will come after us — balanced against real, present needs.",
+      "reflection": "Who in your life made a sacrifice whose benefit you enjoy today?"
+    }
+  ]
+}
