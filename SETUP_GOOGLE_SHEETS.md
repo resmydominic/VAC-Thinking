@@ -28,25 +28,19 @@ The app creates these tabs automatically on first use:
 Tip: do not rename or reorder the header row; you can add filters, charts or extra tabs freely.
 
 ## 3. Put the details into secrets
-Open the downloaded JSON file in Notepad. In `secrets.toml` (locally) or **Streamlit Cloud → App → Settings → Secrets**:
+Open the downloaded JSON file in Notepad, select everything (Ctrl+A) and copy it.
+In **Streamlit Cloud → App → Settings → Secrets** (or a local `secrets.toml`), paste it **exactly as it is**
+between three single quotes:
 
 ```toml
 GSHEET_URL = "https://docs.google.com/spreadsheets/d/....../edit"
 
-[gcp_service_account]
-type = "service_account"
-project_id = "..."
-private_key_id = "..."
-private_key = "-----BEGIN PRIVATE KEY-----\n...\n-----END PRIVATE KEY-----\n"
-client_email = "..."
-client_id = "..."
-auth_uri = "https://accounts.google.com/o/oauth2/auth"
-token_uri = "https://oauth2.googleapis.com/token"
-auth_provider_x509_cert_url = "https://www.googleapis.com/oauth2/v1/certs"
-client_x509_cert_url = "..."
-universe_domain = "googleapis.com"
+gcp_service_account = '''
+{ ...paste the whole JSON file here, including the curly brackets... }
+'''
 ```
-Copy each value from the JSON exactly (keep the `\n` characters inside `private_key`).
+Use three single quotes ('''), not three double quotes. Nothing inside needs changing.
+(The older `[gcp_service_account]` table format also still works.)
 
 ## 4. Check it works
 Log in as a test student, answer one practice question, wait ~10 seconds, and look at the Sheet.
