@@ -1,0 +1,8 @@
+# Never upload secrets or student data to GitHub
+.streamlit/secrets.toml
+logs/
+venv/
+.venv/
+__pycache__/
+*.pyc
+.DS_Store
