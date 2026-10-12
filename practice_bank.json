@@ -1,0 +1,1626 @@
+{
+ "diagnostic": [
+  "P101",
+  "P105",
+  "P109",
+  "P204",
+  "P212",
+  "P303",
+  "P308",
+  "W01",
+  "W04",
+  "W07"
+ ],
+ "items": [
+  {
+   "id": "P101",
+   "lvl": 1,
+   "skill": "logic",
+   "theme": "Reading",
+   "text": "Kiran says: 'The canteen food is the best in the district.'",
+   "q": "What kind of statement is this?",
+   "opts": [
+    "A fact that can be checked",
+    "An opinion",
+    "A scientific finding",
+    "A rule"
+   ],
+   "ans": 1,
+   "why": [
+    "'Best' is a judgement; there is no single test for it.",
+    "Correct — 'best' expresses a personal judgement.",
+    "No study or method is mentioned.",
+    "It does not tell anyone what to do."
+   ],
+   "hint": "Could two reasonable people disagree about 'best'?"
+  },
+  {
+   "id": "P102",
+   "lvl": 1,
+   "skill": "logic",
+   "theme": "Reading",
+   "text": "The library is open from 9 am to 6 pm on weekdays.",
+   "q": "What kind of statement is this?",
+   "opts": [
+    "Opinion",
+    "Fact",
+    "Assumption",
+    "Prediction"
+   ],
+   "ans": 1,
+   "why": [
+    "Nothing here is a judgement.",
+    "Correct — you can check the timings.",
+    "Nothing is taken for granted here.",
+    "It describes the present, not the future."
+   ],
+   "hint": "Can you check it with the notice board?"
+  },
+  {
+   "id": "P103",
+   "lvl": 1,
+   "skill": "assumptions",
+   "theme": "Inclusion",
+   "text": "A student is always late on Mondays. A classmate says, 'They are just lazy.'",
+   "q": "What is the classmate doing?",
+   "opts": [
+    "Stating a proven fact",
+    "Making an assumption about the reason",
+    "Giving evidence",
+    "Asking a question"
+   ],
+   "ans": 1,
+   "why": [
+    "Laziness has not been shown — only lateness.",
+    "Correct — the reason is assumed. Buses, family duties or work could explain it.",
+    "No evidence about the reason is given.",
+    "It is a statement, not a question."
+   ],
+   "hint": "What was observed, and what was guessed?"
+  },
+  {
+   "id": "P104",
+   "lvl": 1,
+   "skill": "evidence",
+   "theme": "Digital",
+   "text": "A message says: 'Exams postponed!!! Forward to all!' It has no link and comes from an unknown number.",
+   "q": "What is the BEST first step?",
+   "opts": [
+    "Forward it quickly to help friends",
+    "Check the official college website or notice",
+    "Believe it because of the exclamation marks",
+    "Delete your exam notes"
+   ],
+   "ans": 1,
+   "why": [
+    "Forwarding unverified news can spread false information.",
+    "Correct — verify with the official source first.",
+    "Strong punctuation shows emotion, not truth.",
+    "Never act on unverified news."
+   ],
+   "hint": "Where would real exam news be published?"
+  },
+  {
+   "id": "P105",
+   "lvl": 1,
+   "skill": "assumptions",
+   "theme": "Reading",
+   "text": "Sam scored low in the first test. The teacher says, 'Sam will fail the course.'",
+   "q": "What is the main weakness in the teacher's statement?",
+   "opts": [
+    "It uses difficult words",
+    "It predicts a final result from just one test",
+    "It is too polite",
+    "It mentions Sam's name"
+   ],
+   "ans": 1,
+   "why": [
+    "The words are simple.",
+    "Correct — one result is weak evidence for a long-term prediction.",
+    "Politeness is not the issue.",
+    "Naming the student is not the reasoning problem."
+   ],
+   "hint": "How much evidence is the prediction based on?"
+  },
+  {
+   "id": "P106",
+   "lvl": 1,
+   "skill": "ethics",
+   "theme": "Values",
+   "text": "You find a phone in the classroom. It has a lock screen photo of its owner.",
+   "q": "Which action shows the most responsibility?",
+   "opts": [
+    "Keep it until someone asks",
+    "Hand it to the teacher or office and tell the class",
+    "Leave it where it is",
+    "Use it to call your friends"
+   ],
+   "ans": 1,
+   "why": [
+    "The owner may not know where to ask.",
+    "Correct — this gives the best chance of a safe return.",
+    "It may be taken by someone else.",
+    "Using someone else's phone is not right."
+   ],
+   "hint": "What would you want someone to do if it were your phone?"
+  },
+  {
+   "id": "P107",
+   "lvl": 1,
+   "skill": "perspectives",
+   "theme": "Justice",
+   "text": "The college plans to close the main gate at 8 am to reduce late-coming.",
+   "q": "Whose perspective is MOST important to consider before deciding?",
+   "opts": [
+    "Only the security guard",
+    "Students who travel long distances by bus",
+    "Visitors to the college",
+    "The canteen owner"
+   ],
+   "ans": 1,
+   "why": [
+    "The guard is affected, but not most.",
+    "Correct — they may be late for reasons outside their control.",
+    "Visitors are less affected by an 8 am rule.",
+    "The canteen is only indirectly affected."
+   ],
+   "hint": "Who would be hit hardest by this rule?"
+  },
+  {
+   "id": "P108",
+   "lvl": 1,
+   "skill": "problem",
+   "theme": "Environment",
+   "text": "Plastic waste is piling up near the college gate every evening.",
+   "q": "Which is the most useful FIRST step towards solving this?",
+   "opts": [
+    "Blame all students",
+    "Find out where the waste comes from and when",
+    "Ignore it; it will go away",
+    "Post angry messages online"
+   ],
+   "ans": 1,
+   "why": [
+    "Blame without information rarely solves problems.",
+    "Correct — understanding the cause guides the solution.",
+    "Problems like this usually grow.",
+    "Anger online doesn't identify the cause."
+   ],
+   "hint": "Before fixing a problem, what do you need to understand?"
+  },
+  {
+   "id": "P109",
+   "lvl": 1,
+   "skill": "counterargument",
+   "theme": "Reading",
+   "text": "Alex argues: 'Uniforms should be compulsory because they reduce competition over clothes.'",
+   "q": "Which is the strongest argument AGAINST Alex's view?",
+   "opts": [
+    "Uniforms are boring",
+    "Uniforms can be costly for some families and limit self-expression",
+    "Alex is too young to decide",
+    "Nobody likes uniforms"
+   ],
+   "ans": 1,
+   "why": [
+    "A personal preference, not a strong reason.",
+    "Correct — it gives real reasons: cost and freedom.",
+    "Attacks the person, not the argument.",
+    "'Nobody' is an exaggeration with no evidence."
+   ],
+   "hint": "A strong counterargument gives a reason, not just a feeling."
+  },
+  {
+   "id": "P110",
+   "lvl": 1,
+   "skill": "reflection",
+   "theme": "Values",
+   "text": "Robin believed online classes are always worse than offline classes. Then Robin read a study showing some students learn better online.",
+   "q": "What is the most thoughtful response?",
+   "opts": [
+    "Ignore the study",
+    "Change to 'online classes are always better'",
+    "Revise the view: it may depend on the student and the subject",
+    "Stop reading studies"
+   ],
+   "ans": 2,
+   "why": [
+    "Ignoring evidence weakens thinking.",
+    "Swinging to the opposite extreme is also a generalisation.",
+    "Correct — update the view in proportion to the evidence.",
+    "Avoiding evidence prevents learning."
+   ],
+   "hint": "Good thinkers update precisely, not completely."
+  },
+  {
+   "id": "P111",
+   "lvl": 1,
+   "skill": "language",
+   "theme": "Language",
+   "text": "'The rule was meant to help everyone. ______, students without internet could not register.'",
+   "q": "Choose the best linking word.",
+   "opts": [
+    "Therefore",
+    "However",
+    "For example",
+    "Because"
+   ],
+   "ans": 1,
+   "why": [
+    "'Therefore' shows a result, but this is a contrast.",
+    "Correct — 'However' shows a contrast between the aim and the effect.",
+    "'For example' introduces an example of the first sentence.",
+    "'Because' gives a reason, which doesn't fit here."
+   ],
+   "hint": "Do the two sentences agree or contrast?"
+  },
+  {
+   "id": "P112",
+   "lvl": 1,
+   "skill": "language",
+   "theme": "Language",
+   "text": "Original: 'Everyone on social media spreads fake news.'",
+   "q": "Which rewrite is the most careful and accurate?",
+   "opts": [
+    "Everybody online spreads fake news.",
+    "Some people on social media spread false information, sometimes without knowing.",
+    "Social media is 100% fake.",
+    "Nobody tells the truth online."
+   ],
+   "ans": 1,
+   "why": [
+    "Still an absolute ('everybody').",
+    "Correct — 'some' and 'sometimes' make it accurate.",
+    "An extreme exaggeration.",
+    "Another absolute claim."
+   ],
+   "hint": "Look for 'some', 'many', 'often' instead of 'all' or 'never'."
+  },
+  {
+   "id": "P113",
+   "lvl": 1,
+   "skill": "evidence",
+   "theme": "Environment",
+   "text": "A soap advertisement says: 'Eco-friendly and green!' It gives no other information.",
+   "q": "What is missing?",
+   "opts": [
+    "A nice colour",
+    "Specific, checkable details about why it is eco-friendly",
+    "A celebrity",
+    "A lower price"
+   ],
+   "ans": 1,
+   "why": [
+    "Colour doesn't support an environmental claim.",
+    "Correct — vague green words need evidence (ingredients, certification, packaging).",
+    "Celebrities don't prove environmental claims.",
+    "Price is unrelated to the claim."
+   ],
+   "hint": "What would prove the claim?"
+  },
+  {
+   "id": "P114",
+   "lvl": 1,
+   "skill": "logic",
+   "theme": "Digital",
+   "text": "'This video has 2 million views, so it must be true.'",
+   "q": "What is wrong with this reasoning?",
+   "opts": [
+    "Nothing; popular videos are reliable",
+    "Popularity does not prove truth",
+    "2 million is too small",
+    "Videos are never true"
+   ],
+   "ans": 1,
+   "why": [
+    "Many popular videos contain errors.",
+    "Correct — this is an appeal to popularity.",
+    "The number isn't the issue.",
+    "Over-correction — some videos are accurate."
+   ],
+   "hint": "Does the number of viewers tell you if it's accurate?"
+  },
+  {
+   "id": "P115",
+   "lvl": 1,
+   "skill": "perspectives",
+   "theme": "Inclusion",
+   "text": "A class trip is planned to a place with many steps. One classmate uses crutches.",
+   "q": "What should the organisers do first?",
+   "opts": [
+    "Go ahead; the classmate can stay back",
+    "Ask the classmate what would make it possible for them to join",
+    "Cancel all trips forever",
+    "Choose secretly without telling anyone"
+   ],
+   "ans": 1,
+   "why": [
+    "This excludes someone without trying.",
+    "Correct — ask the person; they know their needs best.",
+    "An extreme response.",
+    "Secret decisions reduce trust."
+   ],
+   "hint": "Who knows best what the classmate needs?"
+  },
+  {
+   "id": "P116",
+   "lvl": 1,
+   "skill": "ethics",
+   "theme": "Digital",
+   "text": "A friend sends you a funny photo of a classmate sleeping in class and asks you to post it on Instagram.",
+   "q": "What is the main concern?",
+   "opts": [
+    "The photo quality",
+    "The classmate's privacy and dignity",
+    "How many likes it will get",
+    "The time of posting"
+   ],
+   "ans": 1,
+   "why": [
+    "Not the ethical issue.",
+    "Correct — the classmate didn't agree, and it may embarrass them.",
+    "Likes don't make it acceptable.",
+    "Timing doesn't change the consent issue."
+   ],
+   "hint": "Would the classmate want this photo public?"
+  },
+  {
+   "id": "P117",
+   "lvl": 1,
+   "skill": "problem",
+   "theme": "Justice",
+   "text": "Many students skip the morning assembly because the hall is too small and they stand outside in the sun.",
+   "q": "What is the real problem?",
+   "opts": [
+    "Students are disrespectful",
+    "The space doesn't fit everyone, so attending is uncomfortable",
+    "Assemblies are useless",
+    "The sun is too strong in Kerala"
+   ],
+   "ans": 1,
+   "why": [
+    "This assumes bad attitude without checking.",
+    "Correct — the cause is a practical constraint.",
+    "A judgement, not the cause described.",
+    "Weather is fixed; the hall size is the solvable part."
+   ],
+   "hint": "What does the scenario say causes the skipping?"
+  },
+  {
+   "id": "P118",
+   "lvl": 1,
+   "skill": "assumptions",
+   "theme": "Values",
+   "text": "'If you are quiet in class, you don't understand the topic.'",
+   "q": "What assumption is hidden here?",
+   "opts": [
+    "That speaking is the only sign of understanding",
+    "That classes are too long",
+    "That teachers talk too much",
+    "That topics are difficult"
+   ],
+   "ans": 0,
+   "why": [
+    "Correct — some people understand well but prefer listening.",
+    "Not related to the statement.",
+    "Not related to the statement.",
+    "Not the hidden assumption."
+   ],
+   "hint": "What does the speaker take for granted?"
+  },
+  {
+   "id": "P119",
+   "lvl": 1,
+   "skill": "counterargument",
+   "theme": "Environment",
+   "text": "Claim: 'Banning plastic bags will solve plastic pollution.'",
+   "q": "Which is the best response?",
+   "opts": [
+    "Totally agree; nothing else is needed",
+    "It may help, but bottles, packaging and waste collection also matter",
+    "Plastic is not a problem",
+    "Bags are useful, so never ban them"
+   ],
+   "ans": 1,
+   "why": [
+    "Ignores other sources of plastic.",
+    "Correct — it accepts the partial truth and adds what's missing.",
+    "Contradicts strong evidence.",
+    "Ignores the real harm."
+   ],
+   "hint": "Is one action enough for a large problem?"
+  },
+  {
+   "id": "P120",
+   "lvl": 1,
+   "skill": "reflection",
+   "theme": "Values",
+   "text": "After a debate, your team lost. A friend says the other team had better evidence.",
+   "q": "What is the most useful reflection?",
+   "opts": [
+    "The judges were unfair",
+    "What evidence did they use that we missed?",
+    "Debates are pointless",
+    "Our team was right anyway"
+   ],
+   "ans": 1,
+   "why": [
+    "Blaming others blocks learning.",
+    "Correct — this question helps you improve.",
+    "Avoids learning from the experience.",
+    "Refuses to consider feedback."
+   ],
+   "hint": "Which response helps you improve next time?"
+  },
+  {
+   "id": "P121",
+   "lvl": 1,
+   "skill": "language",
+   "theme": "Language",
+   "text": "'Many farmers lost their crops in the flood. ______, prices of vegetables rose in the market.'",
+   "q": "Choose the best linking word.",
+   "opts": [
+    "As a result",
+    "However",
+    "Although",
+    "For instance"
+   ],
+   "ans": 0,
+   "why": [
+    "Correct — the price rise is a result of crop loss.",
+    "'However' signals contrast, not result.",
+    "'Although' needs a contrasting clause.",
+    "'For instance' introduces an example."
+   ],
+   "hint": "Is the second sentence a result of the first?"
+  },
+  {
+   "id": "P122",
+   "lvl": 1,
+   "skill": "evidence",
+   "theme": "Reading",
+   "text": "Which of these supports the claim 'The new bus route helps students'?",
+   "q": "Choose the strongest evidence.",
+   "opts": [
+    "The bus is painted blue",
+    "Attendance from that area rose from 70% to 88% after the route began",
+    "The driver is friendly",
+    "Buses are good"
+   ],
+   "ans": 1,
+   "why": [
+    "Irrelevant to helping students.",
+    "Correct — specific, measurable and related.",
+    "Nice, but not evidence of benefit for attendance.",
+    "A vague opinion."
+   ],
+   "hint": "Look for a specific, measurable change."
+  },
+  {
+   "id": "P201",
+   "lvl": 2,
+   "skill": "logic",
+   "theme": "Reading",
+   "text": "'Either we build the new road, or our village will never develop.'",
+   "q": "What reasoning problem is this?",
+   "opts": [
+    "False choice — it ignores other paths to development",
+    "A strong logical argument",
+    "A fact",
+    "A question"
+   ],
+   "ans": 0,
+   "why": [
+    "Correct — development could also come from schools, internet, health, other routes.",
+    "It limits options unfairly.",
+    "It's a claim about the future.",
+    "It's a statement."
+   ],
+   "hint": "Are there really only two options?"
+  },
+  {
+   "id": "P202",
+   "lvl": 2,
+   "skill": "evidence",
+   "theme": "Digital",
+   "text": "Source A: an anonymous blog. Source B: a district health office notice with a date and officer's name.",
+   "q": "Which is more reliable for local health guidance, and why?",
+   "opts": [
+    "A — blogs are more honest",
+    "B — it is official, dated and accountable",
+    "Both are equal",
+    "Neither can ever be trusted"
+   ],
+   "ans": 1,
+   "why": [
+    "Anonymity makes checking impossible.",
+    "Correct — accountability and traceability increase reliability.",
+    "They differ in accountability.",
+    "Too cynical; some sources are much more reliable."
+   ],
+   "hint": "Which one can you trace and hold responsible?"
+  },
+  {
+   "id": "P203",
+   "lvl": 2,
+   "skill": "assumptions",
+   "theme": "Justice",
+   "text": "A college gives laptops to the top 10 scorers to 'encourage everyone'.",
+   "q": "Which assumption is most questionable?",
+   "opts": [
+    "That laptops are useful",
+    "That rewarding top scorers will motivate all students, including those who need laptops most",
+    "That colleges have money",
+    "That students like gifts"
+   ],
+   "ans": 1,
+   "why": [
+    "Laptops are generally useful.",
+    "Correct — students who most need laptops may not be top scorers.",
+    "Not the questionable part.",
+    "Not the key assumption."
+   ],
+   "hint": "Who actually receives the laptops?"
+  },
+  {
+   "id": "P204",
+   "lvl": 2,
+   "skill": "logic",
+   "theme": "Digital",
+   "text": "A survey finds students who eat breakfast get higher marks.",
+   "q": "What is the most careful conclusion?",
+   "opts": [
+    "Breakfast causes higher marks",
+    "Breakfast and marks are linked, but other factors (sleep, routine, family support) may explain both",
+    "Students should skip lunch",
+    "Surveys are useless"
+   ],
+   "ans": 1,
+   "why": [
+    "Correlation alone doesn't prove cause.",
+    "Correct — it notes the link and possible third factors.",
+    "Unrelated conclusion.",
+    "Surveys show useful patterns."
+   ],
+   "hint": "Correlation or causation?"
+  },
+  {
+   "id": "P205",
+   "lvl": 2,
+   "skill": "perspectives",
+   "theme": "Environment",
+   "text": "A wind farm is proposed on a hill. Some residents welcome cheap power; others worry about noise and birds.",
+   "q": "Which statement best represents both sides fairly?",
+   "opts": [
+    "The residents who complain are against progress",
+    "Both groups care about the community's future but weigh energy and local impact differently",
+    "Birds don't matter",
+    "Wind farms are always good"
+   ],
+   "ans": 1,
+   "why": [
+    "Labels one side unfairly.",
+    "Correct — it finds the shared concern beneath the disagreement.",
+    "Dismisses a real concern.",
+    "An absolute claim."
+   ],
+   "hint": "What do both sides have in common?"
+  },
+  {
+   "id": "P206",
+   "lvl": 2,
+   "skill": "ethics",
+   "theme": "Values",
+   "text": "A shopkeeper gives you ₹200 extra change by mistake. It's a small shop with low income.",
+   "q": "Which reasoning is strongest?",
+   "opts": [
+    "Keep it — it was their mistake",
+    "Return it — the money belongs to them, and the loss may hurt a small business",
+    "Keep half",
+    "It's too small to matter"
+   ],
+   "ans": 1,
+   "why": [
+    "A mistake doesn't transfer ownership.",
+    "Correct — it considers both duty (honesty) and consequences (harm).",
+    "Still keeps money that isn't yours.",
+    "Small amounts can matter to small businesses."
+   ],
+   "hint": "Think about both rights and consequences."
+  },
+  {
+   "id": "P207",
+   "lvl": 2,
+   "skill": "perspectives",
+   "theme": "Inclusion",
+   "text": "A student from another state says the hostel menu has nothing they can eat. Others say, 'Adjust, everyone else does.'",
+   "q": "What is the most reasonable approach?",
+   "opts": [
+    "Ignore the student",
+    "Find out the need and consider simple menu options without big extra cost",
+    "Change the entire menu to their food",
+    "Ask the student to leave the hostel"
+   ],
+   "ans": 1,
+   "why": [
+    "Ignores a real problem.",
+    "Correct — proportionate and inclusive.",
+    "Over-correction that ignores others' needs.",
+    "Excludes the student."
+   ],
+   "hint": "What is the smallest change that solves the problem?"
+  },
+  {
+   "id": "P208",
+   "lvl": 2,
+   "skill": "problem",
+   "theme": "Justice",
+   "text": "A college library has 5 copies of a key textbook for 120 students before exams.",
+   "q": "Which solution is fairest and most practical?",
+   "opts": [
+    "First come, first served for the whole term",
+    "Short-time loans (e.g. 3 hours) plus a reference copy that stays in the library",
+    "Give copies to toppers only",
+    "Remove the book from the list"
+   ],
+   "ans": 1,
+   "why": [
+    "Early borrowers keep the books; others never get them.",
+    "Correct — it spreads access fairly.",
+    "Unfair to everyone else.",
+    "Removes a needed resource."
+   ],
+   "hint": "How can more people share limited copies?"
+  },
+  {
+   "id": "P209",
+   "lvl": 2,
+   "skill": "counterargument",
+   "theme": "Digital",
+   "text": "Claim: 'Students should not use AI tools at all because they stop people thinking.'",
+   "q": "Which is the strongest counterargument?",
+   "opts": [
+    "AI is cool",
+    "AI can support thinking when used to question and check ideas, not to replace them",
+    "Everyone uses AI",
+    "Teachers use computers too"
+   ],
+   "ans": 1,
+   "why": [
+    "Not a reason.",
+    "Correct — it challenges the claim with a specific condition.",
+    "Appeal to popularity.",
+    "Weak comparison."
+   ],
+   "hint": "A counterargument should target the claim's reason."
+  },
+  {
+   "id": "P210",
+   "lvl": 2,
+   "skill": "reflection",
+   "theme": "Environment",
+   "text": "You argued that electric scooters are always better for the environment. Then you learn that electricity in your area mostly comes from coal.",
+   "q": "How should you revise your view?",
+   "opts": [
+    "Keep the same view",
+    "Electric scooters may still reduce local air pollution, but overall benefit depends on how electricity is produced",
+    "Electric scooters are worse than everything",
+    "Stop thinking about it"
+   ],
+   "ans": 1,
+   "why": [
+    "Ignores new evidence.",
+    "Correct — precise revision using the new information.",
+    "Over-corrects to the opposite extreme.",
+    "Avoids reasoning."
+   ],
+   "hint": "Update your view without throwing it away completely."
+  },
+  {
+   "id": "P211",
+   "lvl": 2,
+   "skill": "language",
+   "theme": "Language",
+   "text": "'Online learning is flexible. ______, it can be lonely for some students.'",
+   "q": "Choose the best linking word.",
+   "opts": [
+    "On the other hand",
+    "Therefore",
+    "As a result",
+    "Because"
+   ],
+   "ans": 0,
+   "why": [
+    "Correct — it introduces a contrasting point.",
+    "Shows result, not contrast.",
+    "Shows result, not contrast.",
+    "Gives a reason, not a contrast."
+   ],
+   "hint": "Is the second idea a contrast?"
+  },
+  {
+   "id": "P212",
+   "lvl": 2,
+   "skill": "evidence",
+   "theme": "Environment",
+   "text": "A company says its river is 'clean now' and shows one photo of clear water.",
+   "q": "Why is this weak evidence?",
+   "opts": [
+    "Photos are always fake",
+    "One photo can't show water quality over time; tests of chemicals and bacteria are needed",
+    "The river is too far",
+    "Companies never pollute"
+   ],
+   "ans": 1,
+   "why": [
+    "Over-generalisation.",
+    "Correct — water can look clear and still be polluted.",
+    "Distance isn't the issue.",
+    "Contradicts many real cases."
+   ],
+   "hint": "Can you see pollution in a photo?"
+  },
+  {
+   "id": "P213",
+   "lvl": 2,
+   "skill": "assumptions",
+   "theme": "Digital",
+   "text": "'This app is free, so I'm not paying anything.'",
+   "q": "What assumption is hidden?",
+   "opts": [
+    "That money is the only form of payment",
+    "That apps are useful",
+    "That phones are expensive",
+    "That apps are slow"
+   ],
+   "ans": 0,
+   "why": [
+    "Correct — you may pay with data, attention or privacy.",
+    "Not the hidden assumption.",
+    "Unrelated.",
+    "Unrelated."
+   ],
+   "hint": "What else could you 'pay' with?"
+  },
+  {
+   "id": "P214",
+   "lvl": 2,
+   "skill": "logic",
+   "theme": "Values",
+   "text": "'If we let students choose one elective, soon they'll want to choose all their subjects, and then there will be no syllabus at all.'",
+   "q": "What reasoning problem is this?",
+   "opts": [
+    "Slippery slope — it assumes one step leads inevitably to extreme results",
+    "Good prediction",
+    "Appeal to authority",
+    "Fact"
+   ],
+   "ans": 0,
+   "why": [
+    "Correct — no evidence that each step must follow.",
+    "No evidence for the chain.",
+    "No authority is quoted.",
+    "It's speculation."
+   ],
+   "hint": "Does each step really follow automatically?"
+  },
+  {
+   "id": "P215",
+   "lvl": 2,
+   "skill": "ethics",
+   "theme": "Justice",
+   "text": "A class representative gets a free meal coupon from the canteen owner, who wants the class to choose his canteen for an event.",
+   "q": "What is the ethical issue?",
+   "opts": [
+    "Conflict of interest — the representative's decision may be influenced by a personal benefit",
+    "The meal is unhealthy",
+    "Canteens shouldn't exist",
+    "There is no issue"
+   ],
+   "ans": 0,
+   "why": [
+    "Correct — the representative should disclose it or decline.",
+    "Not the core issue.",
+    "Irrelevant.",
+    "Personal gains can bias decisions made for a group."
+   ],
+   "hint": "Whose interests should the representative serve?"
+  },
+  {
+   "id": "P216",
+   "lvl": 2,
+   "skill": "problem",
+   "theme": "Environment",
+   "text": "A town's lake is filling with water hyacinth weeds every year. Removing them by hand costs a lot.",
+   "q": "What is the most useful question to ask?",
+   "opts": [
+    "Who can we blame?",
+    "Why are the weeds growing faster — is something like sewage adding nutrients?",
+    "Can we paint the lake?",
+    "Why do people like lakes?"
+   ],
+   "ans": 1,
+   "why": [
+    "Blame doesn't solve the cause.",
+    "Correct — addressing the cause prevents the problem.",
+    "Not a real solution.",
+    "Not useful for the problem."
+   ],
+   "hint": "Treat the cause, not just the symptom."
+  },
+  {
+   "id": "P217",
+   "lvl": 2,
+   "skill": "counterargument",
+   "theme": "Justice",
+   "text": "Argument: 'Exams should be removed because they cause stress.'",
+   "q": "Which response best tests this argument?",
+   "opts": [
+    "Stress is good",
+    "If exams are removed, how will learning be checked fairly — and do other methods cause less stress?",
+    "Exams have existed for centuries",
+    "Students are weak"
+   ],
+   "ans": 1,
+   "why": [
+    "Oversimplified.",
+    "Correct — it questions consequences and alternatives.",
+    "Tradition isn't a reason by itself.",
+    "Insults, doesn't reason."
+   ],
+   "hint": "What would replace exams?"
+  },
+  {
+   "id": "P218",
+   "lvl": 2,
+   "skill": "reflection",
+   "theme": "Inclusion",
+   "text": "You thought a classmate was rude because they never greeted you. Later you learn they have difficulty hearing.",
+   "q": "What is the best lesson?",
+   "opts": [
+    "They should have told everyone",
+    "My judgement was based on an assumption; I should check before concluding",
+    "I was right anyway",
+    "Never greet anyone"
+   ],
+   "ans": 1,
+   "why": [
+    "Puts the burden only on them.",
+    "Correct — reflection on how the judgement was formed.",
+    "Ignores new information.",
+    "Not helpful."
+   ],
+   "hint": "What did you assume?"
+  },
+  {
+   "id": "P219",
+   "lvl": 2,
+   "skill": "language",
+   "theme": "Language",
+   "text": "Original: 'The rule is stupid and the principal is stupid.'",
+   "q": "Which rewrite criticises the idea respectfully?",
+   "opts": [
+    "The principal doesn't know anything.",
+    "The rule may not achieve its goal because many students travel by late buses.",
+    "This is the worst rule ever!!!",
+    "Whatever, rules are rules."
+   ],
+   "ans": 1,
+   "why": [
+    "Attacks the person.",
+    "Correct — criticises the rule with a reason.",
+    "Emotional, no reason.",
+    "Avoids the issue."
+   ],
+   "hint": "Criticise ideas, not people."
+  },
+  {
+   "id": "P220",
+   "lvl": 2,
+   "skill": "evidence",
+   "theme": "Reading",
+   "text": "Article: 'Experts say the new curriculum is better.' No experts are named.",
+   "q": "What should a careful reader ask?",
+   "opts": [
+    "Which experts, and what evidence did they use?",
+    "Why is the article long?",
+    "Who printed it?",
+    "Nothing; experts are always right"
+   ],
+   "ans": 0,
+   "why": [
+    "Correct — unnamed experts can't be checked.",
+    "Length isn't the issue.",
+    "Useful, but naming the evidence matters more.",
+    "Even experts need evidence."
+   ],
+   "hint": "Can you check who said it?"
+  },
+  {
+   "id": "P221",
+   "lvl": 2,
+   "skill": "perspectives",
+   "theme": "Digital",
+   "text": "A college installs CCTV in classrooms to reduce cheating.",
+   "q": "Which concern represents a different, important perspective?",
+   "opts": [
+    "Cameras are expensive",
+    "Students and teachers may feel constantly watched, affecting trust and free discussion",
+    "Cameras are black",
+    "Cheating is fun"
+   ],
+   "ans": 1,
+   "why": [
+    "Cost matters, but the question asks for a perspective.",
+    "Correct — privacy and trust are key concerns.",
+    "Irrelevant.",
+    "Not a serious perspective."
+   ],
+   "hint": "How might people inside the classroom feel?"
+  },
+  {
+   "id": "P222",
+   "lvl": 2,
+   "skill": "ethics",
+   "theme": "Environment",
+   "text": "A factory meets all legal pollution limits but nearby residents still complain of smell and headaches.",
+   "q": "What is the best reasoning?",
+   "opts": [
+    "Legal means no problem",
+    "Legal limits may not capture all harms; the complaints deserve investigation",
+    "Residents are exaggerating",
+    "Close the factory immediately"
+   ],
+   "ans": 1,
+   "why": [
+    "Legal and harmless are different things.",
+    "Correct — balanced and evidence-seeking.",
+    "Dismisses testimony without evidence.",
+    "Acts before investigating."
+   ],
+   "hint": "Is 'legal' always the same as 'harmless'?"
+  },
+  {
+   "id": "P301",
+   "lvl": 3,
+   "skill": "logic",
+   "theme": "Reading",
+   "text": "Passage: 'Since the new principal joined, results have improved by 8%. Clearly her leadership is the reason.' (That same year, the exam pattern became easier across the state.)",
+   "q": "What is the strongest critique?",
+   "opts": [
+    "The principal is not good",
+    "A statewide change offers an alternative explanation; we'd need to compare with similar colleges",
+    "8% is small",
+    "Results never matter"
+   ],
+   "ans": 1,
+   "why": [
+    "Attacks the person without reason.",
+    "Correct — it identifies a confounding factor and a fair test.",
+    "Size isn't the main issue.",
+    "Dismissive."
+   ],
+   "hint": "What else changed at the same time?"
+  },
+  {
+   "id": "P302",
+   "lvl": 3,
+   "skill": "evidence",
+   "theme": "Digital",
+   "text": "Two studies on screen time conflict. Study X (2,000 students, 3 years) finds small effects. Study Y (60 students, 2 weeks) finds large effects.",
+   "q": "How should you weigh them?",
+   "opts": [
+    "Trust Y — larger effects are more interesting",
+    "Give more weight to X for its larger sample and longer period, while noting Y's findings need testing",
+    "Ignore both",
+    "Average them"
+   ],
+   "ans": 1,
+   "why": [
+    "Interest isn't reliability.",
+    "Correct — design quality determines weight.",
+    "Both carry information.",
+    "Averaging ignores quality differences."
+   ],
+   "hint": "Which study design is stronger?"
+  },
+  {
+   "id": "P303",
+   "lvl": 3,
+   "skill": "assumptions",
+   "theme": "Justice",
+   "text": "A policy offers loans to students 'on equal terms: same interest rate for everyone'.",
+   "q": "What could make 'equal terms' produce unequal outcomes?",
+   "opts": [
+    "Nothing; equal is equal",
+    "Students from poorer families may need guarantors or collateral they don't have, so fewer can access the loan",
+    "Interest rates are too low",
+    "Loans are always bad"
+   ],
+   "ans": 1,
+   "why": [
+    "Ignores different starting points.",
+    "Correct — formal equality vs. substantive equality.",
+    "Not the issue raised.",
+    "Overgeneralisation."
+   ],
+   "hint": "Does everyone start from the same place?"
+  },
+  {
+   "id": "P304",
+   "lvl": 3,
+   "skill": "perspectives",
+   "theme": "Environment",
+   "text": "A wildlife sanctuary is expanded, restricting a tribal community's access to forest produce they've collected for generations.",
+   "q": "Which approach best balances perspectives?",
+   "opts": [
+    "Conservation always comes first",
+    "Community needs always come first",
+    "Involve the community in planning, recognise traditional rights, and design sustainable use rules together",
+    "Move the sanctuary elsewhere"
+   ],
+   "ans": 2,
+   "why": [
+    "Ignores livelihoods and rights.",
+    "Ignores ecological concerns.",
+    "Correct — participatory, rights-respecting and ecological.",
+    "May not be possible; avoids the real issue."
+   ],
+   "hint": "Can both goals be met through participation?"
+  },
+  {
+   "id": "P305",
+   "lvl": 3,
+   "skill": "ethics",
+   "theme": "Digital",
+   "text": "A hospital app shares anonymous patient data with researchers to improve treatment. Experts note that anonymous data can sometimes be re-identified.",
+   "q": "What is the most responsible position?",
+   "opts": [
+    "Never share data",
+    "Share freely; science matters most",
+    "Share only with safeguards: informed consent, strong anonymisation, limited access and accountability",
+    "Let the app company decide"
+   ],
+   "ans": 2,
+   "why": [
+    "Loses real benefits.",
+    "Ignores real privacy risks.",
+    "Correct — balances benefits and rights.",
+    "Accountability shouldn't rest only with a company."
+   ],
+   "hint": "Can you keep the benefit and reduce the risk?"
+  },
+  {
+   "id": "P306",
+   "lvl": 3,
+   "skill": "counterargument",
+   "theme": "Values",
+   "text": "Position: 'Merit-based admissions are always fair because they judge only performance.'",
+   "q": "Which is the most sophisticated counterargument?",
+   "opts": [
+    "Merit is a myth",
+    "Performance reflects both ability and unequal opportunities (coaching, schools, resources), so 'only performance' may not measure merit fairly",
+    "Some people are lucky",
+    "Admissions are boring"
+   ],
+   "ans": 1,
+   "why": [
+    "Too absolute.",
+    "Correct — it engages with what 'performance' measures.",
+    "Vague.",
+    "Not a reason."
+   ],
+   "hint": "What shapes performance besides ability?"
+  },
+  {
+   "id": "P307",
+   "lvl": 3,
+   "skill": "reflection",
+   "theme": "Environment",
+   "text": "You supported a ban on fishing during breeding season. A fisher tells you the ban came without income support and families are borrowing at high interest.",
+   "q": "What is the most thoughtful revised position?",
+   "opts": [
+    "Cancel the ban",
+    "Keep the ban but add income support during the ban period",
+    "The fisher is lying",
+    "Fishing should be banned forever"
+   ],
+   "ans": 1,
+   "why": [
+    "Loses the ecological purpose.",
+    "Correct — keeps the goal, fixes the harm.",
+    "Dismisses testimony.",
+    "Extreme and harmful."
+   ],
+   "hint": "Can you keep the goal and reduce the harm?"
+  },
+  {
+   "id": "P308",
+   "lvl": 3,
+   "skill": "problem",
+   "theme": "Justice",
+   "text": "A panchayat has funds for either a new bridge (helps 2,000 daily commuters) or a clean-water pipeline (helps 400 households with frequent illness).",
+   "q": "Which reasoning is strongest?",
+   "opts": [
+    "Choose the bridge — more people",
+    "Choose water — health is everything",
+    "Compare severity, urgency and alternatives: illness from unsafe water may be more severe, but check whether temporary options exist for either need",
+    "Toss a coin"
+   ],
+   "ans": 2,
+   "why": [
+    "Numbers alone ignore severity.",
+    "A slogan, not analysis.",
+    "Correct — weighs severity, numbers and alternatives.",
+    "Avoids reasoning."
+   ],
+   "hint": "Count people, but also weigh how serious each harm is."
+  },
+  {
+   "id": "P309",
+   "lvl": 3,
+   "skill": "logic",
+   "theme": "Reading",
+   "text": "'Most successful entrepreneurs dropped out of college. So dropping out increases your chance of success.'",
+   "q": "What is the main error?",
+   "opts": [
+    "Survivorship bias — we hear about successful dropouts, not the many who struggled",
+    "The word 'most' is wrong grammar",
+    "Entrepreneurs are not successful",
+    "It's a strong argument"
+   ],
+   "ans": 0,
+   "why": [
+    "Correct — and the claim 'most' may itself be false.",
+    "Grammar is fine.",
+    "Irrelevant.",
+    "It draws a causal conclusion from a biased sample."
+   ],
+   "hint": "Who are we NOT hearing about?"
+  },
+  {
+   "id": "P310",
+   "lvl": 3,
+   "skill": "evidence",
+   "theme": "Environment",
+   "text": "A report says air pollution 'fell 30%' in a city. It compares a lockdown month with a festival month the previous year.",
+   "q": "What is the problem?",
+   "opts": [
+    "30% is too big",
+    "The comparison periods are not similar, so the figure may mislead",
+    "Air pollution can't be measured",
+    "Reports are always biased"
+   ],
+   "ans": 1,
+   "why": [
+    "Size isn't the issue.",
+    "Correct — comparisons must be like-for-like.",
+    "It can be measured.",
+    "Overgeneralisation."
+   ],
+   "hint": "Are the two periods comparable?"
+  },
+  {
+   "id": "P311",
+   "lvl": 3,
+   "skill": "assumptions",
+   "theme": "Digital",
+   "text": "'Our hiring AI only uses past employee data, so it can't be biased.'",
+   "q": "What is wrong with this assumption?",
+   "opts": [
+    "Past data may reflect past biases, which the AI can learn and repeat",
+    "AI is always biased",
+    "Employees are biased",
+    "Nothing"
+   ],
+   "ans": 0,
+   "why": [
+    "Correct — biased history produces biased patterns.",
+    "Too absolute.",
+    "Not the point.",
+    "It ignores how AI learns."
+   ],
+   "hint": "Where did the past data come from?"
+  },
+  {
+   "id": "P312",
+   "lvl": 3,
+   "skill": "perspectives",
+   "theme": "Inclusion",
+   "text": "A college debates whether to hold events only in English 'to be inclusive of students from all states'.",
+   "q": "Which perspective reveals a hidden cost?",
+   "opts": [
+    "English is useful",
+    "Students more comfortable in regional languages may feel excluded; inclusion may require several languages or translation",
+    "Events are long",
+    "Nobody cares"
+   ],
+   "ans": 1,
+   "why": [
+    "True but doesn't reveal the cost.",
+    "Correct — one 'inclusive' choice can exclude others.",
+    "Irrelevant.",
+    "Dismissive."
+   ],
+   "hint": "Inclusive for whom?"
+  },
+  {
+   "id": "P313",
+   "lvl": 3,
+   "skill": "ethics",
+   "theme": "Values",
+   "text": "Your manager asks you to write positive reviews of the company's product under fake names. 'Everyone in the industry does it.'",
+   "q": "Which response is ethically strongest?",
+   "opts": [
+    "Do it — it's industry practice",
+    "Decline, explain it misleads customers, and suggest honest ways to gather genuine reviews",
+    "Do it but only a few",
+    "Quit immediately without a word"
+   ],
+   "ans": 1,
+   "why": [
+    "Popularity doesn't justify deception.",
+    "Correct — principled and constructive.",
+    "Still deceptive.",
+    "May be an option later, but first try a constructive refusal."
+   ],
+   "hint": "Is there a response that is honest AND constructive?"
+  },
+  {
+   "id": "P314",
+   "lvl": 3,
+   "skill": "counterargument",
+   "theme": "Environment",
+   "text": "Argument: 'Individuals can't stop climate change; only governments can.'",
+   "q": "What is the most balanced counterargument?",
+   "opts": [
+    "Individuals are useless",
+    "Systemic change matters most, but individual choices, voting and public pressure shape what governments and companies do",
+    "Governments are useless",
+    "Climate change isn't real"
+   ],
+   "ans": 1,
+   "why": [
+    "Agrees with the claim in an extreme form.",
+    "Correct — links individual and systemic action.",
+    "Over-correction.",
+    "Contradicts strong scientific evidence."
+   ],
+   "hint": "How do individuals and systems influence each other?"
+  },
+  {
+   "id": "P315",
+   "lvl": 3,
+   "skill": "reflection",
+   "theme": "Digital",
+   "text": "You shared a post that later turned out to be false. A friend says, 'Just delete it; nobody will notice.'",
+   "q": "What is the most responsible action?",
+   "opts": [
+    "Delete silently",
+    "Post a correction where you shared it, then delete or mark it",
+    "Leave it",
+    "Blame the original poster"
+   ],
+   "ans": 1,
+   "why": [
+    "Those who saw it still believe it.",
+    "Correct — corrections should travel the same path as the error.",
+    "Keeps spreading misinformation.",
+    "Avoids your own part."
+   ],
+   "hint": "Who already saw the false post?"
+  },
+  {
+   "id": "P316",
+   "lvl": 3,
+   "skill": "problem",
+   "theme": "Inclusion",
+   "text": "Students with disabilities rarely join sports day. The college says, 'They are welcome; nobody stops them.'",
+   "q": "What is the most useful next step?",
+   "opts": [
+    "Nothing; they are welcome",
+    "Ask these students about barriers and add events or formats designed for wider participation",
+    "Make participation compulsory",
+    "Cancel sports day"
+   ],
+   "ans": 1,
+   "why": [
+    "'Welcome' isn't the same as 'able to participate'.",
+    "Correct — removes barriers based on the people affected.",
+    "Coercion doesn't remove barriers.",
+    "Punishes everyone."
+   ],
+   "hint": "Is 'not stopped' the same as 'able to join'?"
+  },
+  {
+   "id": "P317",
+   "lvl": 3,
+   "skill": "language",
+   "theme": "Language",
+   "text": "Which sentence best expresses a careful, evidence-aware conclusion?",
+   "q": "Choose the best sentence.",
+   "opts": [
+    "The data proves that phones destroy learning.",
+    "The data suggests that heavy night-time phone use is linked to lower marks, although other factors may contribute.",
+    "Phones are bad, period.",
+    "Everyone knows phones are harmful."
+   ],
+   "ans": 1,
+   "why": [
+    "'Proves' and 'destroy' overstate the evidence.",
+    "Correct — precise, hedged and honest about limits.",
+    "No reasoning.",
+    "Appeal to common belief."
+   ],
+   "hint": "Look for precise, hedged language."
+  },
+  {
+   "id": "P318",
+   "lvl": 3,
+   "skill": "logic",
+   "theme": "Justice",
+   "text": "'Students who protested last year had lower marks. So protests harm education.'",
+   "q": "What is the best critique?",
+   "opts": [
+    "Protests are always good",
+    "The link may be correlation; students with grievances (e.g., fee problems) may already face difficulties affecting marks",
+    "Marks don't matter",
+    "It's correct"
+   ],
+   "ans": 1,
+   "why": [
+    "Absolute claim.",
+    "Correct — identifies a plausible common cause.",
+    "Dismissive.",
+    "It confuses correlation with causation."
+   ],
+   "hint": "Could something cause both?"
+  },
+  {
+   "id": "P319",
+   "lvl": 3,
+   "skill": "evidence",
+   "theme": "Values",
+   "text": "A motivational speaker says, 'I wake up at 4 am and became rich. Wake up at 4 am and you will be rich too.'",
+   "q": "What is the weakest link in this argument?",
+   "opts": [
+    "4 am is too early",
+    "One person's experience can't show that waking early causes wealth for everyone",
+    "Speakers are dishonest",
+    "Wealth is bad"
+   ],
+   "ans": 1,
+   "why": [
+    "Not the logic problem.",
+    "Correct — a single anecdote, with many other factors.",
+    "Attacks the person.",
+    "Irrelevant."
+   ],
+   "hint": "How much evidence supports 'you will be rich too'?"
+  },
+  {
+   "id": "P320",
+   "lvl": 3,
+   "skill": "ethics",
+   "theme": "Justice",
+   "text": "A college must cut costs. Option 1: reduce library hours. Option 2: end free transport for students from remote villages.",
+   "q": "Which reasoning best considers fairness?",
+   "opts": [
+    "Cut transport; fewer students use it",
+    "Consider who is harmed most: losing transport may stop remote students attending at all, while reduced library hours inconvenience many but exclude few",
+    "Cut both",
+    "Ask the toppers"
+   ],
+   "ans": 1,
+   "why": [
+    "Counts users but ignores severity.",
+    "Correct — weighs severity and who bears the cost.",
+    "Avoids analysis.",
+    "Excludes most stakeholders."
+   ],
+   "hint": "Who loses the most?"
+  }
+ ],
+ "write_prompts": [
+  {
+   "id": "W01",
+   "lvl": 1,
+   "skill": "logic",
+   "text": "A college decides that all clubs must meet only on Saturdays.",
+   "q": "In 4–5 sentences: Who might be helped and who might be harmed by this rule? Give one reason for each.",
+   "key_ideas": [
+    "help",
+    "harm",
+    "because",
+    "students",
+    "work",
+    "travel",
+    "saturday",
+    "time"
+   ]
+  },
+  {
+   "id": "W02",
+   "lvl": 1,
+   "skill": "assumptions",
+   "text": "A classmate says, 'People who don't post on social media have nothing interesting in their lives.'",
+   "q": "In 4–5 sentences: What assumption is being made, and why might it be wrong?",
+   "key_ideas": [
+    "assum",
+    "private",
+    "choice",
+    "not",
+    "because",
+    "might",
+    "interest"
+   ]
+  },
+  {
+   "id": "W03",
+   "lvl": 1,
+   "skill": "evidence",
+   "text": "A friend says a new energy drink 'improves memory'.",
+   "q": "In 4–5 sentences: What evidence would you ask for before believing this?",
+   "key_ideas": [
+    "study",
+    "evidence",
+    "test",
+    "who",
+    "compared",
+    "source",
+    "proof"
+   ]
+  },
+  {
+   "id": "W04",
+   "lvl": 2,
+   "skill": "perspectives",
+   "text": "A town plans to turn a public playground into a parking lot because of traffic problems.",
+   "q": "In 4–5 sentences: Describe two different perspectives on this plan and one possible compromise.",
+   "key_ideas": [
+    "children",
+    "parents",
+    "drivers",
+    "shop",
+    "traffic",
+    "play",
+    "compromise",
+    "both"
+   ]
+  },
+  {
+   "id": "W05",
+   "lvl": 2,
+   "skill": "counterargument",
+   "text": "Claim: 'Homework should be banned in colleges.'",
+   "q": "In 4–5 sentences: Give the strongest argument for AND the strongest argument against this claim.",
+   "key_ideas": [
+    "however",
+    "practice",
+    "time",
+    "stress",
+    "learn",
+    "work",
+    "because",
+    "against"
+   ]
+  },
+  {
+   "id": "W06",
+   "lvl": 2,
+   "skill": "ethics",
+   "text": "A student finds the answer key for tomorrow's internal exam left on a photocopier.",
+   "q": "In 4–5 sentences: What should the student do, and why? Mention at least one consequence.",
+   "key_ideas": [
+    "fair",
+    "honest",
+    "teacher",
+    "return",
+    "report",
+    "consequence",
+    "trust",
+    "others"
+   ]
+  },
+  {
+   "id": "W07",
+   "lvl": 3,
+   "skill": "reflection",
+   "text": "You strongly believe that online exams are less fair than offline exams.",
+   "q": "In 4–5 sentences: State your reason, then say what evidence would make you change your mind.",
+   "key_ideas": [
+    "because",
+    "if",
+    "evidence",
+    "change",
+    "fair",
+    "cheat",
+    "access",
+    "would"
+   ]
+  },
+  {
+   "id": "W08",
+   "lvl": 3,
+   "skill": "problem",
+   "text": "A village's only well is drying up every summer, and families argue over turns.",
+   "q": "In 4–5 sentences: Identify the root problem and propose a fair short-term and a long-term solution.",
+   "key_ideas": [
+    "water",
+    "rain",
+    "recharge",
+    "schedule",
+    "fair",
+    "long-term",
+    "short-term",
+    "share"
+   ]
+  },
+  {
+   "id": "W09",
+   "lvl": 2,
+   "skill": "logic",
+   "text": "'Students who sit in the front row get better marks, so the college should make everyone sit in front.'",
+   "q": "In 4–5 sentences: Explain the reasoning problem and what a better conclusion would be.",
+   "key_ideas": [
+    "correlation",
+    "cause",
+    "motivat",
+    "front",
+    "may",
+    "because",
+    "other"
+   ]
+  },
+  {
+   "id": "W10",
+   "lvl": 1,
+   "skill": "ethics",
+   "text": "Someone posts a classmate's phone number in a public group as a joke.",
+   "q": "In 4–5 sentences: Why is this a problem, and what should someone in the group do?",
+   "key_ideas": [
+    "privacy",
+    "harm",
+    "consent",
+    "delete",
+    "report",
+    "safe",
+    "permission"
+   ]
+  },
+  {
+   "id": "W11",
+   "lvl": 3,
+   "skill": "evidence",
+   "text": "A news headline says: 'City's new cycling lanes reduce accidents by 50%!' The article is based on two months of data.",
+   "q": "In 4–5 sentences: Evaluate this claim. What would make it more convincing?",
+   "key_ideas": [
+    "two months",
+    "data",
+    "longer",
+    "compare",
+    "before",
+    "season",
+    "evidence",
+    "may"
+   ]
+  },
+  {
+   "id": "W12",
+   "lvl": 2,
+   "skill": "assumptions",
+   "text": "A company advertises: 'Our tutors are the best, because our students got the highest marks in the district.'",
+   "q": "In 4–5 sentences: What assumptions does this advertisement make?",
+   "key_ideas": [
+    "assum",
+    "students",
+    "already",
+    "select",
+    "other",
+    "factor",
+    "cause",
+    "best"
+   ]
+  }
+ ]
+}

@@ -1,0 +1,398 @@
+{
+  "module_id": "inclusion",
+  "name": "Inclusion & Empathy",
+  "tagline": "Challenge assumptions. Understand other perspectives.",
+  "icon": "🤝",
+  "description": "Recognise stereotypes, separate observation from assumption, and practise understanding people whose lives differ from yours — without giving up careful judgement.",
+  "activities": [
+    {
+      "id": "I01",
+      "title": "The Quiet New Student",
+      "type": "engine",
+      "difficulty": 1,
+      "skills": ["assumptions", "perspectives", "evidence"],
+      "objective": "Separate observation, interpretation, assumption and evidence when judging another person.",
+      "scenario": "Jo joined your class three weeks ago from another state. Jo sits in the last row, rarely speaks in discussions, and leaves quickly after class. When a group invited Jo for tea, Jo said 'Maybe later' and walked away. Some classmates now say, 'Jo thinks they are too good for us.' Others say, 'Jo is just not interested in studies.'",
+      "main_question": "How should the class understand Jo's behaviour, and what would be a fair way to respond?",
+      "follow_ups": [
+        "What exactly have the classmates observed, and what have they assumed?",
+        "What other explanations are possible?",
+        "How might Jo be experiencing these three weeks?",
+        "What could someone do that respects Jo's choices?"
+      ],
+      "key_ideas": ["assum", "observ", "language", "new", "shy", "explanation", "evidence", "lonely", "invite", "respect", "family", "work"],
+      "reasoning_guide": "List only what was observed (last row, rarely speaks, left quickly, said 'Maybe later'). Notice how quickly an interpretation ('too good for us') replaces observation. Generate at least three alternative explanations before choosing a response.",
+      "misconceptions": [
+        "Quiet people are unfriendly or proud.",
+        "Being kind means insisting until the person joins in.",
+        "If you can't know the reason, nothing can be done."
+      ],
+      "perspectives": [
+        "Jo may be struggling with a new language, missing home, working part-time, or travelling far.",
+        "Classmates may feel rejected after their invitation was turned down.",
+        "The teacher may notice the pattern and be in a position to check in privately."
+      ],
+      "concept": "Observation: what you see. Interpretation: what you think it means. Assumption: what you take for granted without checking. Evidence: what supports or challenges an interpretation.",
+      "reflection": "Have you ever been misjudged because of how you behaved in a new place?"
+    },
+    {
+      "id": "I02",
+      "title": "The Stereotype Detector",
+      "type": "classify",
+      "difficulty": 1,
+      "skills": ["assumptions", "evidence", "logic"],
+      "objective": "Recognise generalisations and assumptions hidden inside everyday statements.",
+      "scenario": "Classify each statement. Some are deliberately ambiguous — careful judgement and a clear reason matter more than the label.",
+      "categories": ["Fact supported by evidence", "Opinion", "Assumption", "Generalisation", "Claim needing more evidence"],
+      "items": [
+        {"statement": "Students from wealthy families are privileged in every situation.", "accepted": ["Generalisation", "Assumption"], "best": "Generalisation", "explanation": "'Every situation' turns a common pattern into a universal rule. Wealth can bring advantages, but not in every context."},
+        {"statement": "People who disagree with us are usually ignorant.", "accepted": ["Generalisation", "Assumption", "Opinion"], "best": "Assumption", "explanation": "It assumes disagreement comes from lack of knowledge, rather than different values or information."},
+        {"statement": "A person who speaks confidently must be knowledgeable.", "accepted": ["Assumption", "Generalisation"], "best": "Assumption", "explanation": "Confidence and knowledge are different. This links them without evidence."},
+        {"statement": "Everyone who receives equal treatment experiences equal opportunities.", "accepted": ["Assumption", "Claim needing more evidence"], "best": "Assumption", "explanation": "It assumes people start from the same point. Equal treatment can still produce unequal outcomes."},
+        {"statement": "Our college has 37 students who use hearing aids, according to the student support office.", "accepted": ["Fact supported by evidence"], "best": "Fact supported by evidence", "explanation": "Specific, sourced and checkable."},
+        {"statement": "Students from rural areas are less comfortable using technology.", "accepted": ["Generalisation", "Claim needing more evidence"], "best": "Generalisation", "explanation": "It may be true for some, but it treats a whole group as one. Access and comfort vary widely."},
+        {"statement": "Group projects are the best way to learn.", "accepted": ["Opinion"], "best": "Opinion", "explanation": "A value judgement — 'best' for whom and for what kind of learning?"},
+        {"statement": "Students who sit in the front row get higher marks.", "accepted": ["Claim needing more evidence", "Generalisation"], "best": "Claim needing more evidence", "explanation": "Might be testable. Even if true, it could be correlation (motivated students choose the front) rather than cause."}
+      ],
+      "main_question": "Pick one statement you classified. How would you rewrite it so that it becomes fair and accurate?",
+      "key_ideas": ["some", "many", "evidence", "generalis", "assum", "not all", "depends", "data"],
+      "concept": "A generalisation turns some cases into all cases. Replacing 'all/always' with 'some/sometimes' and adding evidence often turns a stereotype into a fair, testable claim.",
+      "perspectives": [],
+      "reflection": "Which stereotype have you heard about a group you belong to? How did it feel?"
+    },
+    {
+      "id": "I03",
+      "title": "Tradition or Change at the College Fest",
+      "type": "engine",
+      "difficulty": 2,
+      "skills": ["perspectives", "problem", "ethics"],
+      "objective": "Identify what each side in a disagreement is trying to protect and look for common ground.",
+      "scenario": "For thirty years, the college arts fest has opened with a classical dance and a traditional instrumental performance. This year, the organising committee splits. One group wants to keep the opening as it is: 'It is our identity; alumni come back for it.' Another group wants to open with a mixed programme of rap in Malayalam, contemporary dance and a short film made by students: 'The fest should reflect who we are now.' Both groups have threatened to boycott if they lose.",
+      "main_question": "What is each group trying to protect, and how should the committee decide?",
+      "follow_ups": [
+        "What does each group value?",
+        "What do both groups have in common?",
+        "Is a compromise possible? Is it always the right answer?",
+        "What decision process would both groups accept as fair, even if they lose?"
+      ],
+      "key_ideas": ["tradition", "identity", "change", "new", "common", "compromise", "both", "value", "respect", "alumni", "students", "process"],
+      "reasoning_guide": "Look beneath the positions ('keep it' vs 'change it') to the interests (identity, continuity, belonging, self-expression, relevance). Shared interests often point to solutions.",
+      "misconceptions": [
+        "Tradition and change are always opposed.",
+        "The group with more members should simply win.",
+        "Compromise means both sides are equally unhappy."
+      ],
+      "perspectives": [
+        "Traditionalists may fear losing something that took decades to build.",
+        "Innovators may feel the fest does not represent them.",
+        "Alumni, sponsors and first-year students each see it differently."
+      ],
+      "concept": "Positions vs interests: a position is what people demand; an interest is why they want it. Agreements are easier when we work on interests.",
+      "reflection": "What tradition in your life would you defend, and what would you like to change?"
+    },
+    {
+      "id": "I04",
+      "title": "The Friend Who Took Credit",
+      "type": "branch",
+      "difficulty": 2,
+      "skills": ["ethics", "perspectives", "reflection"],
+      "objective": "Work through a conflict between loyalty, honesty and fairness, and see the consequences of different choices.",
+      "scenario": "Your close friend Ari presents a project design in a competition. You recognise it: it was created by Kiran, a quiet classmate, and shared in a study group. Ari's team is shortlisted for the final, which carries an internship.",
+      "nodes": {
+        "start": {
+          "text": "You are certain the core design is Kiran's. What do you do first?",
+          "choices": [
+            {"label": "Stay silent — it's not my business", "next": "silent"},
+            {"label": "Talk to Ari privately", "next": "private"},
+            {"label": "Tell Kiran what you saw", "next": "tellk"},
+            {"label": "Report directly to the faculty in charge", "next": "report"}
+          ]
+        },
+        "silent": {
+          "text": "Ari's team reaches the final. Kiran sees the presentation and looks shocked but says nothing. You notice Kiran avoiding the study group.",
+          "choices": [
+            {"label": "Continue staying out of it", "next": "end_silent"},
+            {"label": "Now talk to Ari", "next": "private"}
+          ]
+        },
+        "private": {
+          "text": "Ari says: 'Everyone shares ideas in study groups. I improved it a lot. Please don't make this a big deal — I need this internship.'",
+          "choices": [
+            {"label": "Ask Ari to credit Kiran or withdraw", "next": "end_credit"},
+            {"label": "Accept Ari's explanation", "next": "end_accept"}
+          ]
+        },
+        "tellk": {
+          "text": "Kiran thanks you, but is afraid: 'Ari is popular. If I complain, people will say I'm jealous.'",
+          "choices": [
+            {"label": "Offer to support Kiran if they raise it", "next": "end_support"},
+            {"label": "Tell Kiran to let it go", "next": "end_letgo"}
+          ]
+        },
+        "report": {
+          "text": "The faculty member asks for evidence. You have the study-group chat with Kiran's original file, dated earlier.",
+          "choices": [
+            {"label": "Share the evidence", "next": "end_report"},
+            {"label": "Back out — you don't want to lose Ari", "next": "end_backout"}
+          ]
+        },
+        "end_silent": {"end": true, "title": "Silence", "text": "Ari wins the internship. Kiran stops sharing ideas with anyone.", "analysis": "Silence protected the friendship in the short term, but trust in the group was damaged, and Kiran carried the cost alone."},
+        "end_credit": {"end": true, "title": "Honest conversation", "text": "Ari is upset for a week, then adds Kiran to the team credits. The friendship is strained but survives.", "analysis": "Giving a friend the chance to correct a wrong respects both loyalty and fairness. It doesn't always work — but it often works better than people expect."},
+        "end_accept": {"end": true, "title": "Accepted excuse", "text": "Nothing changes. You feel uneasy each time Ari mentions the internship.", "analysis": "'Everyone does it' and 'I improved it' may contain some truth, but they don't answer the core question: whose idea was it?"},
+        "end_support": {"end": true, "title": "Standing beside someone", "text": "With your support, Kiran writes to the faculty. The design is credited jointly.", "analysis": "Sometimes the most useful role is not to act for someone, but to make it safer for them to act."},
+        "end_letgo": {"end": true, "title": "Let it go", "text": "Kiran lets it go, but tells you later they felt nobody would have their back.", "analysis": "Advising silence can feel protective, but it may confirm a person's fear that speaking up is pointless."},
+        "end_report": {"end": true, "title": "Formal report", "text": "The faculty investigates and disqualifies the entry. Ari stops speaking to you. Kiran is credited.", "analysis": "Fairness was restored, but at a high personal cost. Was there a step before reporting that might have achieved the same with less damage?"},
+        "end_backout": {"end": true, "title": "Backing out", "text": "The faculty has suspicion but no evidence. Nothing is resolved.", "analysis": "Starting a complaint and abandoning it can leave everyone worse off. Think through your willingness before acting."}
+      },
+      "main_question": "Which value guided your choices most — loyalty, honesty, fairness, or self-protection? Was that the right priority here?",
+      "key_ideas": ["loyalty", "honest", "fair", "credit", "friend", "Kiran", "consequence", "trust", "evidence"],
+      "concept": "Many ethical dilemmas have no cost-free option. Good reasoning names the values in conflict and chooses the least harmful path that still respects what matters most.",
+      "perspectives": ["Ari: under pressure and may genuinely believe the improvements matter.", "Kiran: lost credit and may lose confidence.", "The study group: depends on trust to function."],
+      "reflection": "Replay with a different first choice. Which ending would you be most comfortable explaining to Kiran?"
+    },
+    {
+      "id": "I05",
+      "title": "A Letter from the Construction Site",
+      "type": "mcq",
+      "difficulty": 2,
+      "skills": ["perspectives", "assumptions", "logic"],
+      "objective": "Read a first-person text with empathy and make inferences supported by the text.",
+      "passage": {
+        "kind": "Letter (fictional)",
+        "title": "A letter home",
+        "text": "Dear Amma,\n\nThe rain here does not stop. In our village the rain comes like a guest; here it lives with us. The building we are working on is now nine floors high. From the top I can see the sea, which I never saw before I came. You would like it.\n\nThe work is hard but the pay comes on time, and I send what I can. Some people here are kind. The tea-shop uncle gives me an extra biscuit and is learning words of my language — he says 'thank you' in it and laughs at himself. Others look at us on the bus as if we are a problem to be solved. A woman moved her bag closer when I sat down. I wanted to tell her I am a teacher's son, that I finished Class 12, that I read the newspaper every morning, even if slowly in this new language. But how do you say all that on a bus?\n\nI am learning the words for 'cement', 'left', 'careful' and 'tomorrow'. Tomorrow is the most useful word.\n\nYour son"
+      },
+      "main_question": "Answer the questions, then reflect.",
+      "questions": [
+        {
+          "q": "'In our village the rain comes like a guest; here it lives with us.' What does this comparison suggest?",
+          "options": [
+            {"text": "The writer dislikes guests.", "quality": "weak", "explanation": "The comparison is about rain, not about guests themselves."},
+            {"text": "Rain is occasional at home but constant here, which feels unfamiliar.", "quality": "best", "explanation": "Yes. The metaphor contrasts frequency and familiarity, hinting at how strange the new place feels."},
+            {"text": "The writer's village has no rain.", "quality": "weak", "explanation": "'Comes like a guest' means it does come, just occasionally."},
+            {"text": "The writer is complaining about the weather.", "quality": "partial", "explanation": "There is mild discomfort, but the main effect is to show difference and distance from home."}
+          ]
+        },
+        {
+          "q": "Why does the writer list what they wanted to tell the woman on the bus?",
+          "options": [
+            {"text": "To show the gap between how others see them and who they really are.", "quality": "best", "explanation": "Correct. The list reveals education, family and habits that strangers cannot see — the opposite of a stereotype."},
+            {"text": "To prove the woman was a bad person.", "quality": "weak", "explanation": "The writer does not judge her character. Moving a bag could have many reasons — but it felt like suspicion."},
+            {"text": "To show off their education.", "quality": "weak", "explanation": "The tone is wistful, not boastful. Read for tone as well as content."},
+            {"text": "To explain why they stopped taking the bus.", "quality": "weak", "explanation": "The letter does not say this. Avoid adding events the text does not contain."}
+          ]
+        },
+        {
+          "q": "'Tomorrow is the most useful word.' What is the most reasonable interpretation?",
+          "options": [
+            {"text": "Work instructions often mention tomorrow.", "quality": "partial", "explanation": "A literal reading that may be partly true, but it misses the emotional layer."},
+            {"text": "The writer survives by focusing on hope and the future.", "quality": "best", "explanation": "A strong inference: the word carries hope — for pay, for home, for things getting easier."},
+            {"text": "The writer is lazy and postpones work.", "quality": "weak", "explanation": "Nothing in the letter supports this. This is exactly the kind of stereotype the letter challenges."},
+            {"text": "The writer wants to go home tomorrow.", "quality": "weak", "explanation": "No evidence in the text for this specific plan."}
+          ]
+        }
+      ],
+      "justify_prompt": "The woman on the bus might tell a different story. Write 3–4 sentences imagining her side fairly, then say what both people could not see about each other.",
+      "key_ideas": ["perspective", "stereotype", "unknown", "fear", "assum", "both", "see", "language", "stranger"],
+      "concept": "Inference: a conclusion supported by clues in the text. A good inference can be pointed to; a weak one adds things the text does not say.",
+      "perspectives": ["The writer: far from home, learning a new language.", "The woman on the bus: her reasons are unknown.", "The tea-shop owner: a small act of welcome."],
+      "reflection": "What is one thing people cannot see about you at first glance?"
+    },
+    {
+      "id": "I06",
+      "title": "Extra Time in the Exam Hall",
+      "type": "mcq",
+      "difficulty": 1,
+      "skills": ["ethics", "assumptions", "logic"],
+      "objective": "Understand reasonable accommodation and why it is not the same as unfair advantage.",
+      "scenario": "Sam has low vision and is allowed 30 minutes of extra time and a large-print question paper, as per university rules for students with disabilities. After the exam, a classmate posts in the class group: 'Some people get extra time and we don't. How is that equal?'",
+      "main_question": "Choose the best answer for each question, then explain.",
+      "questions": [
+        {
+          "q": "What is the main assumption in the classmate's message?",
+          "options": [
+            {"text": "That everyone starts the exam with the same ability to read the paper.", "quality": "best", "explanation": "Yes. Extra time compensates for a barrier (reading speed with low vision), not for lack of knowledge."},
+            {"text": "That exams are too short.", "quality": "partial", "explanation": "The classmate may feel this, but the message's logic depends on assuming equal starting conditions."},
+            {"text": "That Sam cheated.", "quality": "weak", "explanation": "The message doesn't say this. Don't add accusations that aren't there."},
+            {"text": "That rules are always fair.", "quality": "weak", "explanation": "The classmate is actually questioning a rule."}
+          ]
+        },
+        {
+          "q": "Which analogy best explains reasonable accommodation?",
+          "options": [
+            {"text": "Giving one runner a head start because they are a friend.", "quality": "weak", "explanation": "This is favouritism, not accommodation for a barrier."},
+            {"text": "Allowing a student with a broken arm to use a scribe.", "quality": "best", "explanation": "Good analogy: the scribe removes a barrier to showing knowledge; it does not add knowledge."},
+            {"text": "Letting everyone use calculators.", "quality": "partial", "explanation": "This changes the rules for all, which is a different idea (universal design)."},
+            {"text": "Giving extra marks to students who are tired.", "quality": "weak", "explanation": "Marks reflect performance; accommodations affect access, not marks."}
+          ]
+        },
+        {
+          "q": "What would be the BEST way for the class to respond to the post?",
+          "options": [
+            {"text": "Mock the classmate for being insensitive.", "quality": "weak", "explanation": "This shames rather than explains, and often makes people defensive."},
+            {"text": "Explain calmly what accommodations are for, without discussing Sam's medical details.", "quality": "best", "explanation": "This addresses the misunderstanding and protects Sam's privacy."},
+            {"text": "Ask Sam to explain their condition to everyone.", "quality": "weak", "explanation": "Sam is not obliged to share private medical information."},
+            {"text": "Ignore it.", "quality": "partial", "explanation": "Sometimes reasonable, but a misunderstanding left unanswered can spread."}
+          ]
+        }
+      ],
+      "justify_prompt": "Is the classmate's question entirely unreasonable? Explain one fair point it raises and one mistake it makes.",
+      "key_ideas": ["barrier", "accommodation", "equal", "fair", "privacy", "advantage", "access", "ability"],
+      "concept": "Reasonable accommodation removes barriers so a person can show their real ability. It aims at equal opportunity, not identical treatment.",
+      "perspectives": ["Sam may feel hurt and exposed.", "The classmate may sincerely not understand.", "The exam office follows established rules."],
+      "reflection": "When has someone adjusted something so you could participate fully?"
+    },
+    {
+      "id": "I07",
+      "title": "Helping or Sidelining?",
+      "type": "engine",
+      "difficulty": 2,
+      "skills": ["assumptions", "perspectives", "ethics"],
+      "objective": "Recognise 'kind' exclusion — when good intentions limit someone's opportunities.",
+      "scenario": "In a group project, Alex has a stammer. Without asking, the group leader assigns Alex only typing and formatting work 'so Alex doesn't have to stress about the presentation.' The others divide the research and the final presentation, which carries most of the marks. Alex says nothing in the meeting. Later, a teacher notices that Alex has the lowest individual score in the group.",
+      "main_question": "Was the leader's decision helpful or harmful? What should have happened?",
+      "follow_ups": [
+        "What did the leader assume about Alex?",
+        "What did the leader not do before deciding?",
+        "Why might Alex have stayed silent?",
+        "How can a group include someone without either pressuring or sidelining them?"
+      ],
+      "key_ideas": ["assum", "ask", "choice", "intention", "marks", "exclude", "include", "decide", "respect", "silent", "kind"],
+      "reasoning_guide": "Good intentions and good outcomes are different things. Look at the decision process: who decided, who was consulted, and what the consequences were for Alex's learning and marks.",
+      "misconceptions": [
+        "If the intention was kind, the action was right.",
+        "If Alex didn't object, Alex agreed.",
+        "Including someone means making them do exactly what everyone else does."
+      ],
+      "perspectives": [
+        "The leader genuinely wanted to protect Alex.",
+        "Alex may have wanted to present, or may have preferred another research role.",
+        "Other group members may not have noticed the problem at all."
+      ],
+      "concept": "Benevolent exclusion: limiting someone's choices 'for their own good' without asking them. The simplest fix is often to ask the person.",
+      "reflection": "Has someone ever decided what was 'best for you' without asking? How did it feel?"
+    },
+    {
+      "id": "I08",
+      "title": "Many Languages at the Canteen",
+      "type": "mcq",
+      "difficulty": 2,
+      "skills": ["perspectives", "ethics", "problem"],
+      "objective": "Weigh the comfort of using one's own language against the need for shared spaces.",
+      "scenario": "A group of students from another state usually speak their own language at the canteen. Some local students say they feel excluded and suggest everyone should speak Malayalam or English on campus. The visiting students say their own language is the only space where they feel at home after a long day of struggling in other languages.",
+      "main_question": "Choose the best answers, then explain your view.",
+      "questions": [
+        {
+          "q": "Which description treats both sides fairly?",
+          "options": [
+            {"text": "The visiting students are being rude.", "quality": "weak", "explanation": "This judges one side only, ignoring their stated reason."},
+            {"text": "Local students are being intolerant.", "quality": "weak", "explanation": "This also judges one side only; feeling excluded is a real experience."},
+            {"text": "Both groups want to feel they belong; they are experiencing the same space differently.", "quality": "best", "explanation": "Yes — this names the shared need (belonging) underneath both complaints."},
+            {"text": "It is a simple misunderstanding.", "quality": "partial", "explanation": "Partly, but it involves real needs on both sides, not just confusion."}
+          ]
+        },
+        {
+          "q": "Is a rule requiring Malayalam or English everywhere on campus a good solution?",
+          "options": [
+            {"text": "Yes, it creates unity.", "quality": "weak", "explanation": "Forced uniformity in private conversation rarely creates real unity and may increase isolation."},
+            {"text": "No, because it controls private conversation, which is far more than the problem needs.", "quality": "best", "explanation": "A proportionate response targets shared activities (classes, meetings), not friends chatting."},
+            {"text": "Yes, but only for visiting students.", "quality": "weak", "explanation": "Applying it to one group makes it discriminatory."},
+            {"text": "It depends on whether the canteen is crowded.", "quality": "weak", "explanation": "Crowding is not the core issue."}
+          ]
+        },
+        {
+          "q": "Which action is most likely to build connection?",
+          "options": [
+            {"text": "A 'language exchange' table where students teach each other simple phrases.", "quality": "best", "explanation": "This turns difference into curiosity and makes both groups learners."},
+            {"text": "Separate canteen tables for each state.", "quality": "weak", "explanation": "This would deepen division."},
+            {"text": "Complaining to the principal.", "quality": "partial", "explanation": "May be needed in serious cases, but here it escalates before dialogue has been tried."},
+            {"text": "Waiting for visiting students to learn Malayalam.", "quality": "partial", "explanation": "Learning takes time; connection can start earlier with effort from both sides."}
+          ]
+        }
+      ],
+      "justify_prompt": "Imagine you are the only person in a group who doesn't understand the language being spoken. What would you want others to do — and what would you NOT want them to do?",
+      "key_ideas": ["belong", "language", "home", "exclude", "both", "shared", "learn", "comfort", "respect"],
+      "concept": "Proportionality and shared needs: before choosing a rule, ask what need lies under each complaint and what is the smallest change that meets both.",
+      "perspectives": ["Visiting students far from home.", "Local students who feel shut out of conversations.", "Staff who want a welcoming campus for all."],
+      "reflection": "What is one phrase you could learn in a language spoken by a classmate?"
+    },
+    {
+      "id": "I09",
+      "title": "When Compromise Is Not Enough",
+      "type": "engine",
+      "difficulty": 3,
+      "skills": ["ethics", "counterargument", "perspectives", "reflection"],
+      "objective": "Recognise when a 'middle path' conflicts with basic dignity or rights.",
+      "scenario": "The college nature club plans a two-day field trip to a hill station. Robin, a member who uses a wheelchair, asks to join. Some organisers worry about trails and the bus. After a long debate, they offer what they call a 'fair compromise': Robin can come, but must bring a personal helper at Robin's own cost, stay at the base camp while others trek, and sign a form saying the club is not responsible for any problem. One organiser says, 'We met halfway. That is how democracy works.'",
+      "main_question": "Is this compromise fair? When is meeting 'halfway' not the right answer?",
+      "follow_ups": [
+        "What does each condition cost Robin, and what does it cost the club?",
+        "Were alternatives explored (accessible trails, shared helper, different destination)?",
+        "Can a compromise be procedurally fair but still unjust?",
+        "What are the club's genuine safety concerns, and how should they be addressed?"
+      ],
+      "key_ideas": ["dignity", "compromise", "cost", "equal", "safety", "alternative", "include", "rights", "burden", "access", "condition"],
+      "reasoning_guide": "Look at where the burden falls. A compromise between a basic right (equal participation) and convenience is not balanced. But safety concerns are real too — a strong answer takes both seriously.",
+      "misconceptions": [
+        "Any compromise is automatically fair.",
+        "Safety concerns are just excuses.",
+        "Including someone means ignoring all practical limits."
+      ],
+      "perspectives": [
+        "Organisers fear accidents and blame.",
+        "Robin wants to belong as a full member, not a special case.",
+        "Other members may want to help but don't know how."
+      ],
+      "concept": "Compromise works between competing preferences. It is harder to justify when one side's 'half' is a basic right or dignity. Ask: who carries the cost of the compromise?",
+      "reflection": "Can you think of a compromise that seemed fair to the majority but placed most of the cost on one person?"
+    },
+    {
+      "id": "I10",
+      "title": "'We Are All the Same Here'",
+      "type": "mcq",
+      "difficulty": 3,
+      "skills": ["logic", "assumptions", "perspectives", "counterargument"],
+      "objective": "Analyse an appealing statement whose meaning shifts depending on context.",
+      "passage": {
+        "kind": "Speech (fictional)",
+        "title": "Welcome speech at a first-year orientation",
+        "text": "Dear first-year students, welcome!\n\nI want you to remember one thing about this college: here, there are no differences. We do not see where you come from, what your parents do, what language you speak at home, or what you look like. Every one of you is simply a student. We are all the same here.\n\nBecause we treat everyone the same, we have one timetable, one uniform, one set of rules and one standard for marks. No one gets special treatment. If you work hard, you will succeed. If you fail, it will be because of your own effort, not because of anything else.\n\nSo leave your differences at the gate. Inside, we are one family.\n\nThank you, and best wishes for your journey."
+      },
+      "main_question": "Analyse the speech closely.",
+      "questions": [
+        {
+          "q": "What is admirable about the speaker's intention?",
+          "options": [
+            {"text": "It aims to prevent discrimination and favouritism.", "quality": "best", "explanation": "Yes. Wanting no one to be judged by background is a sincere and important goal. Start by recognising what is good in an argument."},
+            {"text": "It encourages students to forget their families.", "quality": "weak", "explanation": "An uncharitable reading. The speaker means 'don't be judged by family', not 'forget them'."},
+            {"text": "It promises everyone good marks.", "quality": "weak", "explanation": "The speech says effort leads to success; it does not promise marks."},
+            {"text": "Nothing; it is a harmful speech.", "quality": "weak", "explanation": "Dismissing the speech entirely ignores its good intention. Critical thinking is not the same as rejecting everything."}
+          ]
+        },
+        {
+          "q": "Which sentence contains the most questionable assumption?",
+          "options": [
+            {"text": "'Welcome!'", "quality": "weak", "explanation": "A greeting with no assumption to examine."},
+            {"text": "'If you fail, it will be because of your own effort, not because of anything else.'", "quality": "best", "explanation": "Correct. It assumes that once rules are the same, all other factors (finances, distance, disability, language) disappear."},
+            {"text": "'We have one timetable.'", "quality": "weak", "explanation": "A factual description."},
+            {"text": "'Every one of you is simply a student.'", "quality": "partial", "explanation": "Debatable, but it mainly expresses equal status. The failure sentence makes a stronger, more testable claim."}
+          ]
+        },
+        {
+          "q": "How might a student who works night shifts to pay fees hear 'leave your differences at the gate'?",
+          "options": [
+            {"text": "As reassurance that no one will judge them.", "quality": "partial", "explanation": "Possibly — the same words can comfort one listener."},
+            {"text": "As a signal that their real difficulties will not be recognised.", "quality": "partial", "explanation": "Also possible — the same words can worry another listener."},
+            {"text": "Either way, depending on whether the college still offers support when needed.", "quality": "best", "explanation": "The strongest answer: meaning depends on what the institution does. Ambiguous statements need context to judge."},
+            {"text": "They would not care.", "quality": "weak", "explanation": "Assumes the student has no reaction; ignores their perspective."}
+          ]
+        }
+      ],
+      "justify_prompt": "Rewrite two sentences of the speech so it keeps the speaker's good intention but avoids the problematic assumption.",
+      "key_ideas": ["equal", "same", "difference", "support", "assum", "intention", "effort", "opportunity", "context"],
+      "concept": "Charitable interpretation: first understand the best version of what someone means, then test its assumptions. Critique is stronger when it is fair.",
+      "perspectives": ["The speaker: wants unity and fairness.", "A first-generation student: may need visible support.", "A student facing discrimination outside college: may find the message comforting or dismissive."],
+      "reflection": "Is 'treating everyone the same' always the same as 'treating everyone fairly'? Has your view changed?"
+    }
+  ]
+}

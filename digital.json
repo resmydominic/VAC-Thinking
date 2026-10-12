@@ -1,0 +1,381 @@
+{
+  "module_id": "digital",
+  "name": "Digital Ethics & AI",
+  "tagline": "Verify information. Question technology. Protect privacy.",
+  "icon": "💡",
+  "description": "Check sources, notice manipulation, understand algorithmic bias and privacy trade-offs, and use AI responsibly in everyday digital life.",
+  "activities": [
+    {
+      "id": "D01",
+      "title": "The Viral Food Post",
+      "type": "mcq",
+      "difficulty": 1,
+      "skills": ["evidence", "logic", "assumptions"],
+      "objective": "Evaluate a viral claim: popularity, images and emotional language are not evidence.",
+      "passage": {
+        "kind": "Social media post (fictional)",
+        "title": "Shared 48,000 times",
+        "text": "⚠️⚠️ URGENT!!! DOCTORS ARE SHOCKED ⚠️⚠️\n\nEating bananas at night causes kidney stones!! My neighbour's cousin ate bananas every night and now he is in hospital. The food companies don't want you to know this. Share with everyone you love before this post is DELETED!!!\n\n[Photo: a person in a hospital bed with a drip]\n\n48K shares · 12K comments"
+      },
+      "main_question": "Investigate the post.",
+      "questions": [
+        {
+          "q": "The post has 48,000 shares. What does this tell you about whether the claim is true?",
+          "options": [
+            {"text": "It is probably true, because so many people believe it.", "quality": "weak", "explanation": "Popularity measures spread, not accuracy. False claims often spread faster because they are surprising."},
+            {"text": "Nothing about truth; it shows only that it is widely shared.", "quality": "best", "explanation": "Correct. Shares tell you about reach and emotion, not evidence."},
+            {"text": "It is definitely false, because viral posts are always fake.", "quality": "weak", "explanation": "Over-correction. Some viral posts are true. Judge evidence, not popularity in either direction."},
+            {"text": "Doctors must have confirmed it.", "quality": "weak", "explanation": "'Doctors are shocked' names no doctor and cites nothing."}
+          ]
+        },
+        {
+          "q": "What is the problem with the hospital photograph?",
+          "options": [
+            {"text": "There is no evidence it shows the person in the story or anything to do with bananas.", "quality": "best", "explanation": "Yes. Unrelated photos add emotional weight without adding evidence. A reverse image search could check where it came from."},
+            {"text": "The photo is too blurry.", "quality": "weak", "explanation": "Even a sharp photo would not prove the claim."},
+            {"text": "Hospital photos are not allowed online.", "quality": "weak", "explanation": "Not the key reasoning issue here."},
+            {"text": "There is no problem; it proves someone is ill.", "quality": "partial", "explanation": "It may show someone ill, but not why, or whether it is linked to this story."}
+          ]
+        },
+        {
+          "q": "'My neighbour's cousin ate bananas every night and is now in hospital.' What kind of evidence is this?",
+          "options": [
+            {"text": "Scientific evidence.", "quality": "weak", "explanation": "No study, data or method — just a story."},
+            {"text": "A second-hand anecdote that cannot show cause.", "quality": "best", "explanation": "Correct. It is unverified and even if true, many other causes could explain the illness."},
+            {"text": "Strong evidence, because it is from a real person.", "quality": "weak", "explanation": "One unverified case cannot establish cause and effect."},
+            {"text": "An official statement.", "quality": "weak", "explanation": "No official is quoted."}
+          ]
+        },
+        {
+          "q": "What should you do before sharing?",
+          "options": [
+            {"text": "Share it with a note 'Not sure if true'.", "quality": "partial", "explanation": "Better than sharing blindly, but it still spreads the claim. Most people read the post, not the note."},
+            {"text": "Check what trusted health sources say (lateral reading) and don't share unless verified.", "quality": "best", "explanation": "Lateral reading means leaving the post and checking other reliable sources."},
+            {"text": "Ask the original poster if it is true.", "quality": "weak", "explanation": "The source of a claim is not a neutral checker of it."},
+            {"text": "Share it — better safe than sorry.", "quality": "weak", "explanation": "Sharing false health claims can cause fear and harm."}
+          ]
+        }
+      ],
+      "justify_prompt": "List three warning signs in this post and explain in one sentence each why they are warning signs.",
+      "key_ideas": ["source", "urgent", "emotion", "photo", "anecdote", "shares", "evidence", "doctor", "verify", "capital", "delete"],
+      "concept": "Lateral reading: instead of studying a post closely, open new tabs and check what independent, reliable sources say about the claim and the source.",
+      "perspectives": [],
+      "reflection": "What is the last health message you forwarded? Would it pass these checks?"
+    },
+    {
+      "id": "D02",
+      "title": "Rank the Sources",
+      "type": "rank",
+      "difficulty": 2,
+      "skills": ["evidence", "logic", "problem"],
+      "objective": "Rank sources by reliability for a specific health claim and explain the reasoning.",
+      "scenario": "A claim spreads: 'A common pain medicine causes memory loss in young adults.' You find these five sources. Rank them from MOST reliable (top) to LEAST reliable for deciding whether the claim is true.",
+      "items": [
+        {"id": "a", "label": "Official public health department statement", "detail": "Reviews available studies; says there is no established link at normal doses, and advises following prescription limits."},
+        {"id": "b", "label": "Peer-reviewed study in a medical journal", "detail": "Followed 4,000 adults for 5 years; found no memory difference at normal doses; small effect at very high doses."},
+        {"id": "c", "label": "Newspaper article with named experts", "detail": "Quotes two named pharmacologists and links to the study."},
+        {"id": "d", "label": "Video by a popular fitness influencer", "detail": "Says 'I stopped this medicine and my memory improved'. Sells herbal supplements in the description."},
+        {"id": "e", "label": "Anonymous account with an unrelated photo", "detail": "Posts the claim with a picture of a brain scan from a different country's news story."}
+      ],
+      "reference_order": ["b", "a", "c", "d", "e"],
+      "explanations": {
+        "b": "Original research with a clear method and large sample. Still one study — but the most direct evidence.",
+        "a": "Summarises many studies and is accountable to the public. Very close to the top; many would reasonably rank it first.",
+        "c": "Useful and traceable, but it reports on others' research — check its links.",
+        "d": "Personal experience plus a conflict of interest (selling supplements).",
+        "e": "No author, no evidence, and a misleading image."
+      },
+      "tolerance_pairs": [["a", "b"]],
+      "main_question": "Explain why you placed your top two sources where you did. What would make the lowest source more credible?",
+      "key_ideas": ["peer", "study", "method", "sample", "official", "named", "conflict", "interest", "anonymous", "evidence", "corroborat"],
+      "concept": "Source evaluation: ask who made it, what evidence it uses, how it was checked, and whether the source gains from you believing it (conflict of interest). Corroboration — several independent sources agreeing — strengthens confidence.",
+      "perspectives": [],
+      "reflection": "Which kind of source do you usually trust most for health information? Why?"
+    },
+    {
+      "id": "D03",
+      "title": "The AI That Predicts Failure",
+      "type": "engine",
+      "difficulty": 2,
+      "skills": ["ethics", "evidence", "perspectives", "counterargument"],
+      "objective": "Analyse algorithmic bias, accountability and human oversight in an AI system.",
+      "scenario": "A college uses an AI system that predicts which students are likely to fail their semester exams, based on past marks, attendance, distance from home, and family income. Flagged students are offered extra classes. An audit finds the system is correct 80% of the time overall, but for students from rural areas, it wrongly flags about 1 in 3 who would actually have passed. Some flagged students say they felt labelled and lost confidence. The college says, 'The AI is objective; it has no feelings or prejudices.'",
+      "main_question": "Should the college keep using the system? If yes, what changes are needed? If no, what should replace it?",
+      "follow_ups": [
+        "Is an AI system 'objective' because it has no feelings?",
+        "Why might the system make more mistakes for rural students?",
+        "Who is responsible when the prediction is wrong?",
+        "Should students be told they are flagged and allowed to challenge it?",
+        "What role should teachers' judgement play?"
+      ],
+      "key_ideas": ["bias", "data", "objective", "accuracy", "rural", "responsib", "human", "oversight", "transparen", "challenge", "consent", "label", "income"],
+      "reasoning_guide": "An AI learns patterns from past data; if past data reflects unequal conditions, predictions can repeat them. Look at overall accuracy vs. accuracy for each group, the harm of a wrong label, and who can correct mistakes.",
+      "misconceptions": [
+        "Machines cannot be biased.",
+        "80% accuracy means the system is fair to everyone.",
+        "If the help offered is good, being labelled causes no harm."
+      ],
+      "perspectives": [
+        "Students who got useful extra support.",
+        "Rural students wrongly flagged.",
+        "Teachers who could add context the data misses.",
+        "Administrators seeking an efficient tool."
+      ],
+      "concept": "Algorithmic bias: systematic errors that disadvantage some groups, often coming from biased data or poorly chosen inputs (like 'distance from home'). Accountability and human oversight mean a person remains responsible for decisions.",
+      "reflection": "Which apps make predictions about you? Would you want to know how?"
+    },
+    {
+      "id": "D04",
+      "title": "The Privacy Paradox",
+      "type": "allocate",
+      "difficulty": 1,
+      "skills": ["ethics", "problem", "assumptions"],
+      "objective": "Experience the trade-off between convenience and privacy by choosing app permissions.",
+      "scenario": "A free study-planner app called 'StudyBuddy' asks for these permissions. Turn each on or off and watch what changes. The app still works with all permissions off — but with fewer features.",
+      "mode": "toggle",
+      "indicators": ["Convenience", "Personalisation", "Data Exposure"],
+      "inverse_indicators": ["Data Exposure"],
+      "options": [
+        {"key": "contacts", "label": "Access contacts", "desc": "Suggests study partners from your phone contacts.", "effects": {"Convenience": [1, 1], "Personalisation": [1, 1], "Data Exposure": [3, 3]}, "on": "Your friends' numbers are shared too — and they never agreed.", "off": "You add study partners manually."},
+        {"key": "location", "label": "Precise location (always)", "desc": "Reminds you to study when you reach the library.", "effects": {"Convenience": [2, 2], "Personalisation": [1, 1], "Data Exposure": [4, 4]}, "on": "The app knows where you live, study and travel — every day.", "off": "You set reminders by time instead."},
+        {"key": "photos", "label": "All photos", "desc": "Lets you scan notes from your gallery.", "effects": {"Convenience": [2, 2], "Personalisation": [0, 0], "Data Exposure": [3, 3]}, "on": "The app can read every photo, not just notes.", "off": "You can still pick single photos when needed."},
+        {"key": "browsing", "label": "Browsing & app usage", "desc": "Recommends videos based on what you watch.", "effects": {"Convenience": [1, 1], "Personalisation": [3, 3], "Data Exposure": [3, 3]}, "on": "Detailed interest profile may be used for ads.", "off": "Recommendations are more general."},
+        {"key": "notifications", "label": "Notifications", "desc": "Study reminders.", "effects": {"Convenience": [2, 2], "Personalisation": [0, 0], "Data Exposure": [0, 0]}, "on": "Helpful reminders; little data risk.", "off": "You may forget study sessions."},
+        {"key": "calendar", "label": "Calendar", "desc": "Plans study around your classes.", "effects": {"Convenience": [2, 2], "Personalisation": [2, 2], "Data Exposure": [1, 1]}, "on": "Useful for the core purpose; moderate data.", "off": "You type your timetable in once."}
+      ],
+      "main_question": "Which permissions did you allow, and why? Which ones are actually necessary for a study planner? Can consent be meaningful when people don't know what happens to their data?",
+      "follow_ups": ["How could the app be redesigned to protect users by default?"],
+      "key_ideas": ["necessary", "consent", "data", "privacy", "convenience", "friends", "location", "minim", "default", "purpose"],
+      "concept": "Data minimisation: collect only what is necessary for a service's purpose. The privacy paradox: people say they value privacy but often trade it away for convenience.",
+      "perspectives": ["Your contacts, whose data you share.", "The free app company that earns from data.", "You, five years from now."],
+      "reflection": "Open your phone's settings tonight. Which app has a permission it doesn't need?"
+    },
+    {
+      "id": "D05",
+      "title": "Judging Content, Not Guessing Its Author",
+      "type": "mcq",
+      "difficulty": 2,
+      "skills": ["evidence", "logic", "assumptions"],
+      "objective": "Evaluate any text — human or AI — by its evidence, sources, reasoning and context, not by guessing who wrote it.",
+      "passage": {
+        "kind": "Short academic paragraph (for evaluation)",
+        "title": "Paragraph submitted in a class blog",
+        "text": "Social media has fundamentally transformed the way young people communicate. Studies have consistently shown that excessive use leads to anxiety, depression and reduced attention spans. According to experts, 87% of teenagers spend over seven hours daily on screens. It is therefore crucial that governments implement strict regulations immediately. In conclusion, social media is a double-edged sword that requires careful navigation in today's fast-paced digital landscape."
+      },
+      "main_question": "Evaluate the paragraph's reliability.",
+      "questions": [
+        {
+          "q": "A classmate says, 'An AI detector says 92% AI, so this is unreliable.' What's wrong with this reasoning?",
+          "options": [
+            {"text": "Nothing; AI detectors are always accurate.", "quality": "weak", "explanation": "AI detectors make frequent errors, especially with non-native English writers. They should not be treated as proof."},
+            {"text": "Who wrote it doesn't decide reliability; the evidence and reasoning do.", "quality": "best", "explanation": "Yes. A human can write unreliable text and AI can produce accurate text. Evaluate the content."},
+            {"text": "The detector should be 100% before deciding.", "quality": "weak", "explanation": "The problem is the method, not the threshold."},
+            {"text": "The paragraph is too short to detect.", "quality": "partial", "explanation": "Length does affect detectors, but the deeper issue is relying on authorship at all."}
+          ]
+        },
+        {
+          "q": "'87% of teenagers spend over seven hours daily on screens.' What is the main problem?",
+          "options": [
+            {"text": "The number is too high to be true.", "quality": "partial", "explanation": "It might be wrong, but you can't know without a source. Surprise alone isn't evidence."},
+            {"text": "No source, country, year or definition of 'screens' is given.", "quality": "best", "explanation": "Correct. Without these, the statistic can't be checked. Invented statistics often look exactly like this."},
+            {"text": "It uses a percentage.", "quality": "weak", "explanation": "Percentages are fine when sourced."},
+            {"text": "It is about teenagers, not adults.", "quality": "weak", "explanation": "Audience isn't the issue."}
+          ]
+        },
+        {
+          "q": "Which phrase is the biggest logical leap?",
+          "options": [
+            {"text": "'Social media has transformed communication.'", "quality": "partial", "explanation": "Broad but widely accepted."},
+            {"text": "'It is therefore crucial that governments implement strict regulations immediately.'", "quality": "best", "explanation": "Yes. Even if the earlier claims were true, 'strict regulation immediately' doesn't follow without discussing what kind, costs and alternatives."},
+            {"text": "'In conclusion…'", "quality": "weak", "explanation": "A transition, not a claim."},
+            {"text": "'Double-edged sword'", "quality": "partial", "explanation": "A cliché that adds little, but not the biggest logical leap."}
+          ]
+        }
+      ],
+      "justify_prompt": "Rewrite one sentence from the paragraph so that it is more careful, specific and honest about evidence.",
+      "key_ideas": ["source", "evidence", "specific", "study", "which", "may", "some", "cite", "data", "claim"],
+      "concept": "Provenance and evidence: ask where a claim comes from, whether it can be traced, and whether the conclusion follows. 'Studies show' without naming any study is a warning sign, whoever writes it.",
+      "perspectives": [],
+      "reflection": "If you use AI to help you write, how will you check the facts it gives you?"
+    },
+    {
+      "id": "D06",
+      "title": "Think Before You Share",
+      "type": "classify",
+      "difficulty": 1,
+      "skills": ["evidence", "assumptions", "ethics"],
+      "objective": "Identify manipulation techniques in emotionally charged messages.",
+      "scenario": "Classify the main problem with each message. Some may have more than one — choose the strongest and explain.",
+      "categories": ["Emotional manipulation", "Missing context", "Unverified claim", "Privacy harm", "Reasonable to share"],
+      "items": [
+        {"statement": "'If you don't forward this to 10 people, something bad will happen to your family.'", "accepted": ["Emotional manipulation"], "best": "Emotional manipulation", "explanation": "Uses fear and guilt to force sharing; contains no information."},
+        {"statement": "A 10-second clip showing a student shouting at a teacher, posted with 'Shameful youth!' (the full 5-minute video is not shared).", "accepted": ["Missing context", "Emotional manipulation"], "best": "Missing context", "explanation": "A short clip can hide what happened before and after."},
+        {"statement": "'BREAKING: College exams cancelled tomorrow!' — from an unknown number, no link to the college website.", "accepted": ["Unverified claim"], "best": "Unverified claim", "explanation": "Check the official source before believing or sharing."},
+        {"statement": "A screenshot of a classmate's private chat about their breakup, shared 'for fun'.", "accepted": ["Privacy harm"], "best": "Privacy harm", "explanation": "Even if true and funny to some, sharing private messages harms a real person."},
+        {"statement": "The university's official page announcing revised exam dates, with the link to the notice.", "accepted": ["Reasonable to share"], "best": "Reasonable to share", "explanation": "Official, linked and useful."},
+        {"statement": "'This brand's workers are treated like slaves — boycott now!!' with no source or details.", "accepted": ["Unverified claim", "Emotional manipulation"], "best": "Unverified claim", "explanation": "A serious accusation needs evidence; strong words are not evidence."},
+        {"statement": "A photo of a missing child with a police helpline number and FIR reference, shared by the district police page.", "accepted": ["Reasonable to share"], "best": "Reasonable to share", "explanation": "Verified source, specific details, and sharing helps."}
+      ],
+      "main_question": "Describe one message you have received that fits a category here. What did you do, and what would you do now?",
+      "key_ideas": ["verify", "source", "context", "privacy", "emotion", "fear", "official", "check", "harm"],
+      "concept": "Confirmation bias: we share faster when a message matches what we already believe. Pause especially when a message makes you angry or afraid.",
+      "perspectives": [],
+      "reflection": "What emotion makes you most likely to share without checking?"
+    },
+    {
+      "id": "D07",
+      "title": "The Voice Note That Wasn't",
+      "type": "branch",
+      "difficulty": 2,
+      "skills": ["evidence", "problem", "ethics", "reflection"],
+      "objective": "Respond to a possible deepfake and explore the consequences of verification choices.",
+      "scenario": "At 10 pm, a voice note in the class group sounds exactly like the principal: 'Due to a water problem, college will remain closed tomorrow. Inform all students.' You are the class representative.",
+      "nodes": {
+        "start": {
+          "text": "Students are asking you whether it's real. What do you do?",
+          "choices": [
+            {"label": "Forward it to all groups immediately", "next": "forward"},
+            {"label": "Check the college website and official channels first", "next": "check"},
+            {"label": "Call the principal directly at 10 pm", "next": "call"}
+          ]
+        },
+        "forward": {
+          "text": "Within an hour, 1,500 students have it. At 11:30 pm, the college posts: 'The voice note is FAKE. Classes and the internal exam will go on.'",
+          "choices": [
+            {"label": "Delete your forward quietly", "next": "end_quiet"},
+            {"label": "Post the correction in every group you forwarded to", "next": "end_correct"}
+          ]
+        },
+        "check": {
+          "text": "There is no notice on the website or official page. A teacher you message says she hasn't heard anything.",
+          "choices": [
+            {"label": "Tell the class it's unverified and wait for official word", "next": "end_verified"},
+            {"label": "Stay silent until morning", "next": "end_silent"}
+          ]
+        },
+        "call": {
+          "text": "The principal doesn't answer — it's late. Students keep pressing you.",
+          "choices": [
+            {"label": "Assume it's real since the voice is identical", "next": "end_assume"},
+            {"label": "Message the class: 'Can't confirm yet. Don't forward. Check official page.'", "next": "end_verified"}
+          ]
+        },
+        "end_quiet": {"end": true, "title": "Quiet deletion", "text": "Many students miss the correction and skip the internal exam.", "analysis": "Deleting doesn't undo spread. Corrections must travel the same path as the error."},
+        "end_correct": {"end": true, "title": "Public correction", "text": "Most students see the correction in time. A few are annoyed, but trust in you grows.", "analysis": "Admitting and correcting a mistake openly is a sign of responsible digital citizenship."},
+        "end_verified": {"end": true, "title": "Verify first", "text": "The college confirms it is fake. Your class attends normally.", "analysis": "Voices can be cloned with AI. Familiarity is no longer proof; official channels are."},
+        "end_silent": {"end": true, "title": "Silence", "text": "You didn't spread it, but students who believed it from other groups miss the exam.", "analysis": "Not spreading misinformation is good; actively warning others can be better when you have a role of trust."},
+        "end_assume": {"end": true, "title": "Trusting the voice", "text": "You confirm the fake to others. Students blame you the next day.", "analysis": "Deepfakes exploit trust in familiar voices and faces. Verification through a second, independent channel is essential."}
+      },
+      "main_question": "What did you learn about verifying audio and video in the age of AI? Write two rules you will follow.",
+      "key_ideas": ["verify", "official", "fake", "deepfake", "voice", "forward", "correct", "check", "channel", "trust"],
+      "concept": "Deepfakes: AI-generated audio, video or images that imitate real people. Verify through an independent, official channel before acting.",
+      "perspectives": ["Students who trusted you.", "The principal whose voice was used.", "The person who made the fake — what were they trying to achieve?"],
+      "reflection": "Replay with another choice. Which ending would you most like to avoid?"
+    },
+    {
+      "id": "D08",
+      "title": "Rumour at Monsoon Midnight",
+      "type": "engine",
+      "difficulty": 1,
+      "skills": ["evidence", "problem", "ethics"],
+      "objective": "Respond responsibly to an alarming message during an emergency.",
+      "scenario": "During heavy monsoon rain, a forwarded message arrives at 1 am in your family group: 'Dam shutters will open in 30 minutes!!! Water will reach 2 metres in our area. Leave NOW. Forwarded as received.' Your grandmother is frightened. Your uncle wants to drive the family to a relative's house 20 km away through flooded roads. There is no name, link or official source in the message.",
+      "main_question": "What should your family do in the next 15 minutes? Explain how you would decide.",
+      "follow_ups": [
+        "What exactly does the message claim, and what is missing?",
+        "Where could you check quickly at 1 am?",
+        "What are the risks of acting on it — and of ignoring it?",
+        "Should you forward it to others while unsure?"
+      ],
+      "key_ideas": ["official", "verify", "district", "source", "risk", "safe", "forward", "check", "emergency", "helpline", "panic", "road"],
+      "reasoning_guide": "In emergencies, both over-reacting and under-reacting carry risk. Separate the claim from the source, check official disaster or district channels, consider safe precautions that don't create new dangers (like driving through floods), and avoid forwarding unverified alerts.",
+      "misconceptions": [
+        "In an emergency, there is no time to check anything.",
+        "Forwarding warnings is always 'better safe than sorry'.",
+        "If it's not verified, it must be ignored completely."
+      ],
+      "perspectives": [
+        "A frightened elder.",
+        "A relative eager to protect the family.",
+        "Disaster management officials who rely on calm compliance with real alerts."
+      ],
+      "concept": "Risk under uncertainty: compare the harms of both errors (acting on a false alarm vs ignoring a real one) and look for low-risk precautions while verifying.",
+      "reflection": "Which official emergency channels for your district do you have saved on your phone?"
+    },
+    {
+      "id": "D09",
+      "title": "Correlation or Cause?",
+      "type": "mcq",
+      "difficulty": 2,
+      "skills": ["logic", "evidence", "assumptions"],
+      "objective": "Distinguish correlation from causation in claims about technology use.",
+      "scenario": "A college survey finds: 'Students who use their phones after midnight have, on average, 12% lower marks than those who don't.' A newspaper headline reads: 'Late-night phone use destroys exam results!'",
+      "main_question": "Analyse the claim.",
+      "questions": [
+        {
+          "q": "Does the survey prove that late-night phone use CAUSES lower marks?",
+          "options": [
+            {"text": "Yes — the numbers are clear.", "quality": "weak", "explanation": "The numbers show an association, not a cause."},
+            {"text": "No — it shows the two go together, but not why.", "quality": "best", "explanation": "Correct. Other factors could explain both."},
+            {"text": "No — surveys are always useless.", "quality": "weak", "explanation": "Surveys are useful for finding patterns; they just can't usually show cause alone."},
+            {"text": "Yes — because phones emit blue light.", "quality": "partial", "explanation": "That's a possible mechanism, but the survey doesn't test it."}
+          ]
+        },
+        {
+          "q": "Which is a plausible 'third factor' that could explain both?",
+          "options": [
+            {"text": "Students working night shifts may have both less study time and late phone use.", "quality": "best", "explanation": "Yes. A third factor (job, stress, health, family duties) can cause both patterns."},
+            {"text": "Phones are expensive.", "quality": "weak", "explanation": "Doesn't explain the link."},
+            {"text": "Marks are calculated wrongly.", "quality": "weak", "explanation": "No evidence for this."},
+            {"text": "The newspaper is biased.", "quality": "partial", "explanation": "The headline exaggerates, but this doesn't explain the data."}
+          ]
+        },
+        {
+          "q": "What would be the best way to test whether phone use causes lower marks?",
+          "options": [
+            {"text": "Ask students if they think phones hurt their marks.", "quality": "partial", "explanation": "Opinions are useful but not a test of cause."},
+            {"text": "Compare similar students where one group reduces late-night use for a term, and measure changes.", "quality": "best", "explanation": "A controlled comparison over time is much stronger evidence of cause."},
+            {"text": "Count how many students own phones.", "quality": "weak", "explanation": "Doesn't test the relationship."},
+            {"text": "Read more headlines.", "quality": "weak", "explanation": "Headlines summarise; they don't test."}
+          ]
+        }
+      ],
+      "justify_prompt": "Rewrite the headline so it is accurate but still interesting.",
+      "key_ideas": ["linked", "associated", "may", "correlation", "survey", "students", "marks", "late"],
+      "concept": "Correlation vs causation: when A and B occur together, A may cause B, B may cause A, a third factor C may cause both, or it may be chance.",
+      "perspectives": [],
+      "reflection": "Find one claim this week that confuses correlation with cause."
+    },
+    {
+      "id": "D10",
+      "title": "When AI Writes the Assignment",
+      "type": "engine",
+      "difficulty": 3,
+      "skills": ["ethics", "counterargument", "perspectives", "reflection"],
+      "objective": "Reason about responsible AI use in learning when rules are unclear.",
+      "scenario": "Your friend Sam submits an essay largely written by an AI chatbot. Sam edited a few lines and added personal examples. The college has no clear AI policy; one teacher bans AI, another encourages it for brainstorming. Sam's essay gets the highest mark in the class. Another student, who wrote everything alone, scores lower and complains. Sam says, 'Calculators didn't destroy maths. This is just a tool.'",
+      "main_question": "Did Sam act unfairly? What would a fair AI policy for your college look like?",
+      "follow_ups": [
+        "Is the calculator comparison a good analogy? Where does it work and where does it fail?",
+        "What is the purpose of an essay assignment — the product or the thinking?",
+        "Can a rule be broken if it doesn't clearly exist?",
+        "What would honest, responsible AI use look like?"
+      ],
+      "key_ideas": ["fair", "honest", "learning", "purpose", "tool", "policy", "disclose", "transparen", "calculator", "thinking", "skill", "rule"],
+      "reasoning_guide": "Separate legality (no clear rule) from ethics (fairness to others, honesty about authorship, own learning). Test the analogy: what does a calculator replace, and what does an AI essay replace?",
+      "misconceptions": [
+        "Anything not explicitly banned is fair.",
+        "Any use of AI is cheating.",
+        "Marks measure only the final product."
+      ],
+      "perspectives": [
+        "Sam: sees AI as a normal tool.",
+        "The student who wrote alone: feels effort was not rewarded.",
+        "Teachers: want to assess thinking, not just text.",
+        "Future employers: expect both AI skill and independent judgement."
+      ],
+      "concept": "Analogy testing: an analogy is only as strong as the similarities that matter. Transparency (disclosing AI use) is a widely accepted principle of responsible AI use.",
+      "reflection": "Write one personal rule for how you will use AI in your studies."
+    }
+  ]
+}
