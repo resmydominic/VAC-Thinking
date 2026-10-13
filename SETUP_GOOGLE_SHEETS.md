@@ -46,6 +46,26 @@ Use three single quotes ('''), not three double quotes. Nothing inside needs cha
 Log in as a test student, answer one practice question, wait ~10 seconds, and look at the Sheet.
 The **Teacher dashboard → System** tab shows `connected: true`, rows written, and any error message.
 
+## 5. Class roster (only listed students can log in)
+The app adds a **Roster** tab to your Sheet automatically (refresh the Sheet after the app has run once).
+Fill it in from row 2 down — one student per row:
+
+| roll_no | full_name | class_group |
+|---|---|---|
+| BA23 | Anu K Thomas | BA English 2 |
+| BA124 | Rahul Menon | BA English 2 |
+
+- Roll numbers are two letters + two or three numbers (BA23, BA124).
+- Students log in with **roll number + first name or full name**; their class is filled in from the roster.
+- Forgiving matching: capitals, spaces, dashes and dots in the roll number don't matter ("ba 23" = "BA23");
+  the name can be first name only, full name, any word order, with or without initials, and with spaces
+  anywhere ("A N U thomas" = "Anu K Thomas").
+- Students who practised **before** the roster was added keep all their progress: the app reconnects their
+  earlier records by roll number even if they typed it or their class differently. Nothing is ever deleted.
+- Leave the tab empty and anyone can log in (with the class access code, if you set one).
+- Adding or editing students needs **no reboot**: changes are picked up within about a minute
+  (or click **Refresh data** on the Teacher dashboard). Wrong attempts are recorded in Sessions as `login_denied`.
+
 ## Why it won't crash with a full class
 Rows are queued and written in batches every few seconds by one background worker, so 60 students
 answering at once still produce only a few Google API calls per minute — well under Google's limits.

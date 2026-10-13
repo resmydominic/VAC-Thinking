@@ -9,7 +9,7 @@ from utils.ai import ai_config, test_connection, _limiter
 from utils.config import get_secret
 from utils.content import SKILLS
 from utils.state import go
-from utils.storage import read_sheet, get_logger, sheets_configured
+from utils.storage import read_sheet, get_logger, sheets_configured, read_roster
 
 SKILL_NAMES = dict(SKILLS, language="Language")
 
@@ -38,10 +38,15 @@ def page():
 
     if st.button("🔄 Refresh data"):
         read_sheet.clear()
+        read_roster.clear()
     src = "Google Sheet" if sheets_configured() else "local CSV files in the logs/ folder"
     st.caption(f"Data source: {src} (refreshes every 2 minutes).")
     resp, prac, sets, sess, appfb = (read_sheet(n) for n in ["Responses", "Practice", "PracticeSets", "Sessions", "AppFeedback"])
 
+    from utils.storage import norm_roll
+    for _df in (resp, prac, sets, sess, appfb):  # 'ba 23' and 'BA23' are the same student
+        if not _df.empty and "roll_no" in _df:
+            _df["roll_no"] = _df["roll_no"].astype(str).map(norm_roll)
     classes = sorted(set(resp["class_group"].tolist() + sets["class_group"].tolist() + sess["class_group"].tolist()) - {""})
     cls = st.selectbox("Class / group", ["All"] + classes)
 
@@ -149,6 +154,16 @@ def page():
         lg = get_logger()
         st.markdown("#### Google Sheets logging")
         st.write({"configured": sheets_configured(), **lg.stats, "queued_rows": lg.q.qsize()})
+        st.markdown("#### Class roster")
+        ros = read_roster()
+        if ros is None:
+            st.warning("The Roster tab could not be read — see last_error above.")
+        elif not ros:
+            st.info("Roster is empty, so anyone can log in. Add students to the 'Roster' tab of your Google Sheet "
+                    "(columns: roll_no, full_name, class_group) to allow only listed students.")
+        else:
+            st.write(f"{len(ros)} students on the roster — only they can log in.")
+            st.dataframe(ros, hide_index=True)
         st.markdown("#### Gemini AI feedback")
         cfg = ai_config()
         st.write({"enabled": cfg["enabled"], "keys": len(cfg["keys"]), "models": cfg["models"],

@@ -13,8 +13,8 @@ def new():
 
 def login(at, roll=None):
     import uuid
-    at.text_input[0].input("Test Student")
-    at.text_input[1].input(roll or "T" + uuid.uuid4().hex[:6])
+    at.text_input[1].input("Test Student")
+    at.text_input[0].input(roll or "T" + uuid.uuid4().hex[:6])
     at.text_input[2].input("BA Test")
     at.checkbox[0].check()
     at.button[0].click().run()  # form submit

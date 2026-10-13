@@ -82,7 +82,8 @@ def elapsed(aid):
 
 def sets_today():
     today = now_ist().strftime("%Y-%m-%d")
-    return sum(1 for s in st.session_state.practice_sets if s.get("date") == today and s.get("set_type") == "practice")
+    return sum(1 for s in st.session_state.practice_sets if s.get("date") == today and
+               (s.get("set_type") == "practice" or str(s.get("set_type", "")).startswith("topic")))
 
 
 def streak_days():

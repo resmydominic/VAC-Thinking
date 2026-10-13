@@ -254,3 +254,49 @@ WRITE_TEMPLATES = [
     ("logic", 1, "Claim: '{c}'", "In 4–5 sentences: Do you agree? Give one clear reason using 'because'."),
     ("assumptions", 1, "Claim: '{c}'", "In 4–5 sentences: What is one assumption hidden in this claim?"),
 ]
+
+
+# ---------------------------------------------------------------- Gen Z / early-adulthood additions
+MORE_STATEMENTS += [
+    ("This reel has 3 million views, so the advice in it must be good.", 2),
+    ("Everyone our age is addicted to their phone.", 3),
+    ("The app's terms of service are 38 pages long.", 0),
+    ("Streaks are the most fun part of any app.", 1),
+    ("People who post gym selfies are all show-offs.", 3),
+    ("My friend didn't like my story, so they must be upset with me.", 2),
+    ("The new music video is the best of the year.", 1),
+    ("The college Wi-Fi was down for 3 hours on Monday, according to the IT notice.", 0),
+    ("Gen Z never wants to work hard.", 3),
+    ("If a brand is trending, it must be ethical.", 2),
+]
+MORE_FALLACY["Appeal to popularity"] += [
+    "'Every creator is doing this skincare trend, so it must be safe for my skin.'",
+    "'The hashtag is trending, so the accusation must be true.'",
+]
+MORE_FALLACY["Attacking the person"] += [
+    "'Don't listen to her opinion on climate — she owns a phone made in a factory.'",
+    "'His point about screen time is useless; he's on his phone all day himself.'",
+]
+MORE_FALLACY["Hasty generalisation"] += [
+    "'I saw two bad reviews of that café on social media, so the café is terrible.'",
+    "'My cousin dropped out and became a successful creator, so college is useless.'",
+]
+MORE_FALLACY["False choice"] += [
+    "'Either you post about every issue, or you don't care about any of them.'",
+    "'Either delete social media completely, or accept being addicted forever.'",
+]
+MORE_CORRELATIONS += [
+    ("students who use productivity apps", "higher marks", "organised students may both use the apps and study more"),
+    ("people who post more often", "more followers", "people with more followers may feel encouraged to post more — the cause could run both ways"),
+]
+INFERENCE_SETS += [
+    ("Robin's 'last seen' shows 2 am every night this week, and Robin looked tired in class.",
+     "Robin may be sleeping late; it might be worth gently checking in.", ["Robin is chatting with a secret friend.", "Robin is lazy.", "Robin is ignoring everyone on purpose."]),
+    ("A brand's sustainability post got 50,000 likes, but its website gives no details about materials or factories.",
+     "The post is popular, but the brand's claims haven't been backed with evidence yet.", ["The brand is definitely lying.", "The brand is proven to be ethical.", "Likes prove the claims."]),
+]
+DEBATE_CLAIMS += [
+    "Influencers should label every paid promotion clearly.", "Read receipts should be off by default.",
+    "Colleges should not use face recognition for attendance.", "Streaks and infinite scroll should be optional features.",
+    "Gig workers should be treated as employees.", "Students should learn how social-media algorithms work.",
+]

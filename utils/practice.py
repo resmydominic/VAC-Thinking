@@ -523,3 +523,54 @@ def build_set(level, weak_skills, seen, set_no, use_ai=True):
     # pacing: 3 choice, 1 written, 2 choice, 1 written, 2 choice, 1 written
     chosen = mcq[:3] + [picked[0]] + mcq[3:5] + [picked[1]] + mcq[5:7] + [picked[2]]
     return chosen[:SET_SIZE]
+
+
+# ---------------------------------------------------------------- topic practice: Democracy & Digital Power
+TOPIC_LEVELS = {1: "Beginner", 3: "Advanced"}
+
+
+@st.cache_data(show_spinner=False)
+def load_topic():
+    with open(os.path.join(DATA_DIR, "topic_digital_power.json"), encoding="utf-8") as f:
+        return json.load(f)
+
+
+def build_topic_set(level, seen, seed=None):
+    """7 multiple-choice + 3 written answers at Beginner (1) or Advanced (3). Unseen first, then recycled."""
+    rnd = random.Random(seed or random.random())
+    t = load_topic()
+    mcq = [dict(i, kind="mcq", topic=True) for i in t["items"] if i["lvl"] == level]
+    wr = [dict(w, kind="write", topic=True, theme=t["glossary"][w["concept"]]["term"]) for w in t["write_prompts"] if w["lvl"] == level]
+
+    def pick(pool, n):
+        fresh = [i for i in pool if i["id"] not in seen]
+        old = [i for i in pool if i["id"] in seen]
+        rnd.shuffle(fresh)
+        rnd.shuffle(old)
+        return (fresh + old)[:n]
+
+    m = [_shuffle_item(i, rnd) for i in pick(mcq, N_MCQ)]
+    w = pick(wr, N_WRITE)
+    return m[:3] + [w[0]] + m[3:5] + [w[1]] + m[5:7] + [w[2]]
+
+
+def explain_for(item):
+    """Returns (title, body_markdown) explaining a question without forcing an answer."""
+    from .scaffolds import SKILL_PLANS
+    if item.get("topic"):
+        g = load_topic()["glossary"].get(item.get("concept"), {})
+        body = (f"**What it means:** {g.get('simple', '')}\n\n**Everyday example:** {g.get('example', '')}\n\n"
+                f"**Critique:** {g.get('critique', '')}\n\n**The other side:** {g.get('other_side', '')}")
+        if item.get("explain"):
+            body = f"{item['explain']}\n\n---\n\n" + body
+        return f"Key idea: {g.get('term', 'this concept')}", body
+    plan = SKILL_PLANS.get(item.get("skill"), {})
+    parts = []
+    if plan:
+        parts.append(f"**What this question practises:** {plan['what']}")
+        parts.append("**How to approach it:**\n" + "\n".join(f"{n}. {s}" for n, s in enumerate(plan["steps"][:3], 1)))
+    if item.get("hint"):
+        parts.append(f"**Clue:** {item['hint']}")
+    if item.get("kind") == "write":
+        parts.append("**Try this frame:** My view is… because… For example… However, someone might say… Therefore…")
+    return "Let's break it down", "\n\n".join(parts) or "Read the situation slowly and ask: what is a fact, and what is a judgement?"

@@ -15,6 +15,8 @@ Built with Python + Streamlit. Works fully **without** any API key; Gemini (free
 | 🧪 **50 Thinking Labs** | 10 per theme: Justice & Democracy · Inclusion & Empathy · Environment & Sustainability · Digital Ethics & AI · Values & Decisions. Types: Critical Thinking Engine (7 stages), Read & Reason (short essays, letters, speeches, reports, posts), classify, rank evidence, branching scenarios, budget/sustainability simulators, privacy settings, values ranking. Three levels each. |
 | 🪜 **Scaffolds** | Stage-by-stage hints, sentence starters, "how to approach this" guides, and a personal **Improvement Plan** with step-by-step routines for each weak thinking skill and for language. |
 | ✍️ **Language coach** | Scores vocabulary, sentence construction, linking ideas, elaboration and academic tone (0–4 each) with tips and word banks. |
+| 🗳️ **Democracy & Digital Power** | Topic practice at Beginner and Advanced level: democracy (Indian and other), oligarchy, plutocracy, tech oligarchy, data/digital/surveillance capitalism, digital infrastructure, transparency, the digital panopticon — in Gen Z and early-adulthood situations (streaks, creators, gig apps, read receipts, AI proctoring), always with counterarguments. Includes a glossary of key ideas. |
+| 🤔 **Explain / ⏭️ Skip** | Every practice question has *Explain this to me* and *Skip*. Skipped questions don't lower the score; the answer and explanation are shown so students still learn. |
 | ☀️ **Today's Thinking Challenge** | 3–5 minutes: initial view → justification → counterargument → final reflection → compare. |
 | 📈 **Progress & journal** | Skill radar, strongest/weakest skills, history, private reflection journal (not sent to the teacher). |
 

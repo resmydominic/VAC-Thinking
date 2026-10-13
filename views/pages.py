@@ -16,40 +16,65 @@ from utils.recommend import (skill_profile, weak_skills, strong_skills, recommen
 from utils.scaffolds import SKILL_PLANS, LANGUAGE_PLANS
 from utils.scoring import score_text
 from utils.state import go, sets_today, streak_days, log_session, draft_text
-from utils.storage import get_logger, base_row, load_student_state
+from utils.storage import (get_logger, base_row, load_student_state, read_roster, roster_match, norm_roll)
 from views.common import chips, esc, reminder, render_feedback, score_header, hero
 
 SKILL_NAMES = dict(SKILLS, language="Language & expression")
 
 
 # ---------------------------------------------------------------- login
+def log_attempt(roll, name, group, reason):
+    row = base_row({"name": name.strip(), "roll": roll.strip(), "class_group": str(group), "session_id": ""})
+    row.update({"event": "login_denied", "page": reason[:120]})
+    get_logger().log("Sessions", row)
+
+
 def login_page():
     hero("An interactive lab for critical thinking and social awareness.",
          "Question assumptions. Explore perspectives. Make informed choices.")
     c1, c2 = st.columns([3, 2])
+    roster = read_roster()
+    use_roster = bool(roster)
     with c1:
         with st.form("login"):
             st.markdown("### Student sign-in")
-            name = st.text_input("Your name", max_chars=60)
-            roll = st.text_input("Roll number / Register number", max_chars=30)
+            roll = st.text_input("Roll number (e.g. BA23 or BA123)", max_chars=30)
+            name = st.text_input("Your name (first name or full name)", max_chars=80)
             groups = as_list(get_secret("CLASS_GROUPS"))
-            group = st.selectbox("Class / group", groups) if groups else st.text_input("Class / group (e.g. BA English 2)", max_chars=40)
+            need_class = not use_roster or any(not s_["class_group"] for s_ in roster)
+            group = ""
+            if need_class:
+                group = st.selectbox("Class / group", groups) if groups else st.text_input("Class / group (e.g. BA English 2)", max_chars=40)
             code_needed = bool(get_secret("CLASS_ACCESS_CODE"))
             code = st.text_input("Class access code", type="password") if code_needed else ""
             consent = st.checkbox("I understand that my answers and scores are shared with my teacher to support my learning.")
-            ok = st.form_submit_button("Start thinking →", type="primary", width="stretch")
+            ok = st.form_submit_button("Start thinking", type="primary", width="stretch")
         if ok:
-            if not name.strip() or not roll.strip() or not str(group).strip():
-                st.error("Please fill in your name, roll number and class.")
+            official_name, official_class = name.strip().title(), str(group).strip()
+            error = None
+            if not name.strip() or not roll.strip() or (need_class and not str(group).strip()):
+                error = "Please fill in your roll number, name" + (" and class." if need_class else ".")
             elif code_needed and code.strip() != str(get_secret("CLASS_ACCESS_CODE")).strip():
-                st.error("That access code is not correct. Please check with your teacher.")
-            elif not consent:
-                st.error("Please tick the consent box to continue.")
+                error = "That access code is not correct. Please check with your teacher."
+            elif roster is None:
+                error = "The class list could not be loaded just now. Please wait a minute and try again."
+            elif use_roster:
+                match, error = roster_match(roster, roll, name, group)
+                if match:
+                    official_name = match["name"]
+                    official_class = match["class_group"] or str(group).strip()
+            if not error and not consent:
+                error = "Please tick the consent box to continue."
+            if error:
+                st.error(error)
+                if use_roster and "class list" in error:
+                    log_attempt(roll, name, group, error)
             else:
-                st.session_state.student = {"name": name.strip().title(), "roll": roll.strip().upper(),
-                                            "class_group": str(group).strip(), "session_id": uuid.uuid4().hex[:10]}
+                roll_n = norm_roll(roll)
+                st.session_state.student = {"name": official_name, "roll": roll_n,
+                                            "class_group": official_class, "session_id": uuid.uuid4().hex[:10]}
                 with st.spinner("Loading your progress…"):
-                    prev = load_student_state(roll.strip().upper(), str(group).strip())
+                    prev = load_student_state(roll_n, official_class)
                 st.session_state.history = prev["history"]
                 st.session_state.practice_sets = prev["practice_sets"]
                 st.session_state.seen = prev["seen"]
@@ -85,7 +110,7 @@ def home_page():
     c4.metric("Practice level", f"Level {lvl}" if lvl else "Not set")
     st.progress(min(done, DAILY_GOAL) / DAILY_GOAL, text="Aim for 5 practice sets a day — small steps, big growth.")
 
-    b = st.columns(3) + st.columns(2)
+    b = st.columns(3) + st.columns(3)
     if b[0].button("🏋️ Practice", type="primary", width="stretch"):
         go("practice"); st.rerun()
     if b[1].button("☀️ Challenge", width="stretch"):
@@ -94,6 +119,8 @@ def home_page():
         go("plan"); st.rerun()
     if b[3].button("📈 Progress", width="stretch"):
         go("progress"); st.rerun()
+    if b[5].button("🗳️ Democracy & digital power", width="stretch"):
+        go("topic"); st.rerun()
     if b[4].button("🎲 Surprise me", width="stretch"):
         go("activity", activity_id=surprise(st.session_state.history)["id"]); st.rerun()
 

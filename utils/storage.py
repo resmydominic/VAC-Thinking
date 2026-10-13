@@ -219,14 +219,26 @@ def read_sheet(sheet: str):
 def load_student_state(roll: str, class_group: str):
     """Rebuild a returning student's progress (from Sheets or local CSV)."""
     import pandas as pd
-    roll_k, cls_k = str(roll).strip().lower(), str(class_group).strip().lower()
+    import re as _re
+    roll_k = norm_roll(roll)
+    cls_k = _re.sub(r"[^a-z0-9]", "", str(class_group).lower())
     state = {"history": [], "practice_sets": [], "seen": set(), "level": None, "diagnostic_done": False}
 
     def mine(df):
+        """Rows for this roll number. Roll numbers are compared ignoring capitals/spaces/dashes, so data
+        saved before the roster existed (e.g. 'ba 23') is still found. If the class was typed differently
+        earlier, the student's rows are still included — earlier progress is never lost."""
         if df.empty:
             return df
-        return df[(df["roll_no"].astype(str).str.strip().str.lower() == roll_k) &
-                  (df["class_group"].astype(str).str.strip().str.lower() == cls_k)]
+        rolls = df["roll_no"].astype(str).map(norm_roll)
+        same = df[rolls == roll_k]
+        if same.empty:
+            return same
+        classes = same["class_group"].astype(str).str.lower().str.replace(r"[^a-z0-9]", "", regex=True)
+        exact = same[classes == cls_k]
+        other_classes = set(classes[classes != cls_k])
+        # if this roll number was used in exactly one other class name, treat it as the same student
+        return same if (exact.empty or len(other_classes) <= 1) else exact
 
     try:
         sets = mine(read_sheet("PracticeSets"))
@@ -270,3 +282,122 @@ def _num(v, default=0):
         return float(v)
     except Exception:
         return default
+
+
+# ---------------------------------------------------------------- class roster
+ROSTER_SHEET = "Roster"
+ROSTER_HEADERS = ["roll_no", "full_name", "class_group"]
+_ROLL_KEYS = {"roll_no", "roll", "roll number", "roll_number", "rollno", "register number", "register_no", "reg no", "reg_no"}
+_NAME_KEYS = {"full_name", "name", "full name", "student name", "student_name"}
+_CLASS_KEYS = {"class_group", "class", "group", "class / group", "batch", "section"}
+
+
+ROLL_PATTERN = r"^[A-Z]{2}[0-9]{2,3}$"   # two letters + two or three digits, e.g. BA23 or BA123
+
+
+def norm_roll(r):
+    """'ba 23', 'Ba-023 ', 'B A 2 3' -> 'BA23' / 'BA023' (capitals, spaces, dashes and dots ignored)."""
+    import re
+    return re.sub(r"[^A-Za-z0-9]", "", str(r)).upper()
+
+
+def roll_looks_valid(r):
+    import re
+    return bool(re.match(ROLL_PATTERN, norm_roll(r)))
+
+
+def _name_words(n):
+    import re
+    return [w for w in re.split(r"[^a-z]+", str(n).lower()) if w]
+
+
+def name_matches(typed, official):
+    """Forgiving name check.
+    Accepts first name only, full name, any word order, with or without initials, any capitals,
+    and any spacing — even 'a n u  t h o m a s'. The typed letters must be made of whole words
+    from the official name (each used once), including at least one real word (not just initials)."""
+    import re
+    t = re.sub(r"[^a-z]", "", str(typed).lower())
+    words = _name_words(official)[:10]
+    if not t or not words:
+        return False
+    n = len(words)
+    seen = set()
+    stack = [(0, 0, False)]          # (position in typed, used-words bitmask, used a real word?)
+    while stack:
+        pos, mask, real = stack.pop()
+        if pos == len(t):
+            if real:
+                return True
+            continue
+        if (pos, mask) in seen:
+            continue
+        seen.add((pos, mask))
+        for i, w in enumerate(words):
+            if not mask & (1 << i) and t.startswith(w, pos):
+                stack.append((pos + len(w), mask | (1 << i), real or len(w) > 1))
+    return False
+
+
+def norm_name(n):
+    return " ".join(sorted(w for w in _name_words(n) if len(w) > 1))
+
+
+def _pick(row, keys):
+    for k, v in row.items():
+        if str(k).strip().lower() in keys:
+            return str(v).strip()
+    return ""
+
+
+@st.cache_data(ttl=60, show_spinner=False)
+def read_roster():
+    """Students allowed to log in. Empty list = roster not in use (anyone can log in).
+
+    Source: a 'Roster' tab in the Google Sheet (created automatically with headers),
+    or a local roster.csv next to app.py when testing on your computer.
+    """
+    rows = []
+    if sheets_configured():
+        try:
+            lg = get_logger()
+            if not lg.stats["connected"]:
+                lg._connect()
+            import gspread
+            try:
+                ws = lg.book.worksheet(ROSTER_SHEET)
+            except gspread.WorksheetNotFound:
+                ws = lg.book.add_worksheet(title=ROSTER_SHEET, rows=500, cols=3)
+                ws.append_row(ROSTER_HEADERS, value_input_option="RAW")
+            rows = ws.get_all_records()
+        except Exception as e:
+            get_logger().stats["last_error"] = f"Roster: {str(e)[:150]}"
+            return None  # roster could not be read
+    else:
+        path = os.path.join(BASE_DIR, "roster.csv")
+        if os.path.exists(path):
+            with open(path, encoding="utf-8-sig") as f:
+                rows = list(csv.DictReader(f))
+    out = []
+    for r in rows:
+        roll, name = _pick(r, _ROLL_KEYS), _pick(r, _NAME_KEYS)
+        if roll and name:
+            out.append({"roll": norm_roll(roll), "name": " ".join(name.split()), "class_group": _pick(r, _CLASS_KEYS)})
+    return out
+
+
+def roster_match(roster, roll, name, class_choice=""):
+    """Returns (student_dict, error_message)."""
+    r_roll = norm_roll(roll)
+    same_roll = [s for s in roster if s["roll"] == r_roll]
+    if not same_roll:
+        hint = "" if roll_looks_valid(roll) else " It should be two letters followed by two or three numbers, e.g. BA23 or BA123."
+        return None, (f"Roll number {roll.strip()} is not on the class list.{hint} "
+                      "Check it carefully, or ask your teacher to add you.")
+    named = [s for s in same_roll if name_matches(name, s["name"])]
+    if not named:
+        return None, ("The name does not match the class list for this roll number. "
+                      "Type your first name or full name as in college records.")
+    if len(named) > 1 and class_choice:
+        named = [s for s in named if s["class_group"].lower() == str(class_choice).strip().lower()] or named
+    return named[0], None

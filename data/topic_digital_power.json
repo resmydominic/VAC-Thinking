@@ -1,0 +1,1381 @@
+{
+ "title": "Democracy & Digital Power",
+ "intro": "Democracy, oligarchy and plutocracy meet streaks, algorithms, gig apps and the digital panopticon. Short scenarios from student and Gen Z life — think critically, not cynically.",
+ "levels": {
+  "1": "Beginner",
+  "3": "Advanced"
+ },
+ "glossary": {
+  "democracy": {
+   "term": "Democracy",
+   "simple": "Rule by the people. Citizens choose leaders, can question and criticise them, and can change them peacefully. It needs free and fair elections, protected rights, independent courts and free information.",
+   "example": "Your class elects a rep — and can still question them every week, not only on election day.",
+   "critique": "Voting once every few years can feel like the only power people have. Money, misinformation and low participation can weaken it.",
+   "other_side": "With all its flaws, democracy allows peaceful change and protects the right to disagree."
+  },
+  "indian_democracy": {
+   "term": "Indian democracy",
+   "simple": "India is a constitutional, parliamentary democracy. Every citizen aged 18+ can vote (universal adult franchise). Power is shared between the Union, the States and local bodies such as panchayats and municipalities. Courts protect rights like free speech and equality, and the Right to Information (RTI) Act, 2005 lets citizens ask public offices for information.",
+   "example": "A first-time voter checking their name on the voter list; a student using RTI to ask how a government college spent a fee.",
+   "critique": "Commonly discussed challenges include costly elections, unequal access to information and online misinformation.",
+   "other_side": "It is one of the largest and most diverse democracies, with regular elections and strong local participation."
+  },
+  "direct_representative": {
+   "term": "Direct vs representative democracy",
+   "simple": "In direct democracy, people vote on decisions themselves. In representative democracy, people elect others to decide for them and hold them accountable.",
+   "example": "A fan server voting on every rule (direct) vs electing moderators who make the rules (representative).",
+   "critique": "Direct democracy can be slow and dominated by the loudest; representatives can drift away from voters.",
+   "other_side": "Many systems mix both — elections plus public consultations, referendums or gram sabhas."
+  },
+  "oligarchy": {
+   "term": "Oligarchy",
+   "simple": "Rule by a small group — based on wealth, family, position or connections — even if elections exist on paper.",
+   "example": "A club where the same five seniors and their friends decide everything every year.",
+   "critique": "Sociologist Robert Michels argued for an 'iron law of oligarchy': even democratic organisations tend to end up run by a few.",
+   "other_side": "Small groups can decide quickly; the real question is whether they stay accountable and open to newcomers."
+  },
+  "plutocracy": {
+   "term": "Plutocracy",
+   "simple": "Rule by the wealthy — when money buys more say in decisions, through funding, sponsorship, lobbying or owning media.",
+   "example": "A fest sponsor deciding which artist performs and which stalls are allowed because 'they pay the most'.",
+   "critique": "Equal votes mean less if unequal money decides which voices are heard.",
+   "other_side": "Wealthy people and firms also fund public goods and jobs; the concern is unequal influence, not wealth itself."
+  },
+  "tech_oligarchy": {
+   "term": "Tech oligarchy",
+   "simple": "When a few technology companies and their owners control the platforms people depend on — search, social media, app stores, cloud, payments — giving them power over what we see, buy and say.",
+   "example": "One algorithm change, and a creator's income collapses overnight with no one to appeal to.",
+   "critique": "Rules that affect billions are written by companies no one elected.",
+   "other_side": "These firms built useful, often free services; competition, new startups and regulation can check their power."
+  },
+  "data_capitalism": {
+   "term": "Data capitalism",
+   "simple": "An economy where personal data is collected and analysed to make profit — data becomes a raw material, like oil.",
+   "example": "Your steps, food orders, playlists and late-night searches become data used to target ads.",
+   "critique": "Users create the value but rarely share in the profit; consent is often vague.",
+   "other_side": "Data also improves services, detects fraud and funds 'free' apps."
+  },
+  "digital_capitalism": {
+   "term": "Digital capitalism",
+   "simple": "The wider economy built around digital platforms — app stores, gig work, creator economies, online marketplaces — where platforms take a cut of every exchange and set the rules.",
+   "example": "A delivery app taking commission from both restaurants and riders; a creator app taking a share of tips.",
+   "critique": "Workers can be managed by algorithms without job security; everyday life and identity get turned into content to sell.",
+   "other_side": "Platforms offer flexible income and low entry barriers for small sellers and creators."
+  },
+  "surveillance_capitalism": {
+   "term": "Surveillance capitalism",
+   "simple": "A term popularised by scholar Shoshana Zuboff: a business model that watches user behaviour to predict it — and nudge it — and sells those predictions, mainly to advertisers.",
+   "example": "Feeds and 'only 2 left!' banners timed to moments when your data suggests you are most likely to click or buy.",
+   "critique": "It does not just predict behaviour; it shapes it, and opting out is hard.",
+   "other_side": "Some see targeted ads as a fair trade for free services, and argue the power to manipulate is sometimes overstated."
+  },
+  "digital_infrastructure": {
+   "term": "Digital infrastructure",
+   "simple": "The basic 'roads and pipes' of digital life: internet connectivity, cloud servers, payment systems, digital ID, maps, app stores. Digital public infrastructure (DPI) is the shared, publicly provided kind — for example India's UPI payment system or DigiLocker.",
+   "example": "Paying for chai by QR code, downloading a marksheet from a digital locker.",
+   "critique": "Who owns and controls it matters: outages, exclusion of people without phones or connectivity, and data protection are concerns.",
+   "other_side": "Open public infrastructure can lower costs and reduce dependence on a few private companies."
+  },
+  "transparency": {
+   "term": "Transparency",
+   "simple": "Openness about how decisions are made, what data is collected and how money is spent — so people can check and question power.",
+   "example": "An app explaining why it showed you a post; a college publishing its budget.",
+   "critique": "Transparency without understanding is useless — think 40-page terms nobody reads. Too much exposure of individuals can harm privacy.",
+   "other_side": "Transparency should apply most strongly to the powerful, not to ordinary people."
+  },
+  "panopticon": {
+   "term": "Panopticon / digital panopticon",
+   "simple": "A prison design by philosopher Jeremy Bentham: one central tower from which a guard could watch every cell, but prisoners could never tell when they were watched — so they behaved as if always watched. Thinker Michel Foucault used it to explain how surveillance makes people control themselves.",
+   "example": "Read receipts, 'last seen', live location, AI-proctored exams, face-recognition attendance — you change how you act because you might be seen.",
+   "critique": "It can create a 'chilling effect': people stop experimenting, joking or disagreeing.",
+   "other_side": "Some monitoring improves safety or fairness; the questions are proportion, consent and who watches the watchers."
+  },
+  "attention_economy": {
+   "term": "Attention economy",
+   "simple": "Your attention is the product being sold. Apps compete for screen time with infinite scroll, autoplay, streaks and notifications.",
+   "example": "Keeping a streak alive at 11:58 pm; 'just one more reel'.",
+   "critique": "Design can exploit habits and emotions, especially at night or under stress.",
+   "other_side": "Users still have choices, screen-time tools exist, and entertainment and connection have real value."
+  },
+  "algorithmic_power": {
+   "term": "Algorithmic power",
+   "simple": "Algorithms decide who sees what and who gets what — feeds, job ads, loans, delivery orders, even welfare benefits.",
+   "example": "A rider's rating deciding how many orders they get; a creator fearing a 'shadowban'.",
+   "critique": "Decisions become hard to see, question or appeal.",
+   "other_side": "Algorithms can be faster and more consistent than humans — if they are tested, explained and open to appeal."
+  }
+ },
+ "items": [
+  {
+   "id": "DB01",
+   "lvl": 1,
+   "skill": "logic",
+   "concept": "democracy",
+   "theme": "Democracy",
+   "text": "Your class elects a class rep. After winning, the rep stops sharing updates and says, 'You voted me in, so I decide everything till next year.'",
+   "q": "Which democratic idea is the rep ignoring?",
+   "opts": [
+    "Accountability — leaders must keep answering to the people between elections",
+    "Majority rule — the rep won the most votes",
+    "Secret ballot — votes must be private",
+    "Term limits — reps can serve only one year"
+   ],
+   "ans": 0,
+   "why": [
+    "Correct — democracy is not only voting; it also means leaders can be questioned and checked all the time.",
+    "The rep did win, but winning doesn't remove the duty to explain decisions.",
+    "The vote is over; secrecy of the ballot is not the issue here.",
+    "The length of the term isn't the problem — behaviour during the term is."
+   ],
+   "hint": "What can voters do between elections?",
+   "explain": "Democracy has two parts: choosing leaders and holding them accountable. Accountability means leaders explain decisions, answer questions and can be challenged before the next vote."
+  },
+  {
+   "id": "DB02",
+   "lvl": 1,
+   "skill": "counterargument",
+   "concept": "indian_democracy",
+   "theme": "Indian democracy",
+   "text": "Ari turns 18 this year and says, 'My one vote won't change anything, so I won't even register.'",
+   "q": "Which is the most thoughtful response?",
+   "opts": [
+    "Ari is right — single votes never matter",
+    "Each vote is small, but results come from many individual choices — and registering keeps Ari's options open",
+    "Ari must vote for whoever their family supports",
+    "Only people over 25 should vote anyway"
+   ],
+   "ans": 1,
+   "why": [
+    "Close results do happen, and youth turnout shapes whose concerns parties pay attention to.",
+    "Correct — it respects Ari's choice while explaining why participation matters.",
+    "In India the vote is personal and secret; no one can decide it for Ari.",
+    "India gives the vote to every citizen aged 18 and above."
+   ],
+   "hint": "Respect Ari's feeling, then add what it misses.",
+   "explain": "India follows universal adult franchise: every citizen aged 18+ can vote, whatever their wealth, gender, caste, religion or education. When young people don't vote, their issues can get less attention."
+  },
+  {
+   "id": "DB03",
+   "lvl": 1,
+   "skill": "assumptions",
+   "concept": "oligarchy",
+   "theme": "Oligarchy",
+   "text": "In a college club of 200 members, the same five seniors pick the events, the budget and next year's leaders — every year. Elections exist, but only their friends ever get nominated.",
+   "q": "What best describes this club?",
+   "opts": [
+    "A direct democracy",
+    "An oligarchy — rule by a small group, even though elections exist on paper",
+    "An anarchy — there are no rules",
+    "A monarchy — one person rules"
+   ],
+   "ans": 1,
+   "why": [
+    "In a direct democracy all 200 members would decide together.",
+    "Correct — power is held by a small closed group despite the appearance of elections.",
+    "There are rules; they are just controlled by a few.",
+    "Power is with five people, not one."
+   ],
+   "hint": "How many people actually hold power?",
+   "explain": "Oligarchy means rule by a few. Elections alone don't make something democratic if only a small circle can really compete or decide."
+  },
+  {
+   "id": "DB04",
+   "lvl": 1,
+   "skill": "ethics",
+   "concept": "plutocracy",
+   "theme": "Plutocracy",
+   "text": "The fest's biggest sponsor, an energy-drink brand, insists on choosing the headline artist and banning stalls from rival brands. The committee agrees because 'they pay the most'.",
+   "q": "Which idea does this best illustrate?",
+   "opts": [
+    "Plutocracy — those with the most money get the most say",
+    "Transparency",
+    "Universal adult franchise",
+    "Direct democracy"
+   ],
+   "ans": 0,
+   "why": [
+    "Correct — money is turning into decision-making power over a shared student event.",
+    "Nothing here is about openness; the deal may not even be public.",
+    "That is about every adult having a vote.",
+    "Students are not voting on the decision at all."
+   ],
+   "hint": "Who is deciding, and why?",
+   "explain": "Plutocracy is rule by the wealthy. The worry is not that sponsors exist, but that paying more buys more control over decisions that affect everyone."
+  },
+  {
+   "id": "DB05",
+   "lvl": 1,
+   "skill": "evidence",
+   "concept": "data_capitalism",
+   "theme": "Data capitalism",
+   "text": "Sam uses FitTrack, a free fitness app. It never charges users, yet the company is valued at hundreds of crores.",
+   "q": "What is most likely FitTrack's main source of value?",
+   "opts": [
+    "Users' data — habits, locations, health patterns — used for ads or shared with partners",
+    "Donations from users",
+    "Government money for every step walked",
+    "It plans to lose money forever"
+   ],
+   "ans": 0,
+   "why": [
+    "Correct — when a service is free, data and attention are often what is being sold.",
+    "Few apps survive on donations at this scale.",
+    "No such scheme exists in the scenario.",
+    "Companies are valued for expected future income."
+   ],
+   "hint": "If you're not paying with money, what are you paying with?",
+   "explain": "Data capitalism: personal data is the raw material. 'Free' apps often earn from targeted advertising, data partnerships or selling insights."
+  },
+  {
+   "id": "DB06",
+   "lvl": 1,
+   "skill": "logic",
+   "concept": "surveillance_capitalism",
+   "theme": "Surveillance capitalism",
+   "text": "Jo talks with friends about buying headphones. Later, Jo's feed is full of headphone ads. Jo says, 'My phone is secretly recording me!'",
+   "q": "What is the most careful conclusion?",
+   "opts": [
+    "The microphone was definitely recording",
+    "There may be many explanations — searches, location, friends' activity, purchase data — tracking is wider than we notice",
+    "Ads are completely random",
+    "Nothing is ever tracked online"
+   ],
+   "ans": 1,
+   "why": [
+    "Possible but unproven; jumping to one cause skips the evidence.",
+    "Correct — many data trails can predict interests without any recording.",
+    "Ads are usually targeted, not random.",
+    "Online activity is widely tracked."
+   ],
+   "hint": "How many different data trails could point to 'headphones'?",
+   "explain": "Surveillance capitalism works by combining many small signals — clicks, location, contacts, purchases — to predict what you'll want, often accurately enough to feel like 'listening'."
+  },
+  {
+   "id": "DB07",
+   "lvl": 1,
+   "skill": "problem",
+   "concept": "attention_economy",
+   "theme": "Attention economy",
+   "text": "ScrollUp, a short-video app, has infinite scroll, autoplay, and a streak badge that disappears if you miss a day.",
+   "q": "Why might an app use these features?",
+   "opts": [
+    "To maximise time spent, because users' attention is what the app sells to advertisers",
+    "To help users sleep earlier",
+    "Because the law requires streaks",
+    "To reduce the app's income"
+   ],
+   "ans": 0,
+   "why": [
+    "Correct — more minutes means more ads shown and more data collected.",
+    "These features usually keep people up longer.",
+    "No such law exists.",
+    "The opposite — they increase income."
+   ],
+   "hint": "Who earns when you keep scrolling?",
+   "explain": "Attention economy: platforms compete for your time. Streaks and autoplay use habits and fear of missing out to keep you engaged."
+  },
+  {
+   "id": "DB08",
+   "lvl": 1,
+   "skill": "logic",
+   "concept": "panopticon",
+   "theme": "Panopticon / digital panopticon",
+   "text": "Bentham's 'panopticon' prison had a central watchtower. Prisoners could not see whether a guard was inside, so they behaved as if they were always watched.",
+   "q": "Which campus example works most like a panopticon?",
+   "opts": [
+    "A notice board with exam dates",
+    "Face-recognition cameras in every corridor, where students never know when footage is being checked",
+    "A suggestion box",
+    "A library with open shelves"
+   ],
+   "ans": 1,
+   "why": [
+    "A notice board gives information; it doesn't watch anyone.",
+    "Correct — possible watching at any time leads people to control their own behaviour.",
+    "A suggestion box collects voluntary input.",
+    "Open shelves are about access, not observation."
+   ],
+   "hint": "Where can you be seen without knowing when?",
+   "explain": "The panopticon's power comes from uncertainty: you might be watched, so you watch yourself. Digital tools can create the same effect at a much larger scale."
+  },
+  {
+   "id": "DB09",
+   "lvl": 1,
+   "skill": "ethics",
+   "concept": "transparency",
+   "theme": "Transparency",
+   "text": "QuickBite, a food app, shows a 'platform fee' and 'small cart fee' only on the final payment screen.",
+   "q": "What would make this more transparent?",
+   "opts": [
+    "Showing all fees clearly from the start, with a simple explanation of each",
+    "Hiding the fees inside food prices",
+    "Removing the menu",
+    "Adding more ads"
+   ],
+   "ans": 0,
+   "why": [
+    "Correct — transparency means people can see costs before they decide.",
+    "That hides costs even more.",
+    "That doesn't explain anything.",
+    "Ads don't add openness."
+   ],
+   "hint": "When do you need to know the real price?",
+   "explain": "Transparency is about information arriving in time and in a form people can understand, so they can make real choices."
+  },
+  {
+   "id": "DB10",
+   "lvl": 1,
+   "skill": "problem",
+   "concept": "digital_infrastructure",
+   "theme": "Digital infrastructure",
+   "text": "In ten minutes, Robin pays for chai by QR code, downloads a marksheet from a government digital locker and books a bus ticket online.",
+   "q": "What do these services have in common?",
+   "opts": [
+    "They run on digital infrastructure — shared systems for payments, ID and connectivity that many services build on",
+    "They are all social media",
+    "They only work offline",
+    "They are all entertainment"
+   ],
+   "ans": 0,
+   "why": [
+    "Correct — like roads and electricity, these are systems other services depend on.",
+    "None of them is social media.",
+    "They all need connectivity.",
+    "They are everyday essentials, not entertainment."
+   ],
+   "hint": "What are the 'roads and pipes' underneath these apps?",
+   "explain": "Digital infrastructure is the base layer of digital life. Who builds, owns and governs it shapes access, cost and power."
+  },
+  {
+   "id": "DB11",
+   "lvl": 1,
+   "skill": "perspectives",
+   "concept": "tech_oligarchy",
+   "theme": "Tech oligarchy",
+   "text": "A creator earns most of their income on one platform. Overnight, the platform changes its algorithm and their views drop by 80%. There is no one to appeal to.",
+   "q": "What does this situation show?",
+   "opts": [
+    "A few platforms can hold great power over people's livelihoods, with little accountability",
+    "The creator must be lazy",
+    "Algorithms never change",
+    "Creators control the platforms"
+   ],
+   "ans": 0,
+   "why": [
+    "Correct — the platform sets the rules, changes them alone, and offers no appeal.",
+    "Nothing suggests the creator changed; the platform did.",
+    "The scenario shows the opposite.",
+    "The creator had no say at all."
+   ],
+   "hint": "Who made the decision, and could the creator question it?",
+   "explain": "Tech oligarchy describes a few firms controlling platforms many people depend on. The concern is power without accountability."
+  },
+  {
+   "id": "DB12",
+   "lvl": 1,
+   "skill": "ethics",
+   "concept": "transparency",
+   "theme": "Transparency",
+   "text": "Before using VibeChat you must tick 'I agree' to 38 pages of terms. Nobody in Kiran's friend group read them.",
+   "q": "What is the main problem with this kind of consent?",
+   "opts": [
+    "It is not truly informed — people agree without understanding what they give up",
+    "38 pages is too short",
+    "Consent is never needed",
+    "Reading terms is illegal"
+   ],
+   "ans": 0,
+   "why": [
+    "Correct — a tick box is not the same as real understanding.",
+    "Length is part of the problem, not a solution.",
+    "Data laws and ethics both require consent.",
+    "Of course not — they just aren't designed to be read."
+   ],
+   "hint": "Did anyone really know what they agreed to?",
+   "explain": "Informed consent needs clear, short information and a real choice. Long terms nobody reads make consent mostly a formality."
+  },
+  {
+   "id": "DB13",
+   "lvl": 1,
+   "skill": "problem",
+   "concept": "indian_democracy",
+   "theme": "Indian democracy",
+   "text": "Ash wants to know how a government college spent last year's 'infrastructure fee'.",
+   "q": "Which tool designed for this is available to Indian citizens?",
+   "opts": [
+    "A request under the Right to Information (RTI) Act",
+    "Posting an angry meme",
+    "Guessing from the paint on the walls",
+    "Asking an influencer"
+   ],
+   "ans": 0,
+   "why": [
+    "Correct — RTI lets citizens request information from public authorities, which must reply within a set time (usually 30 days).",
+    "A meme may get attention but not official information.",
+    "Guessing isn't evidence.",
+    "An influencer has no access to the records."
+   ],
+   "hint": "Which tool gives a legal right to information?",
+   "explain": "The RTI Act, 2005 is a transparency tool: citizens can ask public offices for records and reasons, which helps hold power accountable."
+  },
+  {
+   "id": "DB14",
+   "lvl": 1,
+   "skill": "perspectives",
+   "concept": "indian_democracy",
+   "theme": "Indian democracy",
+   "text": "Villages and towns in India elect panchayats and municipal councils to decide local matters like roads, drains, water and playgrounds.",
+   "q": "Why does local democracy matter for young people?",
+   "opts": [
+    "Decisions about streetlights, buses, waste and sports grounds affect daily life and are easier to influence locally",
+    "Local bodies have no powers",
+    "Only national elections affect daily life",
+    "Adults under 25 cannot attend local meetings"
+   ],
+   "ans": 0,
+   "why": [
+    "Correct — local issues are close to daily life, and local meetings are easier to reach.",
+    "They have real powers over many local services.",
+    "Many daily services are local.",
+    "Registered voters can take part in gram sabha or ward meetings."
+   ],
+   "hint": "Which decisions do you notice every day?",
+   "explain": "India's 73rd and 74th Constitutional Amendments (1992) strengthened panchayats and municipalities. Local democracy is often where citizens can be heard most directly."
+  },
+  {
+   "id": "DB15",
+   "lvl": 1,
+   "skill": "evidence",
+   "concept": "digital_capitalism",
+   "theme": "Digital capitalism",
+   "text": "A 'finfluencer' with 2 million followers urges viewers to buy a new crypto token. Later it emerges they were paid by the token's creators and didn't say so.",
+   "q": "What is the main problem?",
+   "opts": [
+    "Undisclosed paid promotion — a hidden conflict of interest",
+    "The influencer has too many followers",
+    "Watching videos is wrong",
+    "The token's name was boring"
+   ],
+   "ans": 0,
+   "why": [
+    "Correct — viewers couldn't judge the advice because the payment was hidden.",
+    "Follower count isn't the issue; honesty is.",
+    "Watching is fine; checking sources is the key.",
+    "Irrelevant."
+   ],
+   "hint": "What did viewers not know?",
+   "explain": "In digital capitalism, attention is monetised through sponsorships. Disclosure ('#ad', 'paid partnership') lets audiences judge advice fairly."
+  },
+  {
+   "id": "DB16",
+   "lvl": 1,
+   "skill": "ethics",
+   "concept": "algorithmic_power",
+   "theme": "Algorithmic power",
+   "text": "GigGo, a delivery app, rates riders. If a rider's rating falls below 4.2, they get fewer orders. Riders don't know exactly how the rating is calculated.",
+   "q": "What is the biggest fairness concern?",
+   "opts": [
+    "Riders' income depends on a system they cannot see, question or appeal",
+    "Ratings use numbers",
+    "Riders use bikes",
+    "Customers like fast delivery"
+   ],
+   "ans": 0,
+   "why": [
+    "Correct — hidden rules plus no appeal means no fair hearing.",
+    "Numbers aren't unfair in themselves.",
+    "Irrelevant to fairness.",
+    "True, but not the fairness problem."
+   ],
+   "hint": "Can a rider find out why their rating dropped?",
+   "explain": "Algorithmic power: when an algorithm acts like a boss, fairness requires explanation, consistency and a way to challenge mistakes."
+  },
+  {
+   "id": "DB17",
+   "lvl": 1,
+   "skill": "reflection",
+   "concept": "panopticon",
+   "theme": "Panopticon / digital panopticon",
+   "text": "Since the class group shows who has 'seen' each message, Dev notices people reply instantly — even at midnight — worried about looking rude.",
+   "q": "Which idea explains this change in behaviour?",
+   "opts": [
+    "The panopticon effect — knowing you might be watched makes you control your own behaviour",
+    "Plutocracy",
+    "Universal adult franchise",
+    "Direct democracy"
+   ],
+   "ans": 0,
+   "why": [
+    "Correct — visibility alone changes behaviour, even without punishment.",
+    "Money and power aren't involved here.",
+    "That's about voting rights.",
+    "That's about voting on decisions."
+   ],
+   "hint": "What feature makes people feel watched?",
+   "explain": "Small design choices like read receipts create a mini-panopticon: people self-monitor because others can see."
+  },
+  {
+   "id": "DB18",
+   "lvl": 1,
+   "skill": "evidence",
+   "concept": "democracy",
+   "theme": "Democracy",
+   "text": "A week before the college union election, a very realistic video appears showing a candidate saying something offensive. The candidate says it's fake.",
+   "q": "What should a responsible voter do first?",
+   "opts": [
+    "Share it widely — people deserve to know",
+    "Check the source and look for verification before believing or sharing it",
+    "Vote against the candidate immediately",
+    "Stop voting in any election"
+   ],
+   "ans": 1,
+   "why": [
+    "Sharing unverified video can spread a deepfake and damage a fair election.",
+    "Correct — verification protects both truth and fair elections.",
+    "Acting on unverified content is risky.",
+    "Giving up voting hands power to others."
+   ],
+   "hint": "Could this video be AI-generated?",
+   "explain": "Democracy depends on reliable information. Deepfakes can be used to mislead voters, so verify before you believe or share."
+  },
+  {
+   "id": "DB19",
+   "lvl": 1,
+   "skill": "perspectives",
+   "concept": "algorithmic_power",
+   "theme": "Algorithmic power",
+   "text": "Noel follows only accounts that agree with their opinions. Noel's feed now makes it seem like 'everyone' thinks the same way.",
+   "q": "What risk does this create for democratic discussion?",
+   "opts": [
+    "An echo chamber — Noel may underestimate other views and find disagreement harder to understand",
+    "Noel will see too many different views",
+    "None — feeds show the whole world",
+    "Noel's phone will slow down"
+   ],
+   "ans": 0,
+   "why": [
+    "Correct — democracy needs people who can understand views they disagree with.",
+    "The opposite is happening.",
+    "Feeds are filtered by choices and algorithms.",
+    "Irrelevant."
+   ],
+   "hint": "Who is missing from Noel's feed?",
+   "explain": "Algorithms show more of what we engage with. That can narrow our view of public opinion and make compromise harder."
+  },
+  {
+   "id": "DB20",
+   "lvl": 1,
+   "skill": "assumptions",
+   "concept": "direct_representative",
+   "theme": "Direct vs representative democracy",
+   "text": "Ancient Athens is often called the birthplace of democracy: citizens voted directly on laws. But women, enslaved people and foreigners could not vote.",
+   "q": "What does this teach us about the word 'democracy'?",
+   "opts": [
+    "Who counts as 'the people' matters — a 'democracy' can still exclude many",
+    "Athens had universal adult franchise",
+    "Direct democracy is always perfect",
+    "Ancient history has no lessons today"
+   ],
+   "ans": 0,
+   "why": [
+    "Correct — always ask who is included and who is left out.",
+    "Most adults in Athens could not vote.",
+    "Athens shows its limits.",
+    "It shows how definitions of 'the people' change."
+   ],
+   "hint": "Who could not vote?",
+   "explain": "Democracy has expanded over time. A key critical question is always: whose voice counts?"
+  },
+  {
+   "id": "DB21",
+   "lvl": 1,
+   "skill": "ethics",
+   "concept": "transparency",
+   "theme": "Transparency",
+   "text": "A friend-finder feature shares your live location with friends by default. You can switch it off, but the setting is hidden three menus deep.",
+   "q": "Which design respects users' choice more?",
+   "opts": [
+    "Location sharing off by default, with a clear option to turn it on",
+    "Location always on with no option",
+    "Sharing location with everyone, not just friends",
+    "Removing the map entirely"
+   ],
+   "ans": 0,
+   "why": [
+    "Correct — privacy by default puts the choice in the user's hands.",
+    "That removes choice completely.",
+    "That increases risk.",
+    "Too extreme — the feature can be useful when chosen."
+   ],
+   "hint": "Who should decide whether your location is shared?",
+   "explain": "Defaults are powerful: most people never change them. Privacy-respecting design makes the safest option the default and explains the choice clearly."
+  },
+  {
+   "id": "DA01",
+   "lvl": 3,
+   "skill": "problem",
+   "concept": "oligarchy",
+   "theme": "Oligarchy",
+   "text": "Sociologist Robert Michels argued that even democratic organisations drift toward control by a small leadership — the 'iron law of oligarchy'. A student union starts with open meetings, but within three years a small core team holds all the passwords, contacts and sponsor deals.",
+   "q": "Which reform would most directly challenge this drift?",
+   "opts": [
+    "Rotating roles, shared access to accounts and records, and term limits for core positions",
+    "Giving the core team bigger titles",
+    "Holding fewer meetings to save time",
+    "Letting the biggest sponsor choose leaders"
+   ],
+   "ans": 0,
+   "why": [
+    "Correct — it spreads the resources (access, knowledge) that let a few hold power.",
+    "Titles increase concentration.",
+    "Fewer meetings mean less oversight.",
+    "That adds plutocracy to oligarchy."
+   ],
+   "hint": "What resources does the core team control?",
+   "explain": "Oligarchy grows through control of information, money and networks. Reforms work when they redistribute those resources, not just change names."
+  },
+  {
+   "id": "DA02",
+   "lvl": 3,
+   "skill": "evidence",
+   "concept": "tech_oligarchy",
+   "theme": "Tech oligarchy",
+   "text": "Critics say a few firms form a 'tech oligarchy' because they control app stores, cloud services and ad markets. Supporters reply that these firms face competition and that 'users can switch anytime'.",
+   "q": "Which evidence would MOST directly test the claim that 'users can switch anytime'?",
+   "opts": [
+    "How easily users can move contacts, photos, purchases and followers to a rival service",
+    "How many ads the firms show",
+    "The founders' net worth",
+    "How recognisable their logos are"
+   ],
+   "ans": 0,
+   "why": [
+    "Correct — switching costs and data portability show whether leaving is realistic.",
+    "Ad volume doesn't test switching.",
+    "Wealth doesn't measure user freedom.",
+    "Brand recognition isn't switching cost."
+   ],
+   "hint": "What stops people from leaving a platform?",
+   "explain": "Network effects and lock-in can make 'free choice' theoretical. Data portability and interoperability are tests of real competition."
+  },
+  {
+   "id": "DA03",
+   "lvl": 3,
+   "skill": "logic",
+   "concept": "surveillance_capitalism",
+   "theme": "Surveillance capitalism",
+   "text": "Scholar Shoshana Zuboff describes 'surveillance capitalism' as collecting behavioural data not only to predict what users will do, but to nudge what they do.",
+   "q": "Which example best fits the 'nudging' part?",
+   "opts": [
+    "A shopping app shows 'Only 2 left! 14 people viewing' at the time your data suggests you're most impulsive",
+    "An app storing your password securely",
+    "A library catalogue sorted alphabetically",
+    "A weather app showing today's temperature"
+   ],
+   "ans": 0,
+   "why": [
+    "Correct — the timing and message are designed to change behaviour, not just predict it.",
+    "Security isn't nudging.",
+    "Neutral organisation, no behavioural targeting.",
+    "Information, not behavioural modification."
+   ],
+   "hint": "Which option is trying to change what you do?",
+   "explain": "Prediction becomes power when it's used to shape choices. Critics see this as a threat to autonomy; defenders call it personalisation."
+  },
+  {
+   "id": "DA04",
+   "lvl": 3,
+   "skill": "counterargument",
+   "concept": "digital_infrastructure",
+   "theme": "Digital infrastructure",
+   "text": "India built shared digital payment infrastructure (UPI) that many private apps run on. Some argue this prevents a few companies from controlling payments. Others worry about centralised data and system outages.",
+   "q": "Which statement is the most balanced evaluation?",
+   "opts": [
+    "Public infrastructure can increase competition and access, but needs strong data protection, accountability and backup systems",
+    "Public infrastructure is always perfect",
+    "Only private companies should run payments",
+    "Digital payments should be banned"
+   ],
+   "ans": 0,
+   "why": [
+    "Correct — it weighs benefits and risks and names safeguards.",
+    "No system is risk-free.",
+    "This ignores the competition benefits described.",
+    "An extreme reaction to manageable risks."
+   ],
+   "hint": "Name one benefit and one risk before choosing.",
+   "explain": "Digital public infrastructure raises a key question: who governs the shared rails of the economy, and with what safeguards?"
+  },
+  {
+   "id": "DA05",
+   "lvl": 3,
+   "skill": "assumptions",
+   "concept": "transparency",
+   "theme": "Transparency",
+   "text": "After criticism, ScrollUp publishes a 120-page 'algorithm transparency report' full of technical terms. Few users read it, and nothing about their feeds changes.",
+   "q": "What does this best illustrate?",
+   "opts": [
+    "Transparency without understanding or the power to act can be mostly symbolic",
+    "The report proves the algorithm is fair",
+    "Reports should be even longer",
+    "Transparency is always harmful"
+   ],
+   "ans": 0,
+   "why": [
+    "Correct — information matters when people can understand it and act on it.",
+    "Publishing a report proves nothing by itself.",
+    "Length isn't accountability.",
+    "Over-correction; good transparency is valuable."
+   ],
+   "hint": "What can users actually do with this report?",
+   "explain": "Critics call this 'transparency theatre'. Meaningful transparency is understandable, targeted and linked to choices or accountability."
+  },
+  {
+   "id": "DA06",
+   "lvl": 3,
+   "skill": "ethics",
+   "concept": "panopticon",
+   "theme": "Panopticon / digital panopticon",
+   "text": "A university adds AI proctoring to online exams: webcam always on, eye-movement tracking, automatic 'suspicious behaviour' flags. Students say they freeze, avoid looking away to think, and feel anxious.",
+   "q": "Which concept explains this, and what is the strongest response?",
+   "opts": [
+    "Digital panopticon; check whether monitoring is proportionate, explain how flags are judged, and keep human review",
+    "Plutocracy; let sponsors decide",
+    "Direct democracy; vote on each exam question",
+    "Nothing; anxiety is irrelevant to exams"
+   ],
+   "ans": 0,
+   "why": [
+    "Correct — it names the effect and balances exam integrity with fairness.",
+    "Money isn't the issue here.",
+    "Unrelated to the problem.",
+    "Anxiety can distort performance and fairness."
+   ],
+   "hint": "How is the monitoring changing student behaviour?",
+   "explain": "Surveillance can change behaviour even when no one is actually watching. Proportionality asks: is this level of monitoring necessary for the goal?"
+  },
+  {
+   "id": "DA07",
+   "lvl": 3,
+   "skill": "perspectives",
+   "concept": "data_capitalism",
+   "theme": "Data capitalism",
+   "text": "Every time Kiran solves an image puzzle to prove 'I'm not a robot', rates a delivery, or corrects an auto-caption, that data can help train AI systems.",
+   "q": "Which critique of data capitalism does this support?",
+   "opts": [
+    "Users perform unpaid 'data labour' whose value is mostly captured by companies",
+    "Users are paid fairly for every click",
+    "Data has no value",
+    "Captchas exist only for fun"
+   ],
+   "ans": 0,
+   "why": [
+    "Correct — small unpaid actions add up to valuable training data. (Defenders note users receive free services in return.)",
+    "No payment is mentioned.",
+    "AI training data is very valuable.",
+    "They also serve security and data purposes."
+   ],
+   "hint": "Who benefits from Kiran's clicks?",
+   "explain": "Some thinkers argue that users' everyday digital actions are a form of work. Others reply that free services are fair compensation."
+  },
+  {
+   "id": "DA08",
+   "lvl": 3,
+   "skill": "logic",
+   "concept": "digital_capitalism",
+   "theme": "Digital capitalism",
+   "text": "GigGo calls riders 'independent partners', not employees. Riders can log in any time, but the app sets prices, assigns orders, rates riders and can deactivate accounts.",
+   "q": "What is the strongest argument that riders are less 'independent' than the label suggests?",
+   "opts": [
+    "The platform controls key working conditions — pay, allocation, evaluation and removal",
+    "Riders choose their own helmets",
+    "Riders can listen to music",
+    "Customers sometimes tip"
+   ],
+   "ans": 0,
+   "why": [
+    "Correct — control over pay and discipline is a core feature of employment.",
+    "Minor choices don't show independence.",
+    "Irrelevant.",
+    "Tips don't change who controls the work."
+   ],
+   "hint": "Who controls pay and discipline?",
+   "explain": "Digital capitalism often reshapes work through labels like 'partner'. Critical reading compares the label with the actual distribution of control."
+  },
+  {
+   "id": "DA09",
+   "lvl": 3,
+   "skill": "problem",
+   "concept": "plutocracy",
+   "theme": "Plutocracy",
+   "text": "In many democracies, election campaigns are very expensive. Candidates who raise more money can buy more advertising and reach more voters.",
+   "q": "Which concern does this raise, and which question best tests it?",
+   "opts": [
+    "A drift toward plutocracy; ask whether funding is transparent and whether policies favour big donors",
+    "Too much democracy; ask why people vote",
+    "Anarchy; ask why laws exist",
+    "None; money never affects results"
+   ],
+   "ans": 0,
+   "why": [
+    "Correct — it names the risk and suggests evidence to check it.",
+    "More voting isn't the issue.",
+    "Unrelated.",
+    "Money can affect visibility, which affects results."
+   ],
+   "hint": "If money buys reach, whose voice gets louder?",
+   "explain": "This is a general question for all democracies. Funding transparency and spending limits are common tools to reduce unequal influence."
+  },
+  {
+   "id": "DA10",
+   "lvl": 3,
+   "skill": "logic",
+   "concept": "algorithmic_power",
+   "theme": "Algorithmic power",
+   "text": "Data from a fictional platform shows that posts provoking anger get 3× more shares, so the algorithm shows them more. During an election period, calm explainers get much less reach.",
+   "q": "What is the most precise conclusion?",
+   "opts": [
+    "The ranking design may amplify outrage and distort public debate — even if no one intended political bias",
+    "The platform deliberately supports one party",
+    "Anger is always bad",
+    "Explainers are useless"
+   ],
+   "ans": 0,
+   "why": [
+    "Correct — it identifies the mechanism without claiming intent that isn't shown.",
+    "No evidence of intent toward any party.",
+    "Anger can be justified; the issue is amplification.",
+    "Their low reach doesn't make them useless."
+   ],
+   "hint": "Is the problem intention or design?",
+   "explain": "Engagement-based ranking can reward emotion over accuracy. Separating mechanism from intention is a key critical-thinking move."
+  },
+  {
+   "id": "DA11",
+   "lvl": 3,
+   "skill": "ethics",
+   "concept": "indian_democracy",
+   "theme": "Indian democracy",
+   "text": "In 2017 India's Supreme Court recognised privacy as a fundamental right (the Puttaswamy case). A college app now wants students' phone contacts 'for networking'.",
+   "q": "How does the right to privacy help evaluate this request?",
+   "opts": [
+    "Collection should be necessary, proportionate and with informed consent — contacts aren't needed for networking",
+    "Privacy only matters for the government, so anything is fine",
+    "Privacy means no app may collect any data",
+    "Students must always share contacts"
+   ],
+   "ans": 0,
+   "why": [
+    "Correct — necessity and proportionality are central ideas in privacy reasoning.",
+    "India's Digital Personal Data Protection Act, 2023 also places duties on organisations handling personal data.",
+    "Over-correction; some data is necessary for services.",
+    "Consent must be real, not forced."
+   ],
+   "hint": "Is the data necessary for the purpose?",
+   "explain": "Privacy reasoning asks: what purpose, what data is necessary, who agreed, and what limits apply?"
+  },
+  {
+   "id": "DA12",
+   "lvl": 3,
+   "skill": "problem",
+   "concept": "panopticon",
+   "theme": "Panopticon / digital panopticon",
+   "text": "A city installs thousands of AI cameras 'for safety'. Footage is kept for years, and it's unclear who can access it.",
+   "q": "Which safeguard best answers 'who watches the watchers'?",
+   "opts": [
+    "Independent oversight, clear rules on retention and access, and public reporting on how footage is used",
+    "More cameras",
+    "Hiding the cameras",
+    "Letting any official access footage anytime"
+   ],
+   "ans": 0,
+   "why": [
+    "Correct — it limits and checks the power of those doing the watching.",
+    "Adds watching, not checks.",
+    "Reduces transparency.",
+    "Removes accountability."
+   ],
+   "hint": "Who checks the people with access?",
+   "explain": "Surveillance power needs limits: purpose, time, access and independent review. Safety and accountability can go together."
+  },
+  {
+   "id": "DA13",
+   "lvl": 3,
+   "skill": "reflection",
+   "concept": "digital_capitalism",
+   "theme": "Digital capitalism",
+   "text": "Creator culture tells young people: 'Build your personal brand, post daily, monetise your hobby.' Ash now feels every walk, meal and friendship must become content.",
+   "q": "Which lens best explains Ash's experience?",
+   "opts": [
+    "Digital capitalism turning everyday life and identity into marketable content",
+    "Universal adult franchise",
+    "Direct democracy",
+    "A purely individual weakness"
+   ],
+   "ans": 0,
+   "why": [
+    "Correct — the pressure comes from a market that rewards constant self-promotion. (Many creators also find community and income.)",
+    "Unrelated.",
+    "Unrelated.",
+    "This ignores the system-level incentives."
+   ],
+   "hint": "Is this only personal, or also shaped by platforms?",
+   "explain": "Critical thinking connects personal feelings to wider structures, without denying personal choice."
+  },
+  {
+   "id": "DA14",
+   "lvl": 3,
+   "skill": "ethics",
+   "concept": "transparency",
+   "theme": "Transparency",
+   "text": "A student group demands that the college publish every staff member's salary and every student's scholarship amount, saying 'total transparency prevents corruption'.",
+   "q": "What is the best critique?",
+   "opts": [
+    "Transparency should focus on how public money and power are used, while protecting individuals — e.g. publish totals and criteria, not every student's name",
+    "Total transparency is always right",
+    "Nothing should ever be published",
+    "Only toppers' scholarships should be public"
+   ],
+   "ans": 0,
+   "why": [
+    "Correct — it keeps accountability while respecting privacy.",
+    "Exposing individuals can cause harm.",
+    "Over-correction; budgets should be open.",
+    "Arbitrary and unfair."
+   ],
+   "hint": "Who is accountable, and who deserves privacy?",
+   "explain": "Transparency and privacy are both values. A good rule: transparency for power and public money, privacy for individuals."
+  },
+  {
+   "id": "DA15",
+   "lvl": 3,
+   "skill": "logic",
+   "concept": "tech_oligarchy",
+   "theme": "Tech oligarchy",
+   "text": "Robin wants to leave a photo app, but 8 years of memories, tags and friends are stuck there, and the export option produces unreadable files.",
+   "q": "Which concept describes this, and why does it matter for tech power?",
+   "opts": [
+    "Lock-in; when leaving is costly, competition weakens and the platform can change rules with little fear of losing users",
+    "Transparency; the app is very open",
+    "Plutocracy; Robin is too rich to leave",
+    "Direct democracy; users vote on features"
+   ],
+   "ans": 0,
+   "why": [
+    "Correct — switching costs give platforms power over users.",
+    "Unreadable exports are the opposite.",
+    "Not about Robin's wealth.",
+    "Users have no vote here."
+   ],
+   "hint": "What would make leaving easy?",
+   "explain": "Lock-in reduces the pressure of competition. Data portability rules aim to let users take their data with them."
+  },
+  {
+   "id": "DA16",
+   "lvl": 3,
+   "skill": "assumptions",
+   "concept": "surveillance_capitalism",
+   "theme": "Surveillance capitalism",
+   "text": "A cookie banner has a large bright 'Accept all' button and a tiny grey 'Manage settings' link leading to 40 toggles.",
+   "q": "What is this design called, and what does it do to consent?",
+   "opts": [
+    "A dark pattern; it steers users into agreeing, so consent becomes less free",
+    "Good design; it saves time, so consent is stronger",
+    "Transparency; every option is visible",
+    "Data portability"
+   ],
+   "ans": 0,
+   "why": [
+    "Correct — design pressure undermines genuine choice.",
+    "Speed isn't the same as free choice.",
+    "Visibility in theory, but hidden in practice.",
+    "Unrelated."
+   ],
+   "hint": "Is refusing as easy as accepting?",
+   "explain": "Dark patterns use design to push users toward choices that benefit the company. Fair consent makes 'no' as easy as 'yes'."
+  },
+  {
+   "id": "DA17",
+   "lvl": 3,
+   "skill": "problem",
+   "concept": "digital_infrastructure",
+   "theme": "Digital infrastructure",
+   "text": "Most colleges in a country store their records on cloud servers owned by two foreign companies. A billing dispute causes a 3-day outage.",
+   "q": "Which question gets to the heart of digital infrastructure and power?",
+   "opts": [
+    "Who owns and controls essential systems, and what happens when they fail or change terms?",
+    "What colour are the servers?",
+    "Why do colleges keep records?",
+    "How fast is the canteen Wi-Fi?"
+   ],
+   "ans": 0,
+   "why": [
+    "Correct — dependency and control are the core issues.",
+    "Irrelevant.",
+    "Records are clearly needed.",
+    "Not the structural issue."
+   ],
+   "hint": "What happens if the provider says no?",
+   "explain": "Digital infrastructure creates dependency. Resilience, backups and diverse providers reduce the power of any one supplier."
+  },
+  {
+   "id": "DA18",
+   "lvl": 3,
+   "skill": "counterargument",
+   "concept": "surveillance_capitalism",
+   "theme": "Surveillance capitalism",
+   "text": "Critic: 'Targeted ads manipulate us.' Defender: 'Ads help me find things I like, I can ignore them, and they keep apps free.'",
+   "q": "Which response engages most fairly with the defender?",
+   "opts": [
+    "Accept that relevance and free access are real benefits, then ask whether users understand and can limit data collection, and whether design exploits weaknesses",
+    "Call the defender naive",
+    "Say all ads are illegal",
+    "Agree completely and drop the topic"
+   ],
+   "ans": 0,
+   "why": [
+    "Correct — it steelmans the defender before raising specific concerns.",
+    "Insults don't engage with arguments.",
+    "False and extreme.",
+    "Gives up critical inquiry."
+   ],
+   "hint": "What is true in the defender's view?",
+   "explain": "Strong critique starts by granting what is reasonable in the other side, then tests specific claims."
+  },
+  {
+   "id": "DA19",
+   "lvl": 3,
+   "skill": "evidence",
+   "concept": "democracy",
+   "theme": "Democracy",
+   "text": "Political scientists say democracies can weaken gradually, not only through sudden coups.",
+   "q": "Which set of signs would suggest a democracy is weakening — in any country?",
+   "opts": [
+    "Pressure on independent courts and media, limits on peaceful protest, and less access to public information",
+    "More people voting",
+    "More newspapers and public debates",
+    "Peaceful transfers of power after elections"
+   ],
+   "ans": 0,
+   "why": [
+    "Correct — these weaken the checks that keep power accountable.",
+    "Higher turnout usually signals health.",
+    "More debate signals health.",
+    "This is a sign of strength."
+   ],
+   "hint": "What keeps power in check between elections?",
+   "explain": "Democracy is more than elections: it relies on institutions and freedoms that let citizens question power."
+  },
+  {
+   "id": "DA20",
+   "lvl": 3,
+   "skill": "ethics",
+   "concept": "algorithmic_power",
+   "theme": "Algorithmic power",
+   "text": "A state uses software to decide who gets a welfare benefit. Thousands are rejected for 'data mismatch' — for example, a spelling difference in their name across two records.",
+   "q": "Which principle should guide fixing this?",
+   "opts": [
+    "Automated decisions affecting people's rights need explanations, a simple human appeal process, and error checks",
+    "Algorithms are neutral, so the rejections must be correct",
+    "Delete all records",
+    "Ask people to change their names"
+   ],
+   "ans": 0,
+   "why": [
+    "Correct — automation must stay accountable to people.",
+    "Software can encode errors and biases.",
+    "Destroys the service.",
+    "Shifts the burden unfairly onto citizens."
+   ],
+   "hint": "Who fixes the machine's mistake?",
+   "explain": "Algorithmic governance can exclude people through small data errors. Human review and clear appeals protect rights."
+  },
+  {
+   "id": "DA21",
+   "lvl": 3,
+   "skill": "evidence",
+   "concept": "democracy",
+   "theme": "Democracy",
+   "text": "A climate hashtag trends worldwide for a day. Critics call it 'slacktivism'; supporters say online campaigns raise awareness and help organise real protests.",
+   "q": "What would be the best evidence to judge whether the hashtag mattered?",
+   "opts": [
+    "Whether it led to measurable actions — sign-ups, attendance, policy responses — beyond views and likes",
+    "The number of likes only",
+    "Whether celebrities posted it",
+    "How colourful the posts were"
+   ],
+   "ans": 0,
+   "why": [
+    "Correct — impact is measured by outcomes, not visibility alone.",
+    "Likes measure attention, not change.",
+    "Celebrity posts measure reach.",
+    "Irrelevant."
+   ],
+   "hint": "What would 'mattering' look like offline?",
+   "explain": "Online participation can be powerful or shallow. Judge it by the actions and changes it leads to."
+  }
+ ],
+ "write_prompts": [
+  {
+   "id": "DBW1",
+   "lvl": 1,
+   "skill": "perspectives",
+   "concept": "panopticon",
+   "text": "Your college plans face-recognition cameras for attendance. It says this will save 10 minutes per class and stop proxy attendance.",
+   "q": "In 4–5 sentences: Who benefits and who might be harmed? Should students have a say? Give reasons.",
+   "key_ideas": [
+    "privacy",
+    "consent",
+    "data",
+    "proxy",
+    "time",
+    "students",
+    "watched",
+    "fair",
+    "store",
+    "delete",
+    "teachers"
+   ],
+   "explain": "Think about benefits (time, fairness in attendance) and costs (privacy, feeling watched, data misuse, errors). Consider who decides and whether students are asked.",
+   "model": "I think the plan has real benefits, but students should have a say. Teachers save time and proxy attendance becomes harder. However, students' faces are sensitive data that could be stored or misused. Some may feel constantly watched, like in a panopticon. Therefore the college should consult students and set clear rules on data storage and deletion."
+  },
+  {
+   "id": "DBW2",
+   "lvl": 1,
+   "skill": "assumptions",
+   "concept": "data_capitalism",
+   "text": "'If an app is free, I'm not paying anything.'",
+   "q": "In 4–5 sentences: Do you agree? Explain what users might 'pay' with, using an example from an app you use.",
+   "key_ideas": [
+    "data",
+    "attention",
+    "ads",
+    "privacy",
+    "free",
+    "time",
+    "example",
+    "because",
+    "sell"
+   ],
+   "explain": "Free apps still need income. Ask what they collect (data) and what they sell (your attention to advertisers).",
+   "model": "I disagree, because free apps usually earn from our data and attention. For example, a short-video app learns what I watch and shows me targeted ads. My time and personal patterns are valuable to advertisers. However, I do get entertainment and useful features in return. So the app is not truly free; I pay with data and attention instead of money."
+  },
+  {
+   "id": "DBW3",
+   "lvl": 1,
+   "skill": "counterargument",
+   "concept": "indian_democracy",
+   "text": "'My single vote doesn't matter, so I won't vote when I turn 18.'",
+   "q": "In 4–5 sentences: Respond fairly — say what is understandable about this view and what it misses.",
+   "key_ideas": [
+    "vote",
+    "young",
+    "together",
+    "turnout",
+    "issues",
+    "understandable",
+    "however",
+    "because",
+    "register"
+   ],
+   "explain": "Start by acknowledging the feeling (one vote is small). Then add what it misses: collective impact, youth turnout, local elections, and that not voting is also a choice.",
+   "model": "It is understandable to feel that one vote is too small to matter. However, elections are decided by many individual choices added together. If young people don't vote, parties may pay less attention to issues like jobs and education. Local elections can also be very close. Therefore registering and voting is a way of making young voices count."
+  },
+  {
+   "id": "DBW4",
+   "lvl": 1,
+   "skill": "counterargument",
+   "concept": "tech_oligarchy",
+   "text": "A creator's income collapsed after a platform suddenly changed its algorithm.",
+   "q": "In 4–5 sentences: Should platforms explain algorithm changes to creators? Give one argument for and one against.",
+   "key_ideas": [
+    "explain",
+    "fair",
+    "creators",
+    "income",
+    "secret",
+    "spam",
+    "however",
+    "because",
+    "notice",
+    "appeal"
+   ],
+   "explain": "For: creators depend on it for income; fairness needs notice and appeal. Against: full details could help spammers game the system. Look for a middle path.",
+   "model": "I think platforms should explain major algorithm changes. Creators depend on these platforms for income, so sudden changes without notice are unfair. On the other hand, revealing every detail could help spammers trick the system. A fair middle path is advance notice, general explanations and an appeal process. Therefore platforms can be transparent without giving away everything."
+  },
+  {
+   "id": "DBW5",
+   "lvl": 1,
+   "skill": "reflection",
+   "concept": "panopticon",
+   "text": "Read receipts, 'last seen' and live location are common in chat apps.",
+   "q": "In 4–5 sentences: Do these features make friendships better or more stressful? Use the idea of the 'digital panopticon'.",
+   "key_ideas": [
+    "watched",
+    "pressure",
+    "reply",
+    "trust",
+    "privacy",
+    "choice",
+    "safety",
+    "panopticon",
+    "however"
+   ],
+   "explain": "These features can help (safety, coordination) but also create pressure to always be available. Link this to self-monitoring in the panopticon.",
+   "model": "These features can make friendships both easier and more stressful. Live location can help friends feel safe on the way home. However, read receipts create pressure to reply instantly, like a digital panopticon where we feel watched all the time. This can lead to misunderstandings when someone replies late. I think these features are best when people choose them, not when they are on by default."
+  },
+  {
+   "id": "DBW6",
+   "lvl": 1,
+   "skill": "ethics",
+   "concept": "plutocracy",
+   "text": "A fest sponsor wants to choose the headline artist because they pay the most.",
+   "q": "In 4–5 sentences: Should sponsors get more say because they pay more? Use the idea of plutocracy and suggest a fair rule.",
+   "key_ideas": [
+    "money",
+    "sponsor",
+    "students",
+    "vote",
+    "fair",
+    "plutocracy",
+    "rule",
+    "because",
+    "however"
+   ],
+   "explain": "Sponsors deserve recognition, but if money buys control over a shared student event, that's plutocracy in miniature. A fair rule separates branding rights from decision rights.",
+   "model": "I don't think sponsors should decide the artist just because they pay more. If money buys control, the fest becomes a small plutocracy instead of a student event. Sponsors do deserve something in return, like branding and stalls. However, important choices should be made by students through a vote or committee. A fair rule is: sponsors get visibility, not veto power."
+  },
+  {
+   "id": "DAW1",
+   "lvl": 3,
+   "skill": "counterargument",
+   "concept": "tech_oligarchy",
+   "text": "'Tech companies have become more powerful than many governments, but nobody elected them.'",
+   "q": "In 4–5 sentences: Evaluate this claim using the idea of tech oligarchy. Include one counterargument and your own conclusion.",
+   "key_ideas": [
+    "platform",
+    "power",
+    "accountab",
+    "elected",
+    "competition",
+    "regulation",
+    "however",
+    "users",
+    "because",
+    "services"
+   ],
+   "explain": "Explain what kind of power platforms hold (over information, markets, livelihoods). Then give a counterargument (competition, regulation, users' choices, useful services) and weigh them.",
+   "model": "The claim has some truth, because a few platforms shape what billions of people see, buy and earn. This looks like a tech oligarchy: important rules are made by companies that voters cannot remove. However, governments can still regulate them, and new competitors do sometimes challenge big firms. Users also gain real value from these services. Overall, I think tech power is a serious democratic concern that needs stronger accountability, not just trust."
+  },
+  {
+   "id": "DAW2",
+   "lvl": 3,
+   "skill": "evidence",
+   "concept": "surveillance_capitalism",
+   "text": "Surveillance capitalism: data is collected to predict and nudge behaviour.",
+   "q": "In 4–5 sentences: Analyse one app you use daily through this lens. What data might it collect, how could it nudge you, and what would you change?",
+   "key_ideas": [
+    "data",
+    "location",
+    "clicks",
+    "nudge",
+    "notification",
+    "ads",
+    "predict",
+    "change",
+    "setting",
+    "because"
+   ],
+   "explain": "Pick a real habit (shopping, video, music, food). List likely data (clicks, time, location), one nudge (notification, 'only 2 left', autoplay), and one realistic change (settings, design rule).",
+   "model": "I use a shopping app every day, and it collects my searches, clicks, location and the time I usually shop. It probably uses this data to predict what I'll buy. It nudges me with notifications and 'only 2 left' banners late at night. This can push me into impulse buying. I would turn off notifications and want the app to make refusing tracking as easy as accepting it."
+  },
+  {
+   "id": "DAW3",
+   "lvl": 3,
+   "skill": "problem",
+   "concept": "digital_infrastructure",
+   "text": "Digital public infrastructure (like UPI or digital lockers) vs private platforms.",
+   "q": "In 4–5 sentences: Should essential digital services be public, private or a mix? Discuss benefits and risks of each.",
+   "key_ideas": [
+    "public",
+    "private",
+    "competition",
+    "access",
+    "data",
+    "outage",
+    "accountab",
+    "mix",
+    "risk",
+    "benefit"
+   ],
+   "explain": "Public: shared access, lower costs, less private control — but risks of centralised data and outages. Private: innovation, choice — but profit motives and concentration. Many argue for public rails with private services on top, plus safeguards.",
+   "model": "I think a mix works best for essential digital services. Public infrastructure can give everyone equal access and stop a few companies from controlling payments or records. However, centralised systems can create big privacy risks and single points of failure. Private companies bring innovation and user-friendly apps. Therefore public 'rails' with competing private apps, strong data protection and backups is the most balanced model."
+  },
+  {
+   "id": "DAW4",
+   "lvl": 3,
+   "skill": "ethics",
+   "concept": "panopticon",
+   "text": "The digital panopticon on campus: CCTV, AI proctoring, attendance apps.",
+   "q": "In 4–5 sentences: Where is the line between safety or fairness and surveillance? Propose two rules a college should follow.",
+   "key_ideas": [
+    "safety",
+    "privacy",
+    "proportion",
+    "consent",
+    "rule",
+    "delete",
+    "access",
+    "human",
+    "purpose",
+    "watched"
+   ],
+   "explain": "Use proportionality: is the monitoring necessary for a clear purpose? Rules might cover purpose, consent, storage time, access, human review, and student consultation.",
+   "model": "Some monitoring can make campuses safer and exams fairer. However, when students feel watched everywhere, it becomes a digital panopticon that discourages free expression. The line should be drawn by necessity and proportion. First, data should be used only for a stated purpose and deleted after a fixed time. Second, any automated flag should be reviewed by a human before action is taken."
+  },
+  {
+   "id": "DAW5",
+   "lvl": 3,
+   "skill": "perspectives",
+   "concept": "digital_capitalism",
+   "text": "Creator culture and 'monetise your passion'.",
+   "q": "In 4–5 sentences: Critically examine how digital capitalism shapes Gen Z identity and leisure. Include one benefit and one cost.",
+   "key_ideas": [
+    "identity",
+    "content",
+    "brand",
+    "income",
+    "pressure",
+    "community",
+    "hobby",
+    "however",
+    "platform",
+    "metrics"
+   ],
+   "explain": "Benefit: new careers, community, creative freedom. Cost: hobbies become work, self-worth tied to metrics, burnout. Link to platform incentives.",
+   "model": "Digital capitalism encourages young people to see themselves as personal brands. One benefit is that creators can build income and communities without traditional gatekeepers. However, hobbies can turn into constant work measured by likes and views. This can link self-worth to platform metrics and cause burnout. I think young people can use platforms creatively while protecting some parts of life from being turned into content."
+  },
+  {
+   "id": "DAW6",
+   "lvl": 3,
+   "skill": "reflection",
+   "concept": "transparency",
+   "text": "'Transparency solves everything.'",
+   "q": "In 4–5 sentences: Evaluate this claim with examples from democracy and technology. When is transparency not enough?",
+   "key_ideas": [
+    "RTI",
+    "report",
+    "understand",
+    "act",
+    "privacy",
+    "accountab",
+    "power",
+    "example",
+    "not enough",
+    "however"
+   ],
+   "explain": "Transparency helps (RTI, published budgets, algorithm notices) but is not enough without understanding, power to act, and protection of individuals' privacy.",
+   "model": "Transparency is powerful, as tools like RTI show when citizens use them to question public spending. In technology, clear explanations of fees or feeds help users make real choices. However, a 120-page report nobody understands does not create accountability. Transparency is not enough unless people can understand information and act on it. It also must not expose ordinary individuals' private data."
+  }
+ ]
+}

@@ -16,7 +16,7 @@ init_state()
 inject_css()
 get_logger()  # start the background logger once per server
 
-NAV = [("home", "🏠 Home"), ("practice", "🏋️ Daily practice"), ("daily", "☀️ Today's challenge"),
+NAV = [("home", "🏠 Home"), ("practice", "🏋️ Daily practice"), ("topic", "🗳️ Democracy & digital power"), ("daily", "☀️ Today's challenge"),
        ("plan", "🎯 My improvement plan"), ("progress", "📈 My progress"), ("journal", "📓 Journal"),
        ("help", "ℹ️ Help & feedback")]
 
@@ -44,7 +44,7 @@ def sidebar():
 
 
 ROUTES = {
-    "home": pages.home_page, "module": pages.module_page, "activity": activity.page, "practice": practice.page,
+    "home": pages.home_page, "module": pages.module_page, "activity": activity.page, "practice": practice.page, "topic": practice.topic_page,
     "daily": pages.daily_page, "progress": pages.progress_page, "plan": pages.plan_page,
     "journal": pages.journal_page, "help": pages.help_page, "teacher": teacher.page,
 }
